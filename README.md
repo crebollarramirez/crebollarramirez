@@ -1,4 +1,5 @@
 If you are coming from my resume, awesome! I got your attention, you won't regret it :)
+My GitHub is currently under construction so not everything is avaliable right now.
 
 I am currently studying Math & Computer Science at University of California - San Diego
 
