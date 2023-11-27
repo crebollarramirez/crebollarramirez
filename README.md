@@ -1,5 +1,3 @@
-If you are coming from my resume, awesome! I got your attention, you won't regret it :)
-
 I am currently studying Math & Computer Science at University of California - San Diego
 I am also double majoring in Cognative Science with a Specialization in Machine Learning and Neural Computation. 
 
