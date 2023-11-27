@@ -1,4 +1,5 @@
 I am currently studying Math & Computer Science at University of California - San Diego
+
 I am also double majoring in Cognative Science with a Specialization in Machine Learning and Neural Computation. 
 
 **Math & Computer Science | Cognative Sciece with a Specialization in Machine Learning and Neural Computation:**
