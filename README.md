@@ -4,6 +4,7 @@ I am currently studying Math & Computer Science at University of California - Sa
 I am also double majoring in Cognative Science with a Specialization in Machine Learning and Neural Computation. 
 
 **Intersection of Math & Computer Science | Cognative Sciece with a Specialization in Machine Learning and Neural Computation:**
+
 My academic journey, with a focus on Math-Computer Science, has equipped me with a robust foundation in both the theoretical and practical aspects of computer science. This, combined with my Cognitive Science major and specialization in machine learning and neural computation, places me at the nexus of analytical thinking, computational expertise, and an in-depth understanding of the intricacies of machine learning algorithms.
 
 - 🔭 I’m currently working on machine learning!
