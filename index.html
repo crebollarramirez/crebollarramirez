@@ -1,14 +1,26 @@
-<button onclick="showContent()">Show hidden content</button>
+<html Lang="en">
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+<body>
+  <section id="header">
+    <a href="#"><img src='images/catpicture.jpeg' class='logo' alt=""></a>
 
-<template>
-  <h2>Cute Cat</h2>
-  <img src="images/catpicture.jpeg" width="214" height="204">
-</template>
-
-<script>
-function showContent() {
-  let temp = document.getElementsByTagName("template")[0];
-  let clon = temp.content.cloneNode(true);
-  document.body.appendChild(clon);
-}
-</script>
+    <div>
+      <ul id="navbar">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a class="active" href="index.html">About Me</a></li>
+        <li><a class="active" href="index.html">Resume</a></li>
+        <li><a class="active" href="index.html">Contact Me</a></li>
+        <li id="lg-bag"><a href="cartmhtml"> <i class="far far-shopping-bag"></i></a></li>
+        <a href="#" id="close"><i class="far fa-times"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href=""><i class="far fa-times"></i</a>
+      <i id="bar" class="far fa-shopping bag"></i>
+    </div>
+  </section>
+</body>
+</html>
