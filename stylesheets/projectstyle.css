@@ -1,0 +1,67 @@
+/* Basic reset for margin and padding */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Center the navigation horizontally */
+    background-color: #141412; /* Optional: if you want a different background color for the header */
+}
+
+body {
+    background-color: #141412; /* Subtle black color */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    font-family: 'Harry P', sans-serif; /* Use Harry P font with fallback to sans-serif */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Optional: set a max width for the navigation bar */
+}
+
+.logo {
+    width: 100px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    background-color: transparent; /* Set background to transparent */
+    margin-right: auto; /* Push the logo to the left */
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    padding: 0;
+    margin: 0 auto; /* Center the navbar within the nav */
+    flex-grow: 1; /* Allow the navbar to take up remaining space */
+}
+
+.navbar li {
+    display: inline;
+    position: relative; /* Ensures diamonds are positioned relative to list items */
+}
+
+.navbar a {
+    position: relative;
+    display: block;
+    color: #8C7F5A;
+    padding: 15px 75px;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.navbar li:not(:last-child)::after {
+    content: "♢"; /* Unicode character for black diamond */
+    font-size: 14px; /* Adjust the font size if needed */
+    color: #D4AF37; /* Adjust the color of the diamond */
+    margin-left: 5px; /* Adjust the space between the links and the diamond */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -15px; /* Position to the right of the link */
+}
