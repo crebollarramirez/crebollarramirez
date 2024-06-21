@@ -1,0 +1,9 @@
+.logo {
+    width: 150px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    background-color: transparent; /* Set background to transparent */
+    margin-right: auto; /* Push the logo to the left */
+    position: absolute;
+    left: -250px;
+
+}
