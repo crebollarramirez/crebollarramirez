@@ -71,12 +71,12 @@ nav{
 
 .card-item{
     min-height: 100%;
-    
+    border: 3px solid white;
 }
 
 .card-item-1{
     font-size: 30px;
-    justify-content: center;
+    
     
 }
 
