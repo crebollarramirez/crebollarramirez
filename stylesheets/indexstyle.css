@@ -1,10 +1,11 @@
 /* Basic reset for margin and padding */
 
 body {
-    background-image: url('/images/background-harrypotter.jpeg');
+    background-image: url('../images/castle.jpeg');
     background-size: cover;
-    background-repeat: repeat-y;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
     font-family: 'Harry P', sans-serif; /* Use Harry P font with fallback to sans-serif */
 }
 
@@ -26,7 +27,7 @@ nav{
 .navbar li {
     display: inline;
     position: relative; /* Ensures diamonds are positioned relative to list items */
-    border: 1px solid #8C7F5A; /* Border color */
+    /*border: 1px solid #8C7F5A; /* Border color */
     
 }
 
@@ -50,25 +51,62 @@ nav{
     right: -11px; /* Position to the right of the link */
 }
 
-.fixed-card {
-    position: fixed;
-    margin: 15px auto;
+.card {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 15px;
     left: 15px; /* Adjust the left position as needed */
-    width: 350px; /* Set the width of the card */
+    width: 400px; /* Set the width of the card */
     padding: 50px;
-    background-color: #2c2c2c; /* Background color of the card */
+    background-color: #060d17; /* Background color of the card */
     color: #bc9b43;
-    border: 1px solid #8C7F5A; /* Border color */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for a nice effect */
+    border: 1px solid #1a1918; /* Border color */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8 px rgba(0, 0, 0, 0.2); /* Box shadow for a nice effect */
+    border-color: #bc9b43;
+}
+
+.card-item{
+    min-height: 100%;
+    
+}
+
+.card-item-1{
+    font-size: 30px;
+    justify-content: center;
+    
+}
+
+.rowlogo{
+    display: flex;
+    margin: 0 0;
+    padding: 0 0;
+
+}
+
+.name{
+    
+}
+
+.crest{
+    width: auto;
+    height: 200px;
+}
+
+.card-item-2{
+    width: 400px;
+    border-radius: 25px;
+
+}
+
+.card-item-3{
     font-size: 25px;
+    align-self: flex-start;
 }
 
-#profile{
-    background-color: red;
-}
- 
 
-#profile img{
-    width: 100%
-}
+
+
