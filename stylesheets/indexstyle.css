@@ -9,56 +9,34 @@ body {
     font-family: 'Harry P', sans-serif; /* Use Harry P font with fallback to sans-serif */
 }
 
-nav{
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    position: fixed;
+main{
 }
+
 
 .navbar {
-    list-style-type: none;
-    justify-content: center; /* Center the items horizontally */
-    display: flex; /* Use flexbox to align items horizontally */
+    width: 100%;
     position: fixed;
-    margin-left: 25%
-}
-
-.navbar li {
-    display: inline;
-    position: relative; /* Ensures diamonds are positioned relative to list items */
-    /*border: 1px solid #8C7F5A; /* Border color */
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .navbar a {
-    position: relative;
-    display: block;
+    font-size: 50px;
     color: #8C7F5A;
-    padding: 15px 75px;
+    margin: 0px 50px;
     text-decoration: none;
-    font-size: 40px;
-    
 }
 
-.navbar li:not(:last-child)::after {
-    content: "♢"; /* Unicode character for black diamond */
-    font-size: 20px; /* Adjust the font size if needed */
-    color: #D4AF37; /* Adjust the color of the diamond */
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -11px; /* Position to the right of the link */
-}
 
 .card {
     display: flex;
-    position: relative;
+    position: fixed;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    margin: 15px 15px;
-    left: 15px; /* Adjust the left position as needed */
+    margin-left: 20px;
+    margin-top: 0;
     width: 400px; /* Set the width of the card */
     padding: 50px;
     background-color: #060d17; /* Background color of the card */
@@ -70,8 +48,7 @@ nav{
 }
 
 .card-item{
-    min-height: 100%;
-    border: 3px solid white;
+    margin: 10px 10px
 }
 
 .card-item-1{
@@ -82,18 +59,20 @@ nav{
 
 .rowlogo{
     display: flex;
-    margin: 0 0;
+    margin: 0 35px;
     padding: 0 0;
+    
 
 }
 
+/*border: 5px solid white;*/
 .name{
-    
 }
 
 .crest{
     width: auto;
-    height: 200px;
+    height: 150px;
+    flex-grow: 1;
 }
 
 .card-item-2{
