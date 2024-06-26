@@ -34,13 +34,15 @@ body{
     grid-column: 1/ 2;
     grid-row: 1/ 7;
     align-items: center;
-    justify-content: center;
+    justify-content: center ;
+    display: flex;
 }
 
 .photo img{
     display: flex;
-    height: 50%;
+    height: 90%;
     width: auto;
+    border-radius: 40px;
 }
 
 .grid-item-2{
