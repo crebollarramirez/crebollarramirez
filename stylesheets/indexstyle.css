@@ -6,10 +6,7 @@
 }
 
 html{
-    background-image: url("../images/castle.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
+    background-color: black;
     font-family: 'Cornerstone';
 }
 
@@ -20,19 +17,31 @@ body{
     align-items: center;
 }
 
+
 #grid-container{
     display: grid;
     position: relative;
-    background: linear-gradient(#e66465, #9198e5);
-    height: 90vh;
-    width: 75vw;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(10, 10%);
 
+    border: 5px solid transparent;
+    /* border-image: linear-gradient(to right, #870000, #190a05); */
+    border-image-slice: 1;
+    padding: 25px;
+
+    background: linear-gradient(to right, #e66465, #9198e5);
+    height: 85vh;
+    width: 75vw;
     justify-content: center;
     justify-items: stretch;
-    border-radius: 15px;
-    padding: 10px;
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(10, 10%);
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, 
+    rgba(240, 46, 170, 0.3) -10px 10px, 
+    rgba(240, 46, 170, 0.2) -15px 15px, 
+    rgba(240, 46, 170, 0.1) -20px 20px, 
+    rgba(240, 46, 170, 0.05) -25px 25px;
+
+
 }
 
 #left{
@@ -70,11 +79,9 @@ body{
 .photo-name img{
     height: 500px;
     width: auto;
-    border: 5px solid transparent;
-    border-image: linear-gradient(to right, green, lightgreen);
-    border-image-slice: 1;
-    border-radius: 10px;
-
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
 }
 
 
@@ -91,11 +98,6 @@ body{
 .photo-name h2{
     font-size:20px;
 }
-
-.grid-item{
-    /* border: 1px solid black; */
-}
-
 
 .socials{
     display: flex;
@@ -149,19 +151,21 @@ body{
     letter-spacing: 5px;
     text-transform: uppercase;
     cursor: pointer;
-    color: #2c9caf;
+    color: #9198e5;
     transition: all 1s;
     font-size: 22px;
     position: relative;
     overflow: hidden;
-    outline: 2px solid #2c9caf;
+    outline: 2px solid #9198e5;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   }
   
   button:hover {
-    color: #ffffff;
+    color: #9198e5;
     transform: scale(1.1);
-    outline: 2px solid #70bdca;
-    box-shadow: 4px 5px 17px -4px #268391;
+    outline: 2px solid #9198e5;
+
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
   
   button::before {
@@ -171,7 +175,7 @@ body{
     top: 0;
     width: 0;
     height: 100%;
-    background-color: #2c9caf;
+    background-color: black;
     transform: skewX(45deg);
     z-index: -1;
     transition: width 1s;
@@ -193,11 +197,14 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    transition: all 1s;
   }
   
   /* Add a hover effect if you want */
   .fa:hover {
-    opacity: 0.7;
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
   
   /* Set a specific color for each brand */
@@ -223,3 +230,24 @@ body{
     color: white;
   }
 
+
+  .reveal {
+    color: #0000;
+    --g: no-repeat linear-gradient(black 0 0) 0 0;
+    background: var(--g), var(--g);
+    background-size: 0 100%;
+    -webkit-background-clip: padding-box,text;
+            background-clip: padding-box,text;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+    animation: 
+      t 2s  .5s both,
+      b 2s 1.3s both;
+  }
+  @keyframes t{
+    to {background-size:150% 100%}
+  }
+  @keyframes b {
+    to {background-position:-200% 0,0 0}
+  }
+  
