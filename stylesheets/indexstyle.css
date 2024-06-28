@@ -217,7 +217,6 @@ body{
     color: white;
   }
 
-
   .reveal {
     color: #0000;
     --g: no-repeat linear-gradient(black 0 0) 0 0;
@@ -245,9 +244,10 @@ body{
             height: 100vh;
             width: 100vw;
         }
+
         #grid-container {
             width: 1fr; /* Full width on smaller devices */
-            height: 2fr;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -295,8 +295,6 @@ body{
             padding: 15px;
         }
 
-        
-
         .right{
             display: flex;
             align-items: center;
@@ -307,5 +305,4 @@ body{
             text-align: center;
         }   
     }
-
 }
