@@ -125,6 +125,7 @@ body{
     justify-content: flex-start;
     font-size: 35px;
     margin: 1% 1%;
+    flex-direction: column;
 
 }
 
