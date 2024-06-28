@@ -80,8 +80,8 @@ body{
     height: 500px;
     width: auto;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    border-radius: 15px;
     margin-bottom: 15px;
+    outline: 2px solid black;
 }
 
 
@@ -146,17 +146,16 @@ body{
     height: 10%;
     width: 60%;
     border: none;
-    border-radius: 10px;
     font-weight: bold;
     letter-spacing: 5px;
     text-transform: uppercase;
     cursor: pointer;
-    color: #9198e5;
+    color: black;
     transition: all 1s;
     font-size: 22px;
     position: relative;
     overflow: hidden;
-    outline: 2px solid #9198e5;
+    outline: 2px solid black;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   }
   
@@ -193,18 +192,19 @@ body{
     width: 50px;
     text-align: center;
     text-decoration: none;
-    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     transition: all 1s;
+    outline: 2px solid black;
   }
   
   /* Add a hover effect if you want */
   .fa:hover {
     transform: scale(1.1);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    outline: 2px solid #9198e5;
   }
   
   /* Set a specific color for each brand */
