@@ -1,5 +1,7 @@
 /* Basic reset for margin and padding */
 
+
+
 @font-face {
     font-family: 'Cornerstone';
     src: url('../fonts/Cornerstone.ttf');
@@ -20,8 +22,7 @@ body{
 
 #grid-container{
     display: grid;
-    position: relative;
-
+    position: absolute;
     border: 5px solid transparent;
     /* border-image: linear-gradient(to right, #870000, #190a05); */
     border-image-slice: 1;
@@ -30,13 +31,12 @@ body{
     background: linear-gradient(to right, #e66465, #9198e5);
     height: 85vh;
     width: 75vw;
-    justify-content: center;
     justify-items: stretch;
 
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(10, 10%);
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, 
-    rgba(240, 46, 170, 0.3) -10px 10px, 
+    #f02eaa4d -10px 10px, 
     rgba(240, 46, 170, 0.2) -15px 15px, 
     rgba(240, 46, 170, 0.1) -20px 20px, 
     rgba(240, 46, 170, 0.05) -25px 25px;
@@ -50,10 +50,8 @@ body{
     grid-row: 1 / -1;
     justify-content: center;
     flex-direction: column;
-    /* border: 1px solid orange; */
     align-items: center;
     gap: 30px;
-
 }
 
 .photo-name{
@@ -65,19 +63,17 @@ body{
 }
 
 .photo-left-item{
-    /* border: 1px solid black;  */
     margin: 0;
     padding: 0;
 }
 
 .left-item{
-    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
 }
 
 .photo-name img{
-    height: 500px;
+    height: 30em; /* 400px */
     width: auto;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     margin-bottom: 15px;
@@ -88,7 +84,6 @@ body{
 .photo-name h1, h2{
     text-align: center;
     font-family: 'Cornerstone';
-    /* border: 1px solid black; */
 }
 
 .photo-name h1{
@@ -106,7 +101,7 @@ body{
     align-self: stretch;
 }
 
-.grid-item-2{
+.bigtext{
     grid-column: 2 / -1;
     grid-row: 1 / 2;
     display: flex;
@@ -114,7 +109,7 @@ body{
     justify-content: center;
 }
 
-.grid-item-2 h1{
+.bigtext h1{
     font-family: 'Cornerstone';
     font-size: 55px;
 }
@@ -128,15 +123,6 @@ body{
     font-size: 35px;
     margin: 1% 1%;
     flex-direction: column;
-
-}
-
-.grid-item-4{
-    grid-column: 1 / 2;
-    grid-row: 9 / -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 }
 
@@ -251,3 +237,43 @@ body{
     to {background-position:-200% 0,0 0}
   }
   
+
+  @media (max-width: 768px) {
+    @media (max-width: 768px) {
+        #grid-container {
+            width: 100%; /* Full width on smaller devices */
+            height: 230%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+
+        .grid-items{
+            border: 2px solid black;
+        }
+
+        .photo-name{
+
+        }
+        .left{
+
+        }
+
+        .bigtext{
+
+        }
+
+        .right{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 35px;
+            margin: 1% 1%;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+}
