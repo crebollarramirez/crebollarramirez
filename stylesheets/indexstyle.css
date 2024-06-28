@@ -241,13 +241,13 @@ body{
   @media (max-width: 1375px) {
     @media (max-width: 1375px) {
         html{
-            height: 100vh;
+            height: 170vh;
             width: 100vw;
         }
 
         #grid-container {
             width: 1fr; /* Full width on smaller devices */
-            height: 100vh;
+            height: 150vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
