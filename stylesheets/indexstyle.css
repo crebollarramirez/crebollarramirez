@@ -235,7 +235,7 @@ body{
 
         #grid-container {
             width: 1fr; /* Full width on smaller devices */
-            height: 150vh;
+            height: 120vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
