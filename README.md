@@ -12,5 +12,3 @@ My academic journey, with a focus on Math-Computer Science, has equipped me with
 
 Check out my portfolio!
 --> https://crebollarramirez.github.io/crebollarramirez/
-
-This is a test
