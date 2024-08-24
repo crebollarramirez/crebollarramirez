@@ -1,7 +1,7 @@
 function downloadFile() {
     const link = document.createElement('a');
-    link.href = './extras/crebollarramirez-resume.pdf';
-    link.download = 'crebollarramirez-resume.pdf';
+    link.href = './extras/crebollar-resume.pdf';
+    link.download = 'crebollar-resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
