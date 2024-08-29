@@ -1,42 +1,209 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+}
+
+html, body{
+  background-color: black;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: hidden;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: 'Cornerstone';
+  src: url('./assets/fonts/Cornerstone.ttf')
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  background: linear-gradient(to right, #e66465, #9198e5);
+  height: 85vh;
+  width: 75vw;
+  justify-items: stretch;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, 
+  #f02eaa4d -10px 10px, 
+  rgba(240, 46, 170, 0.2) -15px 15px, 
+  rgba(240, 46, 170, 0.1) -20px 20px, 
+  rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.card{
+  border: black solid 2px;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-item{
+  margin: 0;
+  padding: 0;
+}
+
+.right h1{
+  font-size: 50;
+}
+
+.right{
+  flex: 3;
+  border: solid black 2px;
+  font-family: 'Cornerstone';
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+  display: flex;
+  align-items: centert;
+  justify-content: flex-start;
+  font-size: 20px;
+  margin: 1% 1%;
+  flex-direction: column;
+}
+
+
+.photo-name img{
+  height: 25em; /* 400px */
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  outline: 2px solid black;
+}
+
+.photo-name h1, h2{
   text-align: center;
+  font-family: 'Cornerstone';
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.photo-name h1{
+  font-size: 27px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.photo-name h2{
+  font-size:20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.socials{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: stretch;
 }
 
-.card {
-  padding: 2em;
+/* Style all font awesome icons */
+.fa {
+  padding: 27px 9px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  transition: all 1s;
+  outline: 2px solid black;
 }
 
-.read-the-docs {
-  color: #888;
+/* Hover effect for social icons */
+.fa:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  outline: 2px solid #9198e5;
 }
+
+/* For Social Icons */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github{
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+/* Download Button  stuff */
+.button {
+  height: 2em;
+  width: 13em;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: black;
+  transition: all 1s;
+  font-size: 22px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+button:hover {
+  color: #9198e5;
+  transform: scale(1.1);
+  outline: 2px solid #9198e5;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1s;
+}
+
+button:hover::before {
+  width: 250%;
+}
+
+.reveal {
+  color: #0000;
+  --g: no-repeat linear-gradient(black 0 0) 0 0;
+  background: var(--g), var(--g);
+  background-size: 0 100%;
+  -webkit-background-clip: padding-box,text;
+          background-clip: padding-box,text;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  animation: 
+    t 2s  .5s both,
+    b 2s 1.3s both;
+}
+
+@keyframes t{
+  to {background-size:150% 100%}
+}
+@keyframes b {
+  to {background-position:-200% 0,0 0}
+}
+
+
+
