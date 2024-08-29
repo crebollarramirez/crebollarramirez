@@ -6,10 +6,9 @@ import { SocialButton } from './components/SocialButton'
 import './App.css'
 
 import { RightSide } from './components/RightSide'
+import { OtherScreen } from './components/OtherScreen'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
       <main>
         <Card/>
