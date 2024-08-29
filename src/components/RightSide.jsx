@@ -1,7 +1,5 @@
 import React from "react";
-import gsap from 'gsap';
 import {AboutMe} from './AboutMe'
-import { OtherScreen } from "./OtherScreen";
 import { SkillsSection } from "./SkillsSection";
 import { ProjectsSection } from "./ProjectsSection";
 import { ContactSection } from "./ContactSection";
@@ -14,7 +12,7 @@ import { ContactSection } from "./ContactSection";
 
 export function RightSide(){
     return (
-        <div className="rightSide scrollable-container">
+        <div className="scrollable-container">
             <AboutMe/>
             <SkillsSection/>
             <ProjectsSection/>

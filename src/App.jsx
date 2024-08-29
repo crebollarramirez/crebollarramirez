@@ -4,9 +4,7 @@ import viteLogo from '/vite.svg'
 import {Card} from "./components/Card"
 import { SocialButton } from './components/SocialButton'
 import './App.css'
-
 import { RightSide } from './components/RightSide'
-import { OtherScreen } from './components/OtherScreen'
 
 function App() {
   return (

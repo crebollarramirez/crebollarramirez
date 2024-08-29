@@ -1,5 +1,5 @@
 :root{
-
+  font-family: 'Cornerstone';
 }
 
 @font-face {
@@ -25,7 +25,6 @@ body{
 main{
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap;  */
   background: linear-gradient(to right, #e66465, #9198e5);
   height: 85vh;
   width: 75vw;
@@ -39,6 +38,7 @@ main{
   gap: 1em;
 }
 
+/* This is used to center the image horizontally */
 .imageContainer{
   width: 100%;
   margin: 0;
@@ -49,6 +49,7 @@ main{
 
 .card{
   height: 100%;
+  width: 100%;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -88,7 +89,8 @@ main{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-self: stretch;
+  align-self: center;
+  gap: 1.3em;
 }
 
 /* Style all font awesome icons */
@@ -200,12 +202,12 @@ button:hover::before {
   to {background-position:-200% 0,0 0}
 }
 
-.right-item{
+.scroll-item{
   height: 100%;
   width: 100%;
 }
 
-.aboutMe{
+.aboutMe-section{
   font-family: 'Cornerstone';
   display: flex;
   align-items: center;
@@ -214,19 +216,13 @@ button:hover::before {
   flex-direction: column;
 }
 
-.aboutMe h1{
+.aboutMe-section h1{
   font-size: 50;
 }
 
 
-.aboutMe p{
+.aboutMe-section p{
   font-size: 30px;
-}
-
-.rightSide{
-  height: 100%;
-  width: 100%;
-  flex: 4;
 }
 
 .otherScreen{
@@ -241,12 +237,16 @@ button:hover::before {
 }
 
 .scrollable-container {
+  height: 100%;
+  width: 100%;
+  flex: 4;
   display: flex;
   flex-direction: column; /* or row for horizontal scrolling */
   overflow-y: auto; /* or overflow-x: auto for horizontal scrolling */
   height: 100%; /* Ensure it takes full height of the parent */
   scroll-snap-type: y mandatory; /* Enable snap scrolling vertically */
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  border: black solid 3px;
   
 }
 

@@ -2,7 +2,7 @@ import React from "react"
 
 export function AboutMe(){
     return (
-        <div className="aboutMe right-item">
+        <div className="aboutMe-section right-item">
             <h1>More About <span class="reveal">Me!</span></h1>
             <div className="otherText">
                 <p><span class="reveal">Hello and welcome to my portfolio page!</span> I'm a full stack developer located in San Diego, USA. I am originally from <span class="reveal">Los Angeles</span> where I grew up.  
