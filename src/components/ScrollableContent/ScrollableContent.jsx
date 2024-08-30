@@ -10,15 +10,13 @@ import { ContactSection } from "./ContactSection";
 // Contact Information
 
 
-export function RightSide(){
+export function ScrollableContent(){
     return (
         <div className="scrollable-container">
             <AboutMe/>
             <SkillsSection/>
             <ProjectsSection/>
             <ContactSection/>
-        </div>
-
-        
+        </div>  
     );
 }

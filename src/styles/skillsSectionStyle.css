@@ -1,0 +1,178 @@
+.skills-section {
+  font-family: "Cornerstone";
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  grid-template-rows: 50% 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.description {
+  grid-column: 1/3;
+  grid-row: 1/-1;
+}
+
+.textSphereGridItem {
+  grid-column: 3/ -1;
+  grid-row: 1/-1;
+}
+
+#pythonImg {
+  height: 15em;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  animation: spin 4s infinite linear;
+  transform-style: preserve-3d; /* Ensures 3D transformations */
+}
+
+#pythonImg:hover {
+  animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.skills-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: green solid 2px; */
+  flex-direction: column;
+}
+
+/* For the grid with the Ai Picture */
+#ml-grid-container {
+  position: relative;
+  /* border: black solid 2px; */
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: repeat(11, 9%);
+  grid-template-columns: repeat(11, 9%);
+}
+
+.mlgrid-item {
+  /* border: black solid 2px; */
+}
+
+.mlgrid-item li {
+  font-size: 1em;
+}
+
+.mlgrid-item h3 {
+  font-size: 1.2em;
+}
+
+.ml-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  grid-column: 5/8;
+  grid-row: 3/10;
+}
+
+.dsml {
+  grid-row: 1/6;
+  grid-column: 1/6;
+}
+
+.deepLearning {
+  grid-row: 6/11;
+  grid-column: 1/5;
+  margin-right: 5em;
+}
+
+.data-visualization {
+  grid-row: 6/11;
+  grid-column: 8/-1;
+  margin-left: 4.6em;
+}
+
+.neural-networks {
+  grid-row: 2/6;
+  grid-column: 8/-1;
+  margin-left: 0.2em;
+}   
+
+.scrollTitle-container{
+    grid-column: 5/8;
+    grid-row: 10/11;
+    display: flex; 
+    align-items: center; 
+    justify-content: end;
+    height: 100%;
+    flex-direction: column;
+}
+.scrollTitle-container h1{
+    font-size: 1.4em;
+    margin: 0;
+}
+
+#ml {
+  height: 100%;
+}
+
+/* This is for text slide bar  */
+.scroll-container {
+  overflow: hidden;
+  background: none;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+
+  grid-row: 11/12;
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-content {
+  display: flex;
+  animation: scroll 25s linear infinite;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-item {
+  display: flex;
+  white-space: wrap;
+}
+
+.scroll-item h2 {
+  display: inline-block;
+  height: 50px;
+  margin: 0 2em;
+  font-size: 1e;
+  color: black;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.scroll-content:hover {
+  animation-play-state: paused;
+}
