@@ -78,8 +78,6 @@
   font-size: 1em;
 }
 
-
-
 .ml-image-container {
   display: flex;
   align-items: center;
@@ -115,7 +113,7 @@
 }   
 
 .scrollTitle-container{
-    grid-column: 5/8;
+    grid-column: 4/9;
     grid-row: 10/11;
     display: flex; 
     align-items: center; 
@@ -123,60 +121,18 @@
     height: 100%;
     flex-direction: column;
 }
+
 .scrollTitle-container h1{
-    font-size: 1.4em;
+    font-size: 1em;
     margin: 0;
+    background: black;
+    outline: 2px solid #9198e5;
+    color: #9198e5;
+    padding: 0.5em;
 }
 
 #ml {
   height: 100%;
-}
-
-/* This is for text slide bar  */
-.scroll-container {
-  overflow: hidden;
-  background: none;
-  white-space: nowrap;
-  position: relative;
-  width: 100%;
-
-  grid-row: 11/12;
-  grid-column: 1/-1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.scroll-content {
-  display: flex;
-  animation: scroll 25s linear infinite;
-  align-items: center;
-  justify-content: center;
-}
-
-.scroll-item {
-  display: flex;
-  white-space: wrap;
-}
-
-.scroll-item h2 {
-  display: inline-block;
-  height: 50px;
-  margin: 0 2em;
-  font-size: 1e;
-  color: black;
-}
-
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-.scroll-content:hover {
-  animation-play-state: paused;
 }
 
 .library{
