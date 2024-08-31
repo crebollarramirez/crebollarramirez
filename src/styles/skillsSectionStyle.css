@@ -75,7 +75,7 @@
 }
 
 .mlgrid-item li {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 
@@ -105,13 +105,13 @@
 .data-visualization {
   grid-row: 6/11;
   grid-column: 8/-1;
-  margin-left: 4.6em;
+  margin-left: 5.5em;
 }
 
 .neural-networks {
   grid-row: 2/6;
   grid-column: 8/-1;
-  margin-left: 0.2em;
+  margin-left: 0.9em;
 }   
 
 .scrollTitle-container{

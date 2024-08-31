@@ -38,6 +38,14 @@ main{
   gap: 1em;
 }
 
+#appContainer{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2em;
+}
+
 .scroll-item{
   height: 100%;
   width: 100%;

@@ -1,6 +1,7 @@
 import React from "react";
+import './../../styles/navigationStyle.css'
 
-export function NavButton({targetId, children}){
+export function NavButton({targetId, name}){
     const handleClick = () => {
         const section = document.getElementById(targetId);
         if (section) {
@@ -10,7 +11,10 @@ export function NavButton({targetId, children}){
 
     return (
             <button id="navButton" onClick={handleClick}>
-                Testing
+                <div className="navText">
+                    {name}
+                </div>
+                
             </button>
     );
 };

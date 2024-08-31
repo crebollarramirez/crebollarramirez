@@ -8,7 +8,6 @@ import { NavigationSection } from './NavigationSection'
 export function Card(){
     return (
         <div className="card flex-item">
-                <NavigationSection />
                 <PhotoName/>
                 <SocialButtonsSection/>
                 <DownloadButton/>

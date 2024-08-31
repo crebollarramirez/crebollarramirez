@@ -163,18 +163,3 @@
   to {background-position:-200% 0,0 0}
 }
 
-#navSection{
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  border: black solid 2px;
-  gap: 1em;
-  margin-top: 2em;
-}
-
-#navButton{
-  width: 6em;
-  height: 2.5em;
-}
-
-
