@@ -1,4 +1,5 @@
 import React from "react"
+import './../../styles/projectSectionStyle.css'
 
 export function ProjectsSection({id}){
     return (
