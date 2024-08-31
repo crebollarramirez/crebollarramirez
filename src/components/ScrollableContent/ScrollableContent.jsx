@@ -13,10 +13,10 @@ import { ContactSection } from "./ContactSection";
 export function ScrollableContent(){
     return (
         <div className="scrollable-container">
-            <AboutMe/>
-            <SkillsSection/>
-            <ProjectsSection/>
-            <ContactSection/>
+            <AboutMe id="about-me"/>
+            <SkillsSection id="skills"/>
+            <ProjectsSection id="projects" />
+            <ContactSection id="contact"/>
         </div>  
     );
 }

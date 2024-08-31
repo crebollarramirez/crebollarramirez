@@ -1,9 +1,9 @@
 import React from "react"
 import './../../styles/aboutMeStyle.css'
 
-export function AboutMe(){
+export function AboutMe({id}){
     return (
-        <div className="aboutMe-section scroll-item">
+        <div className="aboutMe-section scroll-item" id={id}>
             <h1 className="titleText">About <span class="reveal">Me!</span></h1>
             <div className="otherText">
                 <p><span class="reveal">Hello and welcome to my portfolio page!</span> I'm a full stack developer located in San Diego, USA. I am originally from <span class="reveal">Los Angeles</span> where I grew up.  

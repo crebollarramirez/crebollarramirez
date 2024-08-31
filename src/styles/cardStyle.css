@@ -99,7 +99,7 @@
 
 
 /* Download Button  stuff */
-.button {
+.DLbutton {
   height: 3em;
   width: 13em;
   border: none;
@@ -115,16 +115,17 @@
   outline: 2px solid black;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   margin-top: 1em;
+  background-color: white;
 }
 
-button:hover {
+.DLbutton:hover {
   color: #9198e5;
   transform: scale(1.1);
   outline: 2px solid #9198e5;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-button::before {
+.DLbutton::before {
   content: "";
   position: absolute;
   left: -50px;
@@ -137,7 +138,7 @@ button::before {
   transition: width 1s;
 }
 
-button:hover::before {
+.DLbutton:hover::before {
   width: 250%;
 }
 
@@ -161,3 +162,19 @@ button:hover::before {
 @keyframes b {
   to {background-position:-200% 0,0 0}
 }
+
+#navSection{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  border: black solid 2px;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+#navButton{
+  width: 6em;
+  height: 2.5em;
+}
+
+

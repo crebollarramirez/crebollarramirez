@@ -2,6 +2,6 @@ import React from "react";
 
 export function DownloadButton(){
     return (
-        <button className="card-item button">Download CV</button>
+        <button className="card-item DLbutton">Download CV</button>
     );
 }

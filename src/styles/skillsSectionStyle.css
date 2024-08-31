@@ -70,13 +70,15 @@
   /* border: black solid 2px; */
 }
 
-.mlgrid-item li {
-  font-size: 1em;
+.mlgrid-item h3 {
+    font-size: 1.2em;
 }
 
-.mlgrid-item h3 {
-  font-size: 1.2em;
+.mlgrid-item li {
+  font-size: 1.1em;
 }
+
+
 
 .ml-image-container {
   display: flex;
@@ -175,4 +177,22 @@
 }
 .scroll-content:hover {
   animation-play-state: paused;
+}
+
+.library{
+    color: #9198e5;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+.library2{
+    color: #e66465;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
