@@ -1,5 +1,5 @@
 /* This is used to center the image horizontally */
-.imageContainer{
+.imageContainer {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.card{
+.card {
   height: 100%;
   width: 100%;
   display: flex;
@@ -17,35 +17,36 @@
   align-items: center;
 }
 
-.card-item{
+.card-item {
 }
 
-.photo-name{
+.photo-name {
   margin-top: 2em;
   margin-bottom: 0;
 }
 
-.photo-name img{
+.photo-name img {
   height: 25em;
   width: auto;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   outline: 2px solid black;
 }
 
-.photo-name h1, h2{
+.photo-name h1,
+h2 {
   text-align: center;
-  font-family: 'Cornerstone';
+  font-family: "Cornerstone";
 }
 
-.photo-name h1{
+.photo-name h1 {
   font-size: 1.8em;
 }
 
-.photo-name h2{
-  font-size:1.2em;
+.photo-name h2 {
+  font-size: 1.2em;
 }
 
-.socials{
+.socials {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -70,14 +71,16 @@
 /* Hover effect for social icons */
 .fa:hover {
   transform: scale(1.1);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   outline: 2px solid #9198e5;
 }
 
 /* For Social Icons */
 .fa-facebook {
   padding: 15px 20px;
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
@@ -87,7 +90,7 @@
   color: white;
 }
 
-.fa-github{
+.fa-github {
   background: black;
   color: white;
 }
@@ -96,7 +99,6 @@
   background: #125688;
   color: white;
 }
-
 
 /* Download Button  stuff */
 .DLbutton {
@@ -147,19 +149,20 @@
   --g: no-repeat linear-gradient(black 0 0) 0 0;
   background: var(--g), var(--g);
   background-size: 0 100%;
-  -webkit-background-clip: padding-box,text;
-          background-clip: padding-box,text;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
   -webkit-box-decoration-break: clone;
-          box-decoration-break: clone;
-  animation: 
-    t 2s  .5s both,
-    b 2s 1.3s both;
+  box-decoration-break: clone;
+  animation: t 2s 0.5s both, b 2s 1.3s both;
 }
 
-@keyframes t{
-  to {background-size:150% 100%}
+@keyframes t {
+  to {
+    background-size: 150% 100%;
+  }
 }
 @keyframes b {
-  to {background-position:-200% 0,0 0}
+  to {
+    background-position: -200% 0, 0 0;
+  }
 }
-

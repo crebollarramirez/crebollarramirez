@@ -1,44 +1,43 @@
-:root{
-  font-family: 'Cornerstone';
+:root {
+  font-family: "Cornerstone";
 }
 
 @font-face {
-  font-family: 'Cornerstone';
-  src: url('./../assets/fonts/Cornerstone.ttf')
+  font-family: "Cornerstone";
+  src: url("./../assets/fonts/Cornerstone.ttf");
 }
 
-html, body{
+html,
+body {
   background-color: black;
   height: 100%;
   padding: 0;
   margin: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  overflow-y: hidden;/* Prevent vertical scrolling */
+  overflow-y: hidden; /* Prevent vertical scrolling */
 }
 
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-main{
+main {
   display: flex;
   flex-direction: row;
   background: linear-gradient(to right, #e66465, #9198e5);
   height: 85vh;
   width: 80vw;
   justify-items: stretch;
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, 
-  #f02eaa4d -10px 10px, 
-  rgba(240, 46, 170, 0.2) -15px 15px, 
-  rgba(240, 46, 170, 0.1) -20px 20px, 
-  rgba(240, 46, 170, 0.05) -25px 25px;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, #f02eaa4d -10px 10px,
+    rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px,
+    rgba(240, 46, 170, 0.05) -25px 25px;
   padding: 2%;
   gap: 1em;
 }
 
-#appContainer{
+#appContainer {
   display: flex;
   align-items: start;
   justify-content: center;
@@ -46,19 +45,18 @@ main{
   gap: 2em;
 }
 
-.scroll-item{
+.scroll-item {
   height: 100%;
   width: 100%;
   padding: 0.2em;
   /* border: yellow solid 2px; */
 }
 
-.titleText{
+.titleText {
   font-size: 4em;
   padding: 0.2em;
   margin: 0;
 }
-
 
 .scrollable-container {
   height: 100%;
@@ -70,7 +68,6 @@ main{
   height: 100%; /* Ensure it takes full height of the parent */
   scroll-snap-type: y mandatory; /* Enable snap scrolling vertically */
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  
 }
 
 .scrollable-container > * {
@@ -79,7 +76,6 @@ main{
   height: 100%; /* Ensure each section takes full height */
   width: 100%; /* Ensure each section takes full width */
 }
-
 
 /* No Scroll bar */
 .scrollable-container::-webkit-scrollbar {
@@ -91,8 +87,3 @@ main{
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
-
-
-
-
-
