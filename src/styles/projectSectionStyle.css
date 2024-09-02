@@ -1,6 +1,14 @@
 .projects-section {
   font-family: "Cornerstone";
-    display: flex;
-  align-items: start;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.bottomSection{
+  display: flex;
+  align-content: center;
   justify-content: center;
+  height: 100%;
 }
