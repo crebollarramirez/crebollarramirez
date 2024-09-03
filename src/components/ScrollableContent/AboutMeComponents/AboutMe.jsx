@@ -8,12 +8,14 @@ export function AboutMe({ id }) {
       <h1 className="titleText">About Me</h1>
       <div className="otherText">
         <p>
-          <span className="reveal">Hello and welcome to my portfolio page!</span>{" "}
+          <span className="reveal">
+            Hello and welcome to my portfolio page!
+          </span>{" "}
           I'm a student at the{" "}
-          <span className="reveal">University of California - San Diego</span>. I am
-          currently studying Math-Computer Science and Cognitive Science ML. I
-          am originally from <span className="reveal">Los Angeles</span> where I
-          grew up.{" "}
+          <span className="reveal">University of California - San Diego</span>.
+          I am currently studying Math-Computer Science and Cognitive Science
+          ML. I am originally from <span className="reveal">Los Angeles</span>{" "}
+          where I grew up.{" "}
         </p>
 
         <p>
@@ -30,7 +32,6 @@ export function AboutMe({ id }) {
       <div className="numbers-bar">
         <Numbers />
       </div>
-
     </div>
   );
 }
