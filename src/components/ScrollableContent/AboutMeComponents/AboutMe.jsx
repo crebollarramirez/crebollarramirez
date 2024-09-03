@@ -1,21 +1,18 @@
 import React from "react";
 import "./../../../styles/aboutMeStyle.css";
-import GitHubCommits from "./GitHubCommits";
 import { Numbers } from "./Numbers";
 
 export function AboutMe({ id }) {
   return (
     <div className="aboutMe-section scroll-item" id={id}>
-      <h1 className="titleText">
-        About Me
-      </h1>
+      <h1 className="titleText">About Me</h1>
       <div className="otherText">
         <p>
-          <span class="reveal">Hello and welcome to my portfolio page!</span>{" "}
+          <span className="reveal">Hello and welcome to my portfolio page!</span>{" "}
           I'm a student at the{" "}
-          <span class="reveal">University of California - San Diego</span>. I am
+          <span className="reveal">University of California - San Diego</span>. I am
           currently studying Math-Computer Science and Cognitive Science ML. I
-          am originally from <span class="reveal">Los Angeles</span> where I
+          am originally from <span className="reveal">Los Angeles</span> where I
           grew up.{" "}
         </p>
 
@@ -33,6 +30,7 @@ export function AboutMe({ id }) {
       <div className="numbers-bar">
         <Numbers />
       </div>
+
     </div>
   );
 }

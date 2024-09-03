@@ -13,7 +13,7 @@ export function ContactSection({ id }) {
         <h2 className="bottom-container-item">Contact Me</h2>
         <div className="email-container bottom-container-item">
           <div className="envelope-container">
-            <i class="fa fa-envelope"></i>
+            <i className="fa fa-envelope"></i>
           </div>
           <h4>christopherrebollar0@icloud.com</h4>
         </div>
