@@ -1,27 +1,33 @@
-.aboutMe-section{
-    font-family: 'Cornerstone';
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
-  }
-  
-  .aboutMe-section p{
-    font-size: 30px;
-  }
-  
-  .otherText{
-    border: black solid 2px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0.5em;
-    margin: 0;
-    gap: 0;
-  }
+.aboutMe-section {
+  font-family: "Cornerstone";
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
 
-  .otherText p{
-    border: #125688 solid 2px;
-    width: 100%;
-  }
+.aboutMe-section p {
+  font-size: 30px;
+}
+
+.otherText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5em;
+  margin: 0;
+  gap: 0;
+}
+
+.otherText p {
+  width: 100%;
+}
+
+.numbers-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}

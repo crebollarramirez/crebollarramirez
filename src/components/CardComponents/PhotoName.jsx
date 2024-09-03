@@ -7,8 +7,8 @@ export function PhotoName(){
             <div className="imageContainer">
                 <img class="photo-left-item" src={me} alt="me"/>
             </div>
-            <h1 class="photo-left-item reveal">Christopher Rebollar-Ramirez</h1>
-            <h2 class="photo-left-item reveal"><em>Computer Science Student</em></h2>`
+            <h1 class="photo-left-item">Christopher Rebollar-Ramirez</h1>
+            <h2 class="photo-left-item"><em>Computer Science Student</em></h2>`
         </div>
     );
 
