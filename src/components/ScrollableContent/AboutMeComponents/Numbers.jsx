@@ -25,8 +25,7 @@ export function Numbers() {
   const [commitCount, setCommitCount] = useState(0);
   const [issuesClosed, setIssuesClosed] = useState(0);
   const GITHUB_USERNAME = "crebollarramirez";
-  const TOKEN = import.meta.env.VITE_GITHUB_TOKEN; // Optional if using a token
-
+  const TOKEN = import.meta.env.VITE_GITHUB_TOKEN
   useEffect(() => {
     const fetchData = async () => {
       try {
