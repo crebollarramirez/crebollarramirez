@@ -3,7 +3,7 @@ import me from './../../assets/me.jpeg'
 
 export function PhotoName(){
     return (
-        <div className="card-item photo-name">  
+        <div className="photo-name">  
             <div className="imageContainer">
                 <img className="photo-left-item" src={me} alt="me"/>
             </div>

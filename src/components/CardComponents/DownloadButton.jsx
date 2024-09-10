@@ -1,5 +1,5 @@
 import React from "react";
-import resume from './../../assets/crebollarramirez-resume.pdf'
+import resume from "./../../assets/crebollarramirez-resume.pdf";
 
 export function DownloadButton() {
   const handleDownload = () => {
@@ -12,8 +12,10 @@ export function DownloadButton() {
   };
 
   return (
-    <button className="card-item DLbutton" onClick={handleDownload}>
-      Download CV
-    </button>
+    <div className="download-button-container grid-item-buttons">
+      <button className="DLbutton" onClick={handleDownload}>
+        Download CV
+      </button>
+    </div>
   );
 }

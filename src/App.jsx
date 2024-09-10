@@ -1,10 +1,10 @@
-import { Card } from "./components/CardComponents/Card";
 import "./styles/App.css";
 import { ScrollableContent } from "./components/ScrollableContent/ScrollableContent";
 import { NavigationSection } from "./components/CardComponents/NavigationSection";
 import { useEffect, useState } from "react";
-import { DesktopViewComponent } from "./DesktopViewComponent";
-import { MobileViewComponent } from "./MobileViewComponent";
+import { PhotoName } from "./components/CardComponents/PhotoName";
+import { SocialButtonsSection } from "./components/CardComponents/SocialButtonsSection"
+import { DownloadButton } from "./components/CardComponents/DownloadButton";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -21,13 +21,14 @@ function App() {
   }, []);
 
   return (
-
-    <div>
-      {isMobile ? (
-        <MobileViewComponent />
-      ) : (
-        <DesktopViewComponent />
-      )}
+    <div id="appContainer">
+      <main>
+        <PhotoName />
+        <SocialButtonsSection />
+        <DownloadButton />
+        <ScrollableContent />
+      </main>
+      <NavigationSection />
     </div>
   );
 }
