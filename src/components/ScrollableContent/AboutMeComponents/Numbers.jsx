@@ -117,10 +117,10 @@ export function Numbers() {
 
   return (
     <div className="numbers-container">
-      <Number num={commitCount} descrition={"Code Commits"} />
-      <Number num={issuesClosed} descrition={"Closed Issues"} />
-      <Number num={15} descrition={"Projects Completed"} />
-      <Number num={12} descrition={"Technologies Mastered"} />
+      <Number className="number-item grid-item grid-item1" num={commitCount} descrition={"Code Commits"} />
+      <Number className="number-item grid-item grid-item2"  num={issuesClosed} descrition={"Closed Issues"} />
+      <Number className="number-item grid-item grid-item3"  num={15} descrition={"Projects Completed"} />
+      <Number className="number-item grid-item grid-item4"  num={12} descrition={"Technologies Mastered"} />
     </div>
   );
 }
