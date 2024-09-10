@@ -15,7 +15,7 @@
 .navButton {
   width: 7em;
   height: 2.5em;
-  background-color: white;
+  background-color: rgb(27, 2, 2);
   text-transform: uppercase;
   cursor: pointer;
   color: black;
@@ -71,8 +71,9 @@
 
 @media only screen and (max-width: 600px){
   #navSection {
+    position: sticky;
     display: flex;
-    width: 100%;
+    width: 80vw;
     flex-direction: row;
     gap: 0.2em;
     background: linear-gradient(to right, #e66465, #9198e5);
@@ -81,11 +82,13 @@
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, #f02eaa4d -10px 10px,
       rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px,
       rgba(240, 46, 170, 0.05) -25px 25px;
-    padding: 1em;
+    overflow: hidden;
+    padding: 0.3em 2% 0.3em 2%;
+
   }
   
   .navButton {
-    width: 4.4em;
+    width: 6em;
     height: 2.5em;
     background-color: white;
     text-transform: uppercase;
