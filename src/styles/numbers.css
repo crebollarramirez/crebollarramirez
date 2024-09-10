@@ -59,7 +59,7 @@
     overflow: hidden;
     gap: 1em;
     padding-bottom: 1em;
-    border: black solid 2px;
+    /* border: black solid 2px; */
   }
 
   .grid-item1{

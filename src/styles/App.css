@@ -97,31 +97,47 @@ main {
 
 /* This is used to center the image horizontally */
 .imageContainer {
-  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
+  /* border: green solid 2px; */
+}
+
+.name-ocu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* border: red solid 2px; */
+  gap: 1em;
 }
 
 .photo-name {
   grid-column: 1/2;
   grid-row: 1/8;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .photo-name img {
   height: 25em;
-  width: auto;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   outline: 2px solid black;
+  margin-bottom: 1em;
 }
 
 .photo-name h1,
 .photo-name h2 {
-  text-align: center;
   font-family: "Cornerstone";
   text-shadow: 0px 3px 0px grey, 0px 14px 10px rgba(0, 0, 0, 0.15),
     0px 24px 2px rgba(0, 0, 0, 0.1), 0px 24px 30px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
 }
 
 .photo-name h1 {
@@ -131,6 +147,7 @@ main {
 .photo-name h2 {
   font-size: 1.2em;
 }
+
 
 .socials-container {
   height: 100%;
@@ -190,7 +207,7 @@ main {
 /* Download Button  stuff */
 .DLbutton {
   height: 3em;
-  width: 13em;
+  width: 100%;
   border: none;
   font-weight: bold;
   letter-spacing: 3px;
@@ -300,16 +317,19 @@ main {
     margin: 0;
     display: flex;
     flex-direction: row;
-    border: black solid 2px;
+    align-items: center;
+    justify-content: center;
     order: 1;
+    gap: 0;
   }
 
   .photo-name h1,
   .photo-name h2 {
-    text-align: center;
+    text-align: left;
     font-family: "Cornerstone";
     text-shadow: 0px 3px 0px grey, 0px 14px 10px rgba(0, 0, 0, 0.15),
       0px 24px 2px rgba(0, 0, 0, 0.1), 0px 24px 30px rgba(0, 0, 0, 0.1);
+      /* border: black solid 2px; */
   }
 
   .photo-name h1 {
@@ -328,11 +348,20 @@ main {
   }
 
   .imageContainer {
-    width: 100%;
+    width: 70%;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+  }
+
+  .name-ocu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0.6em;
   }
 
   .DLbutton {
@@ -361,43 +390,47 @@ main {
     justify-content: center;
     grid-column: 1/2;
     grid-row: 9/-1;
-    border: black solid 2px;
+    /* border: black solid 2px; */
   }
 
   .animated-buttom {
+    height: 0.3em;
+    width: 0.3em;
+    padding: 0.7em 1.2em 1.4em 0.7em;
     font-size: 1.2em;
     text-align: center;
     text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     outline: 2px solid black;
     transition: all 1s;
   }
 
+  /* For Social Icons */
   .fa-facebook {
-    padding: 10px 12px 9px 12px;
     background: #3b5998;
     color: white;
+    padding-left: 0.9em;
   }
 
   .fa-linkedin {
-    padding: 10px 10px 5px 10px;
     background: #007bb5;
     color: white;
+    padding-left: 0.9em;
+    padding-right: 1.4em;
   }
 
   .fa-github {
-    padding: 10px 10px 5px 10px;
     background: black;
     color: white;
+    padding-left: 0.8em;
+    padding-right: 1.3em;
   }
 
   .fa-instagram {
-    padding: 10px 10px 5px 10px;
     background: #125688;
     color: white;
+    padding-left: 0.8em;
+    padding-right: 1.3em;
   }
 
   .socials-container {
@@ -410,6 +443,39 @@ main {
     gap: 1.1em;
     grid-column: 1/2;
     grid-row: 8/9;
-    border: green solid 2px;
+    /* border: green solid 2px; */
+  }
+
+  .scrollable-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    order: 2;
+    padding: 0 1em 0 1em;
+    flex-direction: column; /* or row for horizontal scrolling */
+    overflow-y: auto; /* or overflow-x: auto for horizontal scrolling */
+    height: 100%; /* Ensure it takes full height of the parent */
+    scroll-snap-type: y mandatory; /* Enable snap scrolling vertically */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+  }
+
+  .scrollable-container > * {
+    scroll-snap-align: start; /* Snap the child components to the start when scrolling */
+    flex-shrink: 0; /* Prevent shrinking */
+    height: 100%; /* Ensure each section takes full height */
+    width: 100%; /* Ensure each section takes full width */
+  }
+
+  /* No Scroll bar */
+  .scrollable-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .container {
+    overflow: auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
   }
 }

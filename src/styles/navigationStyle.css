@@ -15,7 +15,7 @@
 .navButton {
   width: 7em;
   height: 2.5em;
-  background-color: rgb(27, 2, 2);
+  background-color: white;
   text-transform: uppercase;
   cursor: pointer;
   color: black;
@@ -97,7 +97,7 @@
     transition: all 1s;
     overflow: hidden;
     font-family: "Cornerstone";
-    font-size: 1em;
+    font-size: 0.8em;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -35,6 +35,6 @@
 @media only screen and (max-width: 600px){
   .aboutMe-section p {
     font-size: 0.7em;
-    border: black solid 2px;
+    /* border: black solid 2px; */
   }
 }
