@@ -24,8 +24,8 @@ export function SkillsSection({ id }) {
     "SQL",
     "Firebase",
     "Sentry",
-    "Flurry"
-];
+    "Flurry",
+  ];
   return (
     <div className="scroll-item skills-section" id={id}>
       <h1 className="titleText">My Skills</h1>
@@ -39,14 +39,14 @@ export function SkillsSection({ id }) {
             <h3>Data Science and Machine Learning Libraries:</h3>
             <ul>
               <li>
-                <span className="library">pandas:</span> Proficient in data manipulation, including tasks like data
-                cleaning, transformation, and analysis.
+                <span className="library">pandas:</span> Proficient in data
+                manipulation, including tasks like data cleaning,
+                transformation, and analysis.
               </li>
               <li>
                 <span className="library">scikit-learn:</span> Experienced in
-                applying machine learning algorithms, such as
-                regression, classification, <br></br> clustering, and model
-                evaluation.
+                applying machine learning algorithms, such as regression,
+                classification, <br></br> clustering, and model evaluation.
               </li>
             </ul>
           </div>
@@ -55,14 +55,13 @@ export function SkillsSection({ id }) {
             <h3>Deep Learning Frameworks:</h3>
             <ul>
               <li>
-                <span className="library">PyTorch:</span> Skilled in deep learning, including building and training
-                neural networks, implementing custom models, and performing
-                complex tensor operations.
+                <span className="library">PyTorch:</span> Skilled building and training
+                neural networks, implementing custom models, and performing complex tensor
+                operations.
               </li>
               <li>
-                <span className="library">TensorFlow:</span> Experience in creating and deploying deep
-                learning models, leveraging TensorFlow's extensive ecosystem for
-                model building, training, and optimization.
+                <span className="library">TensorFlow:</span> Experienced in
+                building, training, and deploying deep learning models.
               </li>
             </ul>
           </div>
@@ -72,9 +71,9 @@ export function SkillsSection({ id }) {
             <ul>
               <li>
                 <span className="library2">Keras:</span> Adept at building
-                neural networks, with experience in designing and
-                training models for tasks such as image classification, natural
-                language processing, and more.
+                neural networks, with experience in designing and training
+                models for tasks such as image classification, natural language
+                processing, and more.
               </li>
             </ul>
           </div>
@@ -83,10 +82,9 @@ export function SkillsSection({ id }) {
             <h3>Data Visualization Tools:</h3>
             <ul>
               <li>
-                <span className="library2">Matplotlib:</span> Experienced in
-                creating a wide range of visualizations, including line plots,
-                bar charts, histograms, and scatter plots, using Matplotlib to
-                effectively communicate data insights.
+                <span className="library2">Matplotlib:</span> Proficient in
+                creating diverse visualizations (line plots, bar charts,
+                histograms, scatter plots) to convey data insights.
               </li>
               <li>
                 <span className="library2">Seaborn:</span> Skilled in creating
