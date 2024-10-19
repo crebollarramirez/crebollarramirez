@@ -35,9 +35,11 @@ main {
     rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px,
     rgba(240, 46, 170, 0.05) -25px 25px;
   padding: 2%;
+  column-gap: 1em;
 }
 
 .main-grid-item {
+  border: black solid 2px;
 }
 
 #appContainer {
@@ -45,7 +47,6 @@ main {
   align-items: start;
   justify-content: center;
   flex-direction: row;
-  gap: 2em;
 }
 
 .scroll-item {
@@ -66,7 +67,6 @@ main {
   height: 100%;
   width: 100%;
   display: flex;
-  order: 2;
   padding: 0 1em 0 1em;
   flex-direction: column; /* or row for horizontal scrolling */
   overflow-y: auto; /* or overflow-x: auto for horizontal scrolling */
@@ -74,7 +74,8 @@ main {
   scroll-snap-type: y mandatory; /* Enable snap scrolling vertically */
   overflow-x: hidden; /* Prevent horizontal scrolling */
   grid-column: 2/-1;
-  grid-row: 1/-1;
+  grid-row: 2/-1;
+  /* border: black solid 2px; */
 }
 
 .scrollable-container > * {
@@ -97,29 +98,33 @@ main {
 
 /* This is used to center the image horizontally */
 .imageContainer {
+  
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   /* border: green solid 2px; */
+  width: 100%;
 }
 
 .name-ocu {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   /* border: red solid 2px; */
   gap: 1em;
 }
 
 .photo-name {
+  height: 100%;
+  width: 100%;
   grid-column: 1/2;
   grid-row: 1/8;
   display: flex;
   flex-direction: column;
-  
+  /* border: solid black 2px; */
 }
 
 .photo-name img {
@@ -137,7 +142,6 @@ main {
   padding: 0;
   margin: 0;
   text-align: center;
-
 }
 
 .photo-name h1 {
@@ -147,7 +151,6 @@ main {
 .photo-name h2 {
   font-size: 1.2em;
 }
-
 
 .socials-container {
   height: 100%;
@@ -211,7 +214,7 @@ main {
   border: none;
   font-weight: bold;
   letter-spacing: 3px;
-  text-transform: uppercase;
+  text-transform: uppercase;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
   cursor: pointer;
   color: black;
   transition: all 1s;
@@ -329,7 +332,7 @@ main {
     font-family: "Cornerstone";
     text-shadow: 0px 3px 0px grey, 0px 14px 10px rgba(0, 0, 0, 0.15),
       0px 24px 2px rgba(0, 0, 0, 0.1), 0px 24px 30px rgba(0, 0, 0, 0.1);
-      /* border: black solid 2px; */
+    /* border: black solid 2px; */
   }
 
   .photo-name h1 {
@@ -344,7 +347,7 @@ main {
     height: auto;
     width: 5.5em;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    outline: 2px solid black;
+    /* outline: 2px solid black; */
   }
 
   .imageContainer {
@@ -458,7 +461,7 @@ main {
     scroll-snap-type: y mandatory; /* Enable snap scrolling vertically */
     overflow-x: hidden; /* Prevent horizontal scrolling */
     grid-column: 2/-1;
-    grid-row: 1/-1;
+    grid-row: 2/-1;
   }
 
   .scrollable-container > * {

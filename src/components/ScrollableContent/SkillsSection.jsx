@@ -94,9 +94,9 @@ export function SkillsSection({ id }) {
             </ul>
           </div>
           <div className="scrollTitle-container mlgrid-item">
-            <h1>Full-Stack Development and Debugging</h1>
+            {/* <h1>Full-Stack Development and Debugging</h1> */}
           </div>
-          <TextCarousel items={items} speed="fast" />
+          {/* <TextCarousel items={items} speed="fast" /> */}
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import "./styles/App.css";
+import "./styles/navigationStyle.css"
 import { ScrollableContent } from "./components/ScrollableContent/ScrollableContent";
 import { NavigationSection } from "./components/CardComponents/NavigationSection";
 import { useEffect, useState } from "react";
@@ -23,12 +24,13 @@ function App() {
   return (
     <div id="appContainer">
       <main>
+      <NavigationSection />
         <PhotoName />
         <SocialButtonsSection />
         <DownloadButton />
         <ScrollableContent />
       </main>
-      <NavigationSection />
+      
     </div>
   );
 }

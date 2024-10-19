@@ -1,24 +1,24 @@
 #navSection {
   display: flex;
-  width: 10em;
-  flex-direction: column;
-  gap: 0.5em;
-  background: linear-gradient(to right, #e66465, #9198e5);
-  align-items: center;
-  justify-content: center;
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, #f02eaa4d -10px 10px,
-    rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px,
-    rgba(240, 46, 170, 0.05) -25px 25px;
-  padding: 1em 0.7em 1em 0.7em;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-around;
+  grid-row: 1/2;
+  grid-column: 2/-1;
+  /* border: black solid 2px; */
 }
 
 .navButton {
-  width: 7em;
+  width: 8em;
   height: 2.5em;
-  background-color: white;
+  background-color: black;
   text-transform: uppercase;
   cursor: pointer;
-  color: black;
+  color: #9198e5;
+  border-width: 0.2em;
+  border-image: linear-gradient(to right, #9198e5, #e66465) 1;
   transition: all 1s;
   overflow: hidden;
   font-family: "Cornerstone";
@@ -31,45 +31,19 @@
 
 .navButton:hover {
   color: #9198e5;
-  transform: scale(1.1);
   outline: 2px solid #9198e5;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-}
-
-.navButton::before {
-  content: "";
-  position: absolute;
-  left: -50px;
-  top: 0;
-  width: 0;
-  height: 100%;
   background-color: black;
-  transform: skewX(45deg);
-  z-index: -1;
-  transition: width 1s;
-}
-
-.navButton:hover::before {
-  width: 250%;
 }
 
 .navButton.active {
-  color: #9198e5;
   transform: scale(1.1);
   outline: 2px solid #9198e5;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   background-color: black;
 }
 
-.navButton.active::before {
-  width: 250%;
-}
-
-.navButton.active:hover::before {
-  width: 250%;
-}
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   #navSection {
     position: sticky;
     display: flex;
@@ -84,9 +58,8 @@
       rgba(240, 46, 170, 0.05) -25px 25px;
     overflow: hidden;
     padding: 0.3em 2% 0.3em 2%;
-
   }
-  
+
   .navButton {
     width: 6em;
     height: 2.5em;
