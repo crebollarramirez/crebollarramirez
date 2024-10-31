@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "crebollarramirez.me/crebollarramirez",
+  "homepage": "crebollarramirez.me",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
