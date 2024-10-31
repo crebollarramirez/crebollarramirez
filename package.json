@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://crebollarramirez.github.io/crebollarramirez",
+  "homepage": "crebollarramirez.me/crebollarramirez",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
