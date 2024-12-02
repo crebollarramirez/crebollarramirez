@@ -10,7 +10,7 @@ export function PhotoName() {
       <div className="name-ocu">
         <h1 className="photo-left-item">Christopher Rebollar-Ramirez</h1>
         <h2 className="photo-left-item">
-          <em>Full-Stack Developer</em>
+          <em>Software Engineer</em>
         </h2>
       </div>
     </div>

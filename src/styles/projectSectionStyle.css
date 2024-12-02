@@ -6,9 +6,10 @@
   flex-direction: column;
 }
 
-.bottomSection{
+.projects-container {
   display: flex;
-  align-content: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 0.4em;
   height: 100%;
+  width: 100%;
 }

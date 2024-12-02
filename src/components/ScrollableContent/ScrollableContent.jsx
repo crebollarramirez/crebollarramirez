@@ -1,7 +1,7 @@
 import React from "react";
 import {AboutMe} from './AboutMeComponents/AboutMe'
 import { SkillsSection } from "./SkillsSection";
-import { ProjectsSection } from "./ProjectsSection";
+import { ProjectsSection } from "./ProjectsSection/ProjectsSection";
 import { ContactSection } from "./ContactSection";
 
 // About me
