@@ -5,38 +5,37 @@ ___
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=26&pause=1000&color=763EC6&center=true&multiline=true&repeat=false&width=600&height=80&lines=Hello+I+am+Chris!;Tech+enthusiast+with+a+touch+of+magic." alt="Typing SVG" /></a>
   <pre>
   🎓 Math-Computer Science and Cognitive Science ML Student at <a href="https://www.ucsd.edu" target="_blank">UC San Diego</a>
-  💻 Software Engineer
-  
-  </pre>
-
+  💻 Software Engineer • Full-Stack • Machine Learning
+  🍳 Cooking Enthusiast • Exploring Culinary Creativity</pre>
   <a href="https://www.linkedin.com/in/christopher-rebollar-ramirez/" target="_blank">
   <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 <a href="https://discord.com/users/443200364926205979" target="_blank">
   <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
 </a>
-<a href="christopherrebollar0@icloud.com" target="_blank">
-  <img src="https://img.shields.io/badge/Apple-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white" alt="Apple" />
+<a href="mailto:christopherrebollar0@icloud.com">
+  <img src="https://img.shields.io/badge/Apple-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white" alt="Apple">
 </a>
-
-
-  
 </div>
 
 <br>
 
-### 📊 GitHub Stats:
+## 📊 GitHub Stats
+
 ---
+
 <div align="center">
 <img src="https://github-readme-stats.vercel.app/api?username=crebollarramirez&theme=midnight-purple&hide_border=false&include_all_commits=false&count_private=false" alt="GitHub Stats" height="190px"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=crebollarramirez&theme=midnight-purple&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="Top Languages" height="190px"/>
 <img  src="https://github-readme-streak-stats.herokuapp.com/?user=crebollarramirez&theme=midnight-purple&hide_border=false" alt="GitHub Streak Stats" height="190px"/>
 </div>
 
-### 🧠 Tech Stack:
-___
+## 🧠 Tech Stack
 
-#### Languages:
+---
+
+### Languages
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
@@ -47,7 +46,8 @@ ___
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-#### Technologies:
+### Technologies
+
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
@@ -59,8 +59,18 @@ ___
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 
+### Machine Learning
 
-[![](https://visitcount.itsvg.in/api?id=crebollarramirez&icon=6&color=11)](https://visitcount.itsvg.in)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+
+---
+<a href="https://visitcount.itsvg.in">
+  <img align="right"src="https://visitcount.itsvg.in/api?id=crebollarramirez&icon=6&color=11" alt="Visit Count" />
+</a>
 
 <!-- For typing svg -->
 
