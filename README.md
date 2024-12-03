@@ -12,25 +12,12 @@ Math-Computer Science and Cognitive Science ML Student at the [University of Cal
 
   <img src="./tobi.gif" alt="tobi" style="width: 220px; margin-right: 20px;">
 
-<!-- ```
-  class Christopher_Rebollar_Ramirez : public Software_Engineer {
-      private:
-          string Education = "University of California, San Diego";
-          vector<string> Majors = {"Math-Computer Science", "Cognitive Science ML"};
-
-      public: 
-          string Portfolio = "crebollarramirez.me";
-          string Email = "christopherrebollar0@icloud.com";
-          string LinkedIn = "linkedin.com/in/christopher-rebollar-ramirez-1210b5260/";
-
-          tuple<string, string, string, string> getInTouch() {
-              return make_tuple(Email, Github, LinkedIn, Portfolio);
-          }
-  };
-  ``` -->
-
-  Hello My name is Chris!
-
+  <div> 
+    <code>
+    Code Test
+    </code>
+    <p>Hello! My name is Chris!</p>
+  </div>
 </div>
 
 ### 🌐 Socials:
