@@ -8,7 +8,7 @@ Math-Computer Science and Cognitive Science ML Student at the [University of Cal
 
 ### A little bit about me:
 
-<div style="display: flex; align-items: flex-start;">
+<div style="display: flex; align-items: flex-start; flex-direction: row;">
 
   <img src="./tobi.gif" alt="tobi" style="width: 220px; margin-right: 20px;">
 
