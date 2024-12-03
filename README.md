@@ -1,8 +1,8 @@
 ___
 
 <div align="center">
-  <img src="./tobi.gif" alt="tobi" width="100px" align="left"/>
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=30&pause=1000&color=763EC6&center=true&multiline=true&repeat=false&width=700&height=80&lines=Hello+I+am+Chris!;Tech+enthusiast+with+a+touch+of+magic." alt="Typing SVG" /></a>
+  <img src="./tobi.gif" alt="tobi" width="220px" align="left"/>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=30&pause=1000&color=763EC6&center=true&multiline=true&repeat=false&width=680&height=80&lines=Hello+I+am+Chris!;Tech+enthusiast+with+a+touch+of+magic." alt="Typing SVG" /></a>
   <pre>
   🎓 Math-Computer Science and Cognitive Science ML Student at UC San Diego
   💻 Software Engineer
