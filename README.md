@@ -10,15 +10,22 @@ Math-Computer Science and Cognitive Science ML Student at the [University of Cal
 
 <div style="display: flex; align-items: flex-start; flex-direction: row;">
 
+  <!-- Image on the left -->
   <img src="./tobi.gif" alt="tobi" style="width: 220px; margin-right: 20px;">
 
-  <div> 
-    <code>
-    Code Test
-    </code>
-    <p>Hello! My name is Chris!</p>
+  <!-- Content on the right -->
+  <div>
+    <pre>
+    Hello, my name is Chris!
+    I am a software developer passionate about:
+    - Programming
+    - Learning new technologies
+    - Collaborating on exciting projects
+    </pre>
   </div>
+
 </div>
+
 
 ### 🌐 Socials:
 
