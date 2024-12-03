@@ -15,22 +15,9 @@ ___
 <a href="https://discord.com/users/443200364926205979" target="_blank">
   <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
 </a>
-<a href="javascript:void(0);" onclick="copyEmail()">
+<a href="christopherrebollar0@icloud.com" target="_blank">
   <img src="https://img.shields.io/badge/Apple-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white" alt="Apple" />
 </a>
-
-<script>
-  function copyEmail() {
-    const email = 'your-email@example.com'; // Replace with your actual email address
-    const textArea = document.createElement('textarea');
-    textArea.value = email;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textArea);
-    alert('Email copied to clipboard: ' + email);
-  }
-</script>
 
 
   
