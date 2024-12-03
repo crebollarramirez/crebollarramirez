@@ -4,11 +4,36 @@ ___
   <img src="./tobi.gif" alt="tobi" width="220px" align="left"/>
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=26&pause=1000&color=763EC6&center=true&multiline=true&repeat=false&width=600&height=80&lines=Hello+I+am+Chris!;Tech+enthusiast+with+a+touch+of+magic." alt="Typing SVG" /></a>
   <pre>
-  🎓 Math-Computer Science and Cognitive Science ML Student at UC San Diego
+  🎓 Math-Computer Science and Cognitive Science ML Student at <a href="https://www.ucsd.edu" target="_blank">UC San Diego</a>
   💻 Software Engineer
+  
   </pre>
 
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/christopher-rebollar-ramirez-1210b5260)
+  <a href="https://www.linkedin.com/in/christopher-rebollar-ramirez/" target="_blank">
+  <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="https://discord.com/users/443200364926205979" target="_blank">
+  <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
+</a>
+<a href="javascript:void(0);" onclick="copyEmail()">
+  <img src="https://img.shields.io/badge/Apple-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white" alt="Apple" />
+</a>
+
+<script>
+  function copyEmail() {
+    const email = 'your-email@example.com'; // Replace with your actual email address
+    const textArea = document.createElement('textarea');
+    textArea.value = email;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    alert('Email copied to clipboard: ' + email);
+  }
+</script>
+
+
+  
 </div>
 
 <br>
@@ -52,4 +77,4 @@ ___
 
 <!-- For typing svg -->
 
-<!-- https://readme-typing-svg.demolab.com/demo/?weight=500&size=30&color=763EC6&center=true&multiline=true&repeat=false&width=700&height=80&lines=Hello+I+am+Chris!;Tech+enthusiast+with+a+touch+of+magic. -->
+<!-- https://readme-typing-svg.demolab.com/demo/?weight=500&size=26&color=763EC6&center=true&multiline=true&repeat=false&width=600&height=80&lines=Hello+I+am+Chris!;Tech+enthusiast+with+a+touch+of+magic. -->
