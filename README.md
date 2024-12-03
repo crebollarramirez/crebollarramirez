@@ -11,9 +11,8 @@ Math-Computer Science and Cognitive Science ML Student at the [University of Cal
 <div style="display: flex; align-items: flex-start;">
 
   <img src="./tobi.gif" alt="tobi" style="width: 220px; margin-right: 20px;">
-<span style="font-size: 0.4em;">
 
-```
+<!-- ```
   class Christopher_Rebollar_Ramirez : public Software_Engineer {
       private:
           string Education = "University of California, San Diego";
@@ -28,9 +27,9 @@ Math-Computer Science and Cognitive Science ML Student at the [University of Cal
               return make_tuple(Email, Github, LinkedIn, Portfolio);
           }
   };
-  ```
+  ``` -->
 
-</span>
+  Hello My name is Chris!
 
 </div>
 
