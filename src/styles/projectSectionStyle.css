@@ -4,6 +4,9 @@
   align-items: center;
   justify-content: start;
   flex-direction: column;
+  height: 100%;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling, if unnecessary */
 }
 
 .projects-container {

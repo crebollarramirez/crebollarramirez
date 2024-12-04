@@ -1,8 +1,9 @@
 import React from "react";
 import {AboutMe} from './AboutMeComponents/AboutMe'
-import { SkillsSection } from "./SkillsSection";
+import { SkillsSection } from "./SkillsSection/SkillsSection";
 import { ProjectsSection } from "./ProjectsSection/ProjectsSection";
 import { ContactSection } from "./ContactSection";
+import "../../styles/scrollableStyle.css";
 
 // About me
 // Skills

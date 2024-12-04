@@ -1,0 +1,30 @@
+.navButton {
+  width: 8em;
+  height: 2.5em;
+  background-color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--light-purple);
+  border-width: 0.2em;
+  border-image: linear-gradient(to right, var(--light-purple), var(--light-red)) 1;
+  transition: all 1s;
+  overflow: hidden;
+  font-family: "Cornerstone";
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.15em;
+}
+
+.navButton:hover {
+  color: var(--light-purple);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-color: black;
+}
+
+.navButton.active {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-color: black;
+}

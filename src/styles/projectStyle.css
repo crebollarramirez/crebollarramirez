@@ -5,7 +5,7 @@
 .top-container {
   margin: 0;
   padding: 0;
-  color: #9198e5;
+  color: var(--light-purple);
 }
 
 .project-container {
@@ -15,8 +15,7 @@
   justify-content: flex-start;
   border: solid black 0.2em;
   background-color: black;
-  border-image: linear-gradient(to right, #9198e5, #e66465) 1;
-  gap: 0;
+  border-image: linear-gradient(to right, var(--light-purple), var(--light-red)) 1;
   width: 95%;
   padding: 0.5em;
 }
@@ -26,8 +25,14 @@
   font-size: 1.5em;
 }
 
-.text-container p {
-  font-size: 0.8em;
+.text-container li {
+  font-size: 1em;
+}
+
+.text-container ul{
+  display: flex; /* or grid */
+  flex-direction: column;
+  gap: 0.7em;
 }
 
 .top-container {

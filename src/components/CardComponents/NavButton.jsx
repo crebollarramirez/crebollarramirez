@@ -1,6 +1,6 @@
 // NavButton.js
 import React from "react";
-import './../../styles/navigationStyle.css';
+import "../../styles/navButtonStyle.css";
 
 export function NavButton({ targetId, name, isActive }) {
     const handleClick = () => {

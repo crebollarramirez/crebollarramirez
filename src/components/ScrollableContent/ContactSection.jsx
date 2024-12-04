@@ -15,7 +15,11 @@ export function ContactSection({ id }) {
           <div className="envelope-container">
             <i className="fa fa-envelope"></i>
           </div>
-          <h4>christopherrebollar0@icloud.com</h4>
+          <h4>
+            <a href="mailto:christopherrebollar0@icloud.com">
+              christopherrebollar0@icloud.com
+            </a>
+          </h4>
         </div>
       </div>
     </div>

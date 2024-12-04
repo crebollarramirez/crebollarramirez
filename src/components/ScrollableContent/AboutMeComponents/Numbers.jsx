@@ -119,8 +119,8 @@ export function Numbers() {
     <div className="numbers-container">
       <Number className="number-item grid-item grid-item1" num={commitCount} descrition={"Code Commits"} />
       <Number className="number-item grid-item grid-item2"  num={issuesClosed} descrition={"Closed Issues"} />
-      <Number className="number-item grid-item grid-item3"  num={15} descrition={"Projects Completed"} />
-      <Number className="number-item grid-item grid-item4"  num={12} descrition={"Technologies Mastered"} />
+      <Number className="number-item grid-item grid-item3"  num={5} descrition={"Projects Completed"} />
+      <Number className="number-item grid-item grid-item4"  num={10} descrition={"Technologies Mastered"} />
     </div>
   );
 }

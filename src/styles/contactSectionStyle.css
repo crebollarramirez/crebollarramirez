@@ -1,5 +1,4 @@
 .contact-section {
-  font-family: "Cornerstone";
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -38,11 +37,16 @@
   justify-content: center;
   border: solid black 0.2em;
   background-color: black;
-  border-image: linear-gradient(to right, #9198e5, #e66465) 1;
-  color: #9198e5;
+  border-image: linear-gradient(to right, var(--light-purple), var(--light-red))
+    1;
+  color: var(--light-purple);
 
-  /* Animation properties */
   animation: pulse 4s infinite;
+}
+
+.email-container a {
+  text-decoration: none;
+  color: var(--light-purple);
 }
 
 @keyframes pulse {
@@ -122,10 +126,13 @@
     justify-content: center;
     border: solid black 0.2em;
     background-color: black;
-    border-image: linear-gradient(to right, #9198e5, #e66465) 1;
-    color: #9198e5;
-
-    /* Animation properties */
+    border-image: linear-gradient(
+        to right,
+        var(--light-purple),
+        var(--light-red)
+      )
+      1;
+    color: var(--light-purple);
     animation: pulse 4s infinite;
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import resume from "./../../assets/crebollarramirez-resume.pdf";
+import '../../styles/downloadButtonStyle.css';
 
 export function DownloadButton() {
   const handleDownload = () => {

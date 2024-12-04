@@ -1,9 +1,9 @@
 import React from "react";
 import "./../../../styles/projectStyle.css";
-import { SocialButton } from "../../CardComponents/SocialButton";
+import { IconButton } from "../../CardComponents/IconButton";
 
 
-export function Project({ title, date, items, githubLink, buttonStyle }) {
+export function Project({ title, date, items, githubLink}) {
   return (
     <div className="project-container">
       <div className="text-container">
@@ -22,7 +22,7 @@ export function Project({ title, date, items, githubLink, buttonStyle }) {
         )}
       </div>
       <div className="repo-button-container">
-        <SocialButton refer={githubLink} className={"fa repo-button " + buttonStyle} /> 
+        <IconButton refer={githubLink} className={"fa repo-button fa-github"} /> 
       </div>
         
     </div>

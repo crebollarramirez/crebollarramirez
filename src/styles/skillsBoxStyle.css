@@ -1,0 +1,32 @@
+.skillsBox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: black;
+  color: var(--light-purple);
+  border: 1em solid black;
+  border-image: linear-gradient(to right, var(--light-purple), var(--light-red))
+    1;
+  border-width: 0.2em;
+  padding: 0.5em;
+  width: 18em;
+}
+
+.skillsBox-container h1{
+    font-size: 1.5em;
+}
+
+.all-skills-container {
+  display: flex;
+  flex-direction: column;
+  border: black solid 1px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.skill-container p{
+    font-size: 1.1em;
+}
+

@@ -1,7 +1,7 @@
 // NavigationSection.js
 import React, { useState, useEffect } from "react";
 import { NavButton } from "./NavButton";
-import './../../styles/navigationStyle.css';
+import './../../styles/navBar.css';
 
 export function NavigationSection() {
     const [activeSection, setActiveSection] = useState('');

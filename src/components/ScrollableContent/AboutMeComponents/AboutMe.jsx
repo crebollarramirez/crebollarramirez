@@ -14,19 +14,12 @@ export function AboutMe({ id }) {
           I'm a student at the{" "}
           <span className="reveal">University of California - San Diego</span>.
           I am currently studying Math-Computer Science and Cognitive Science
-          ML. I am originally from <span className="reveal">Los Angeles</span>{" "}
-          where I grew up.{" "}
-        </p>
-
+          ML.
+        </p> 
         <p>
-          My goal is to excel in the field of machine learning. I am actively
-          working on machine learning projects, exploring various algorithms,
-          and applying them to real-world problems. In addition to honing my
-          skills in machine learning, I am also delving into full-stack
-          development, gaining experience in both front-end and back-end
-          technologies. As I continue to grow as a software engineer, I am
-          committed to mastering these areas to contribute effectively to
-          innovative projects and solutions.
+          I am interested in <span className="reveal">Software Engineering</span> and <span className="reveal">Machine Learning</span>. I am
+          passionate about using technology to solve real-world problems. I am
+          also a huge foodie and enjoy cooking.
         </p>
       </div>
       <div className="numbers-bar">

@@ -1,5 +1,6 @@
 import React from "react";
 import me from "./../../assets/me.jpeg";
+import "../../styles/photoNameStyle.css";
 
 export function PhotoName() {
   return (
