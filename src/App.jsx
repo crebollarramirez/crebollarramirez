@@ -1,33 +1,56 @@
-import "./styles/App.css";
-import { ScrollableContent } from "./components/ScrollableContent/ScrollableContent";
-import { NavigationSection } from "./components/CardComponents/NavigationSection";
-import { useEffect, useState } from "react";
-import { PhotoName } from "./components/CardComponents/PhotoName";
-import { SocialButtonsSection } from "./components/CardComponents/SocialButtonsSection";
-import { DownloadButton } from "./components/CardComponents/DownloadButton";
+import React, { useRef, useEffect } from "react";
+import "./App.css";
+import Welcome from "./Components/Welcome";
+import Projects from "./Components/Projects/Projects";
+import About from "./Components/About";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [isMobile, setIsMobile] = useState(false);
+  const lightRef = useRef(null); // Reference for the light element
+    const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust breakpoint if needed
+    const light = lightRef.current;
+
+    // Function to move the light effect
+    const handleMouseMove = (e) => {
+      if (light) {
+        light.style.top = `${e.clientY}px`; // Update light position vertically
+        light.style.left = `${e.clientX}px`; // Update light position horizontally
+      }
     };
 
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
+    // Function to adjust blur on scroll
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY; // Get the current scroll position
+      const maxBlur = 10; // Maximum blur value
+      const blurAmount = Math.min(scrollPosition / 50, maxBlur); // Adjust sensitivity
+      document.body.style.setProperty("--blur-amount", `${blurAmount}px`); // Update CSS variable
+    };
 
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
+    // Attach event listeners
+    document.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listeners on component unmount
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // Empty dependency array to set up effect once
 
   return (
-    <div id="appContainer">
-      <main>
-        <NavigationSection />
-        <PhotoName />
-        <SocialButtonsSection />
-        <DownloadButton />
-        <ScrollableContent />
+    <div>
+      <div className="light" ref={lightRef}></div> {/* Light effect */}
+      <main className="app-container d-flex align-items-center justify-content-center flex-row flex-column">
+        <Welcome />
+        <About />
+        <Projects />
       </main>
     </div>
   );

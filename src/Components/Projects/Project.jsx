@@ -9,12 +9,12 @@ const Project = ({ title, tech, details, githubLink, date }) => {
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-decoration-none text-dark text-white"
+            className="text-decoration-none color-beige"
           >
             {title} <i className="fa fa-github fs-2"></i>
           </a>
         </h1>
-        <h3 className="fs-6">{date}</h3>
+        <h3 className="fs-6 ">{date}</h3>
       </div>
 
       {/* Render details as a list if it's an array */}

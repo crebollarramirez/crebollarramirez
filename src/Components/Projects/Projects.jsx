@@ -64,7 +64,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="snap-section min-vh-100 min-vw-100">
+    <div className="snap-section w-75">
       <h1 className="fs-1 text-white">Projects</h1>
       <div className="row">
         {projects.map((project, index) => (
