@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./../../../styles/numbers.css";
 import { Number } from "./Number";
-
 
 export function Numbers() {
   const [commitCount, setCommitCount] = useState(0);
   const [issuesClosed, setIssuesClosed] = useState(0);
   const GITHUB_USERNAME = "crebollarramirez";
-  const TOKEN = import.meta.env.VITE_GITHUB_TOKEN
+  const TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -116,11 +114,11 @@ export function Numbers() {
   }, []);
 
   return (
-    <div className="numbers-container">
-      <Number className="number-item grid-item grid-item1" num={commitCount} descrition={"Code Commits"} />
-      <Number className="number-item grid-item grid-item2"  num={issuesClosed} descrition={"Closed Issues"} />
-      <Number className="number-item grid-item grid-item3"  num={5} descrition={"Projects Completed"} />
-      <Number className="number-item grid-item grid-item4"  num={10} descrition={"Technologies Mastered"} />
+    <div className="d-flex justify-content-center align-items-center gap-3 flex-wrap w-100">
+      <Number num={commitCount} descrition={"Code Commits"} />
+      <Number num={issuesClosed} descrition={"Closed Issues"} />
+      <Number num={5} descrition={"Projects Completed"} />
+      <Number num={10} descrition={"Technologies Mastered"} />
     </div>
   );
 }

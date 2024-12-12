@@ -1,5 +1,3 @@
-import overworldImage from "../assets/overworld.png";
-
 const Welcome = () => {
   const scrollToAbout = () => {
     const aboutSection = document.getElementById("about");
@@ -10,10 +8,10 @@ const Welcome = () => {
 
   return (
     <div className="snap-section d-flex align-items-center justify-content-center flex-row min-vh-100 min-vw-100 flex-column">
-      <div className="d-flex align-items-start justify-content-center flex-column text-start gap-3 ">
+      <div className="middle-container d-flex align-items-start justify-content-center flex-column text-start gap-3">
         <div className="">
           <h1 className="text-white huge-text">
-            Hello I'm, <span className="color-beige">Chris.</span>
+            Hello I'm, <span className="color-beige">Chris</span>.
           </h1>
           <h1 className="text-white huge-text"></h1>
         </div>
@@ -29,7 +27,7 @@ const Welcome = () => {
             View More
             <i className="fa fa-arrow-down ms-2"></i>
           </button>
-          <div className="d-flex gap-3 p-1 align-items-center justify-content-end flex-row w-25">
+          <div className="d-flex gap-3 p-1 align-items-center justify-content-center flex-row w-25">
             <a
               href="https://www.linkedin.com/in/christopher-rebollar-ramirez/"
               target="_blank"

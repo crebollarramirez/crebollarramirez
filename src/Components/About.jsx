@@ -1,5 +1,6 @@
 import React from "react";
 import person from "../assets/person-outline.svg";
+import { Numbers } from "./Numbers";
 
 const About = () => {
   const languages = [
@@ -38,92 +39,87 @@ const About = () => {
   ];
 
   return (
-    <div id="about" className="about-section snap-section d-flex align-items-center justify-content-start flex-column p-1 gap-4">
+    <div
+      id="about"
+      className="about-section snap-section d-flex align-items-center justify-content-start flex-column gap-1"
+    >
       <h1 className="fs-1 text-white">About</h1>
-      <div className="about-container">
-        <div className="person-info-container">
-          <img
-            src={person}
-            alt="Person Icon"
-            className="mb-4 svg-person-style"
-            style={{ maxWidth: "200px" }}
-          />
-          <p className="text-white fs-5 text-start">
-            Hello and welcome to my portfolio page! I'm a student at the{" "}
-            <span className="color-beige">
-              University of California - San Diego
-            </span>
-            . I am currently studying{" "}
-            <span className="color-beige">Math-Computer Science </span>
-            and <span className="color-beige">Cognitive Science ML</span>. I am
-            interested in{" "}
-            <span className="color-beige">Software Engineering</span> and
-            <span className="color-beige"> Machine Learning</span>. I am
-            passionate about using technology to solve real-world problems. I am
-            also a huge <span className="color-beige">foodie</span> and enjoy{" "}
-            <span className="color-beige">cooking</span>.
-          </p>
-        </div>
-
-        <div className="skills-container d-flex flex-column text-white">
-          <h2 className="fs-2 color-beige">Skills</h2>
-
-          <div className="d-flex flex-column text-start gap-4">
-            <h3 className="color-beige">Languages</h3>
-            <div className="d-flex flex-wrap gap-2">
-              {languages.map((link, index) => (
-                <a
-                  key={index}
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="d-inline-block mb-2"
-                >
-                  <img
-                    src={link}
-                    alt="tech-icon"
-                    style={{ width: "auto", height: "2em" }} // Customize size as needed
-                  />
-                </a>
-              ))}
+      <div className="d-flex w-100 h-100 justify-content-center align-items-center">
+        <div className="about-container">
+          <div className="person-info-container gap-3 shadow gap-4">
+            <div className="Me">
+              <img
+                src={person}
+                alt="Person Icon"
+                className="mb-4 svg-person-style"
+              />
+              <p className="text-white text-start">
+                Greetings! I'm a student at the{" "}
+                <span className="color-beige">
+                  University of California - San Diego
+                </span>
+                . I am currently studying{" "}
+                <span className="color-beige">Math-Computer Science </span>
+                and <span className="color-beige">Cognitive Science ML</span>. I
+                am interested in{" "}
+                <span className="color-beige">Software Engineering</span> and
+                <span className="color-beige"> Machine Learning</span>. I am
+                passionate about using technology to solve real-world problems.
+                I am also a huge <span className="color-beige">foodie</span> and
+                enjoy <span className="color-beige">cooking</span>.
+              </p>
             </div>
+            <Numbers />
+          </div>
 
-            <h3 className="color-beige">Technology</h3>
-            <div className="d-flex flex-wrap gap-2">
-              {tech.map((link, index) => (
-                <a
-                  key={index}
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="d-inline-block mb-2"
-                >
-                  <img
-                    src={link}
-                    alt="tech-icon"
-                    style={{ width: "auto", height: "2em" }} // Customize size as needed
-                  />
-                </a>
-              ))}
-            </div>
+          <div className="skills-container d-flex flex-column text-white">
+            <h2 className="fs-2 color-beige">Skills</h2>
 
-            <h3 className="color-beige">Machine Learning</h3>
-            <div className="d-flex flex-wrap gap-2">
-              {machineLearning.map((link, index) => (
-                <a
-                  key={index}
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="d-inline-block mb-2"
-                >
-                  <img
-                    src={link}
-                    alt="tech-icon"
-                    style={{ width: "auto", height: "2em" }} // Customize size as needed
-                  />
-                </a>
-              ))}
+            <div className="d-flex flex-column text-start gap-4 shadow">
+              <h3 className="color-beige fs-4">Languages</h3>
+              <div className="d-flex flex-wrap gap-2">
+                {languages.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="d-inline-block mb-2"
+                  >
+                    <img src={link} alt="tech-icon" className="logo" />
+                  </a>
+                ))}
+              </div>
+
+              <h3 className="color-beige fs-4">Technology</h3>
+              <div className="d-flex flex-wrap gap-2">
+                {tech.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="d-inline-block mb-2"
+                  >
+                    <img src={link} alt="tech-icon" className="logo" />
+                  </a>
+                ))}
+              </div>
+
+              <h3 className="color-beige fs-4">Machine Learning</h3>
+              <div className="d-flex flex-wrap gap-2">
+                {machineLearning.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="d-inline-block mb-2"
+                  >
+                    <img src={link} alt="tech-icon" className="logo" />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>

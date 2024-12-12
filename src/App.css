@@ -85,13 +85,12 @@ body::after {
 
 .about-container{
   display: flex;
-  align-items: stretch;
-  justify-content: center;
-  gap: 1em;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .about-section{
-  width: 100%;
+  width: 75%;
 }
 
 .person-info-container{
@@ -100,18 +99,22 @@ body::after {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 45em;
+  width: 35%;
+}
+
+.projects{
+  width: 75%;
 }
 
 .skills-container{
-  width: 45em;
+  width: 35%;
 }
 
 .custom-btn {
   background: transparent;
   border: none;
   outline: 2px solid var(--beige-color);
-  width: 100%;
+  width: 90%;
   height: 100%;
   color: var(--beige-color);
   cursor: pointer;
@@ -123,19 +126,90 @@ body::after {
   outline: 2px solid var(--beige-color);
 }
 
+.logo{
+  height: 2em;
+  width: auto;
+}
 
-@media only screen and (max-width: 1600px){
+.Me{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.Me p{
+  font-size: 1.5rem;
+}
+
+.numberSize{
+  font-size: 2.5em;
+}
+
+.numDescription{
+  font-size: 1.4em;
+}
+
+
+
+@media only screen and (max-width: 1200px){
   .about-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 1em;
+    width: 90%;
   }
+  
   .person-info-container{
-    width: 70vw;
+    width: 100%;
   }
 
   .skills-container{
-    width: 35em;
+    width: 100%;
+  }
+
+  .svg-person-style{
+    width: 7em;
+    height: auto;
+  }
+
+  .logo{
+    height: 1.2em;
+    width: auto;
+  }
+
+  .middle-container{
+    margin-left: 1em;
+  }
+
+  .projects{
+    width: 90%;
+  }
+
+  .Me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .numberSize{
+    font-size: 1.4em;
+  }
+  
+  .numDescription{
+    font-size: 0.8em;
+  }
+
+  .about-section{
+    width: 100%;
+  }
+
+  .Me p{
+    font-size: 0.9em;
   }
 }
