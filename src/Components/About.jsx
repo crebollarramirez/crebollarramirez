@@ -6,12 +6,9 @@ const About = () => {
   const languages = [
     "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
     "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
-    "https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white",
     "https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white",
     "https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white",
     "https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white",
-    "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
-    "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
     "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
   ];
 
@@ -75,9 +72,9 @@ const About = () => {
           <div className="skills-container d-flex flex-column text-white">
             <h2 className="fs-2 color-beige">Skills</h2>
 
-            <div className="d-flex flex-column text-start gap-4 shadow">
+            <div className="d-flex flex-column text-start gap-2 shadow">
               <h3 className="color-beige fs-4">Languages</h3>
-              <div className="d-flex flex-wrap gap-2">
+              <div className="d-flex flex-wrap gap-1">
                 {languages.map((link, index) => (
                   <a
                     key={index}
@@ -92,7 +89,7 @@ const About = () => {
               </div>
 
               <h3 className="color-beige fs-4">Technology</h3>
-              <div className="d-flex flex-wrap gap-2">
+              <div className="d-flex flex-wrap gap-1">
                 {tech.map((link, index) => (
                   <a
                     key={index}
@@ -107,7 +104,7 @@ const About = () => {
               </div>
 
               <h3 className="color-beige fs-4">Machine Learning</h3>
-              <div className="d-flex flex-wrap gap-2">
+              <div className="d-flex flex-wrap gap-1">
                 {machineLearning.map((link, index) => (
                   <a
                     key={index}
