@@ -3,10 +3,18 @@ import axios from "axios";
 import { Number } from "./Number";
 
 export function Numbers() {
-  const [commitCount, setCommitCount] = useState(0);
-  const [issuesClosed, setIssuesClosed] = useState(0);
+  const [commitCount, setCommitCount] = useState(null);
+  const [issuesClosed, setIssuesClosed] = useState(null);
+  const [projectsCompleted] = useState(5); // Keep as static for now
+  const [technologiesMastered] = useState(10); // Keep as static for now
+
+  // Loading states for dynamically fetched numbers
+  const [isLoadingCommits, setIsLoadingCommits] = useState(true);
+  const [isLoadingIssues, setIsLoadingIssues] = useState(true);
+
   const GITHUB_USERNAME = "crebollarramirez";
   const TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -41,22 +49,6 @@ export function Numbers() {
             );
 
             totalCommits += commitsResponse.data.length;
-
-            // Fetch issues closed by you
-            const issuesResponse = await axios.get(
-              `https://api.github.com/repos/${GITHUB_USERNAME}/${repo.name}/issues`,
-              {
-                headers: {
-                  Authorization: TOKEN ? `token ${TOKEN}` : undefined,
-                },
-                params: {
-                  state: "closed",
-                  creator: GITHUB_USERNAME,
-                },
-              }
-            );
-
-            totalIssuesClosed += issuesResponse.data.length;
           } catch (error) {
             if (error.response && error.response.status === 409) {
               console.warn(
@@ -107,6 +99,12 @@ export function Numbers() {
         setIssuesClosed(totalIssuesClosed);
       } catch (error) {
         console.error("Error fetching data from GitHub:", error);
+        // Set to 0 in case of error
+        setCommitCount(0);
+        setIssuesClosed(0);
+      } finally {
+        setIsLoadingCommits(false);
+        setIsLoadingIssues(false);
       }
     };
 
@@ -115,10 +113,24 @@ export function Numbers() {
 
   return (
     <div className="d-flex justify-content-center align-items-center gap-3 flex-wrap w-100">
-      <Number num={commitCount} descrition={"Code Commits"} />
-      <Number num={issuesClosed} descrition={"Closed Issues"} />
-      <Number num={5} descrition={"Projects Completed"} />
-      <Number num={10} descrition={"Technologies Mastered"} />
+      <Number 
+        num={commitCount} 
+        description="Code Commits" 
+        isLoading={isLoadingCommits} 
+      />
+      <Number 
+        num={issuesClosed} 
+        description="Closed Issues" 
+        isLoading={isLoadingIssues} 
+      />
+      <Number 
+        num={projectsCompleted} 
+        description="Projects Completed" 
+      />
+      <Number 
+        num={technologiesMastered} 
+        description="Technologies Mastered" 
+      />
     </div>
   );
 }

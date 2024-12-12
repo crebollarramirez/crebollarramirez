@@ -3,6 +3,7 @@ import "./App.css";
 import Welcome from "./Components/Welcome";
 import Projects from "./Components/Projects/Projects";
 import About from "./Components/About";
+import { Footer } from "./Components/Footer"; // Add this import
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
         <About />
         <Projects />
       </main>
+      <Footer />
     </div>
   );
 }
