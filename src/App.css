@@ -104,6 +104,7 @@ body::after {
 
 .projects{
   width: 75%;
+  min-height: 100%;
 }
 
 .skills-container{
@@ -187,6 +188,7 @@ body::after {
 
   .projects{
     width: 90%;
+    height: 100%;
   }
 
   .Me{
