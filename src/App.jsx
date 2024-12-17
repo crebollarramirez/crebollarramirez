@@ -3,17 +3,11 @@ import "./App.css";
 import Welcome from "./Components/Welcome";
 import Projects from "./Components/Projects/Projects";
 import About from "./Components/About";
-import { Footer } from "./Components/Footer"; // Add this import
+import Footer from "./Components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const lightRef = useRef(null); // Reference for the light element
-    const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about");
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   useEffect(() => {
     const light = lightRef.current;
@@ -30,7 +24,8 @@ function App() {
     const handleScroll = () => {
       const scrollPosition = window.scrollY; // Get the current scroll position
       const maxBlur = 10; // Maximum blur value
-      const blurAmount = Math.min(scrollPosition / 50, maxBlur); // Adjust sensitivity
+      const maxScroll = document.body.scrollHeight - window.innerHeight; // Maximum scroll height
+      const blurAmount = (scrollPosition / maxScroll) * maxBlur; // Adjust sensitivity
       document.body.style.setProperty("--blur-amount", `${blurAmount}px`); // Update CSS variable
     };
 
@@ -46,15 +41,15 @@ function App() {
   }, []); // Empty dependency array to set up effect once
 
   return (
-    <div>
+    <>
       <div className="light" ref={lightRef}></div> {/* Light effect */}
-      <main className="app-container d-flex align-items-center justify-content-center flex-row flex-column">
+      <main className="d-flex align-items-center justify-content-center flex-column min-vh-100 min-vw-100">
         <Welcome />
         <About />
         <Projects />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

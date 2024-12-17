@@ -36,21 +36,21 @@ const About = () => {
   ];
 
   return (
-    <div
-      id="about"
-      className="about-section snap-section d-flex align-items-center justify-content-start flex-column gap-1"
-    >
+    <div id="about" className="min-vh-100 min-vw-100">
       <h1 className="fs-1 text-white">About</h1>
-      <div className="d-flex w-100 h-100 justify-content-center align-items-center">
-        <div className="about-container">
-          <div className="person-info-container gap-3 shadow gap-4">
-            <div className="Me">
-              <img
-                src={person}
-                alt="Person Icon"
-                className="mb-4 svg-person-style"
-              />
-              <p className="text-white text-start">
+      <div className="d-flex align-items-center justify-content-center h-100">
+        <div className="container">
+          {/* Row containing the SVG and greeting text */}
+          <div className="row align-items-center justify-content-center">
+            <div className="col-sm-12 col-md-10 col-lg-6 d-flex align-items-center justify-content-center flex-column gap-3">
+              {/* SVG Column */}
+              <div className="w-100 col-sm-4 col-md-2 d-flex justify-content-center align-items-center">
+                <div className="w-50">
+                  <img src={person} alt="Person Icon" className="w-100 h-100" />
+                </div>
+              </div>
+              {/* Greeting Text Column */}
+              <p className="text-white text-start fs-5">
                 Greetings! I'm a student at the{" "}
                 <span className="color-beige">
                   University of California - San Diego
@@ -65,57 +65,57 @@ const About = () => {
                 I am also a huge <span className="color-beige">foodie</span> and
                 enjoy <span className="color-beige">cooking</span>.
               </p>
+
+              <Numbers styles="d-flex align-items-center justify-content-center gap-3 flex-wrap" />
             </div>
-            <Numbers />
-          </div>
 
-          <div className="skills-container d-flex flex-column text-white">
-            <h2 className="fs-2 color-beige">Skills</h2>
+            <div className="col-lg-6 d-flex flex-column text-white">
+              <h2 className="fs-2 color-beige">Skills</h2>
+              <div className="d-flex flex-column text-start gap-2 shadow">
+                <h3 className="color-beige fs-4">Languages</h3>
+                <div className="d-flex flex-wrap gap-1">
+                  {languages.map((link, index) => (
+                    <a
+                      key={index}
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="d-inline-block mb-2"
+                    >
+                      <img src={link} alt="tech-icon" className="logo" />
+                    </a>
+                  ))}
+                </div>
 
-            <div className="d-flex flex-column text-start gap-2 shadow">
-              <h3 className="color-beige fs-4">Languages</h3>
-              <div className="d-flex flex-wrap gap-1">
-                {languages.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="d-inline-block mb-2"
-                  >
-                    <img src={link} alt="tech-icon" className="logo" />
-                  </a>
-                ))}
-              </div>
+                <h3 className="color-beige fs-4">Technology</h3>
+                <div className="d-flex flex-wrap gap-1">
+                  {tech.map((link, index) => (
+                    <a
+                      key={index}
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="d-inline-block mb-2"
+                    >
+                      <img src={link} alt="tech-icon" className="logo" />
+                    </a>
+                  ))}
+                </div>
 
-              <h3 className="color-beige fs-4">Technology</h3>
-              <div className="d-flex flex-wrap gap-1">
-                {tech.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="d-inline-block mb-2"
-                  >
-                    <img src={link} alt="tech-icon" className="logo" />
-                  </a>
-                ))}
-              </div>
-
-              <h3 className="color-beige fs-4">Machine Learning</h3>
-              <div className="d-flex flex-wrap gap-1">
-                {machineLearning.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="d-inline-block mb-2"
-                  >
-                    <img src={link} alt="tech-icon" className="logo" />
-                  </a>
-                ))}
+                <h3 className="color-beige fs-4">Machine Learning</h3>
+                <div className="d-flex flex-wrap gap-1">
+                  {machineLearning.map((link, index) => (
+                    <a
+                      key={index}
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="d-inline-block mb-2"
+                    >
+                      <img src={link} alt="tech-icon" className="logo" />
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
