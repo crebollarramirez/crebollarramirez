@@ -81,3 +81,17 @@ body::after {
   transform: translateY(-5px);
   outline: 2px solid var(--beige-color);
 }
+
+/* For Projects Section */
+.projects{
+  width: 75%;
+  min-height: 100vh;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .projects{
+    width: 95%;
+  }
+}
+
