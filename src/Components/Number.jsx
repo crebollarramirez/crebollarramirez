@@ -1,10 +1,6 @@
 import React from "react";
 
-export function Number({ 
-  num, 
-  description = "", 
-  isLoading = false 
-}) {
+const Number = ({ num, description = "", isLoading = false }) => {
   // Function to replace spaces with line breaks
   function replaceSpaces(input) {
     return input.split(" ").map((item, index) => (
@@ -20,14 +16,18 @@ export function Number({
       {isLoading ? (
         <div className="d-flex gap-2 align-items-center">
           <h1 className="text-white fs-6">Loading...</h1>
-          <h2 className="color-beige numDescription">{replaceSpaces(description)}</h2>
+          <h2 className="color-beige numDescription">
+            {replaceSpaces(description)}
+          </h2>
         </div>
       ) : (
         <>
-          <h1 className="text-white numberSize">{num}</h1>
-          <h2 className="color-beige numDescription">{replaceSpaces(description)}</h2>
+          <h1 className="text-white fs-2">{num}</h1>
+          <h2 className="color-beige fs-5">{replaceSpaces(description)}</h2>
         </>
       )}
     </div>
   );
 }
+
+export default Number;

@@ -14,7 +14,7 @@ const Project = ({ title, tech, details, githubLink, date }) => {
             {title} <i className="fa fa-github fs-2"></i>
           </a>
         </h1>
-        <h3 className="fs-6 ">{date}</h3>
+        <h3 className="fs-6">{date}</h3>
       </div>
 
       {/* Render details as a list if it's an array */}
@@ -29,13 +29,13 @@ const Project = ({ title, tech, details, githubLink, date }) => {
       </div>
 
       {/* Display tech links dynamically */}
-      <div className="d-flex align-items-center justify-content-center tech-links flex-wrap gap-1">
+      <div className="d-flex align-items-center justify-content-center flex-wrap gap-1 w-100">
         {tech.map((link, index) => (
           <a key={index} href={link} target="_blank" rel="noopener noreferrer">
             <img
               src={link}
               alt="tech-icon"
-              style={{ width: "auto", height: "25px" }} // Customize size as needed
+              style={{ width: "auto", height: "100%" }} // Customize size as needed
             />
           </a>
         ))}

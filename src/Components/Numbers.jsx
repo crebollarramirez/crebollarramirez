@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Number } from "./Number";
+import Number from "./Number";
 
-export function Numbers() {
+const Numbers = ({ styles = "" }) => {
   const [commitCount, setCommitCount] = useState(null);
   const [issuesClosed, setIssuesClosed] = useState(null);
   const [projectsCompleted] = useState(5); // Keep as static for now
@@ -112,25 +112,21 @@ export function Numbers() {
   }, []);
 
   return (
-    <div className="d-flex justify-content-center align-items-center gap-3 flex-wrap w-100">
-      <Number 
-        num={commitCount} 
-        description="Code Commits" 
-        isLoading={isLoadingCommits} 
+    <div className={styles}>
+      <Number
+        num={commitCount}
+        description="Code Commits"
+        isLoading={isLoadingCommits}
       />
-      <Number 
-        num={issuesClosed} 
-        description="Closed Issues" 
-        isLoading={isLoadingIssues} 
+      <Number
+        num={issuesClosed}
+        description="Closed Issues"
+        isLoading={isLoadingIssues}
       />
-      <Number 
-        num={projectsCompleted} 
-        description="Projects Completed" 
-      />
-      <Number 
-        num={technologiesMastered} 
-        description="Technologies Mastered" 
-      />
+      <Number num={projectsCompleted} description="Projects Completed" />
+      <Number num={technologiesMastered} description="Technologies Mastered" />
     </div>
   );
-}
+};
+
+export default Numbers;

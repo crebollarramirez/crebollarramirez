@@ -2,7 +2,6 @@ import React from "react";
 import Project from "./Project";
 
 const Projects = () => {
-  // Array of projects
   const projects = [
     {
       title: "DaybyDay",
@@ -28,8 +27,7 @@ const Projects = () => {
         "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white",
         "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
         "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white",
-        "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"
-
+        "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black",
       ],
       details: [
         "Built a digits classification system using a custom K-Nearest Neighbors algorithm, achieving 91.4% test accuracy on the MNIST dataset and outperforming Scikit-learn's implementation in specific cases.",
@@ -47,8 +45,7 @@ const Projects = () => {
         "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white",
         "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
         "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white",
-        "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"
-
+        "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black",
       ],
       details: [
         "Developed and implemented binary classification models using Perceptron and Logistic Regression, achieving an accuracy of 98.25% on the Breast Cancer Wisconsin dataset through Python-based custom algorithms and Scikit-learn.",
@@ -60,11 +57,10 @@ const Projects = () => {
         "https://github.com/crebollarramirez/Perceptron---Logistic-Regression-for-Breast-Cancer",
       date: "August 2024",
     },
-   
   ];
 
   return (
-    <div className="snap-section projects">
+    <div className="min-vh-100 w-sm-100 w-md-75 w-75">
       <h1 className="fs-1 text-white">Projects</h1>
       <div className="row">
         {projects.map((project, index) => (

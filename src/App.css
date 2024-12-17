@@ -1,26 +1,17 @@
 @font-face {
-  font-family: 'KumbhSans';
-  src: url('./assets/fonts/Bold') format('truetype');
+  font-family: "KumbhSans";
+  src: url("./assets/fonts/Bold") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 #root {
   text-align: center;
-  --beige-color: rgb(180,155,130);
-  font-family: 'KumbhSans', sans-serif; /* Fallback font added */
+  --beige-color: rgb(180, 155, 130);
+  font-family: "KumbhSans", sans-serif; /* Fallback font added */
 }
 
-.snap-section{
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-}
-
-.app-container{
-  width: 100%;
-  margin: 0 auto;
-}
-
+/* Hexagonal Background with light*/
 body {
   position: relative;
   min-height: 100vh;
@@ -29,7 +20,7 @@ body {
 }
 
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -40,7 +31,7 @@ body::before {
 }
 
 body::after {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -61,62 +52,26 @@ body::after {
   transform: translate(-50%, -50%);
   width: 13em;
   height: 13em;
-  border-radius: 50%; /* Makes the element circular */
+  border-radius: 50%;
   filter: blur(15px);
-  background: linear-gradient(
-    to right,
-    #ff0000,#fdcf58
-  );
+  background: linear-gradient(to right, #ff0000, #fdcf58);
   z-index: -2; /* In front of the black background, but behind the grid */
 }
 
-.color-beige{
+/* Custom colors and sizing */
+.color-beige {
   color: var(--beige-color);
 }
 
-.huge-text{
+.huge-text {
   font-size: 4em;
 }
 
-.svg-person-style{
-  width: 15em;
-  height: auto;
-}
-
-.about-container{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.about-section{
-  width: 75%;
-}
-
-.person-info-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 35%;
-}
-
-.projects{
-  width: 75%;
-  min-height: 100%;
-}
-
-.skills-container{
-  width: 35%;
-}
-
+/* Button for "View More" */
 .custom-btn {
   background: transparent;
   border: none;
   outline: 2px solid var(--beige-color);
-  width: 90%;
-  height: 100%;
   color: var(--beige-color);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -125,93 +80,4 @@ body::after {
 .custom-btn:hover {
   transform: translateY(-5px);
   outline: 2px solid var(--beige-color);
-}
-
-.logo{
-  height: 2em;
-  width: auto;
-}
-
-.Me{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.Me p{
-  font-size: 1.5rem;
-}
-
-.numberSize{
-  font-size: 2.5em;
-}
-
-.numDescription{
-  font-size: 1.4em;
-}
-
-
-
-@media only screen and (max-width: 1200px){
-  .about-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1em;
-    width: 90%;
-  }
-  
-  .person-info-container{
-    width: 100%;
-  }
-
-  .skills-container{
-    width: 100%;
-  }
-
-  .svg-person-style{
-    width: 7em;
-    height: auto;
-  }
-
-  .logo{
-    height: 1.2em;
-    width: auto;
-  }
-
-  .middle-container{
-    margin-left: 1em;
-  }
-
-  .projects{
-    width: 90%;
-    height: 100%;
-  }
-
-  .Me{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 1em;
-  }
-
-  .numberSize{
-    font-size: 1.4em;
-  }
-  
-  .numDescription{
-    font-size: 0.8em;
-  }
-
-  .about-section{
-    width: 100%;
-  }
-
-  .Me p{
-    font-size: 0.9em;
-  }
 }
