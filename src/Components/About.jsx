@@ -1,6 +1,6 @@
 import React from "react";
-import person from "../assets/person-outline.svg";
 import Numbers from "./Numbers";
+import Me from "../assets/meSpain.jpg";
 
 const About = () => {
   const languages = [
@@ -23,7 +23,6 @@ const About = () => {
     "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white",
     "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white",
     "https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white",
-    "https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white",
     "https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white",
   ];
 
@@ -36,86 +35,92 @@ const About = () => {
   ];
 
   return (
-    <div id="about" className="min-vh-100 min-vw-100">
-      <h1 className="fs-1 text-white">About</h1>
-      <div className="d-flex align-items-center justify-content-center h-100">
-        <div className="container">
-          {/* Row containing the SVG and greeting text */}
-          <div className="row align-items-center justify-content-center">
-            <div className="col-sm-12 col-md-10 col-lg-6 d-flex align-items-center justify-content-center flex-column gap-3">
-              {/* SVG Column */}
-              <div className="w-100 col-sm-4 col-md-2 d-flex justify-content-center align-items-center">
-                <div className="w-50">
-                  <img src={person} alt="Person Icon" className="w-100 h-100" />
-                </div>
+    <div
+      id="about"
+      className="lg:h-full w-full flex flex-col items-center justify-center"
+    >
+      <h1 className="text-4xl text-white mb-12">About</h1>
+      <div className="lg:mt-0 flex items-center justify-center h-full">
+        <div className="flex items-center justify-center gap-2 md:gap-5 lg:gap-10 flex-col md:flex-row lg:flex-row">
+          {/* Me and Greeting */}
+          <div className="flex flex-col items-center justify-center gap-3 w-full md:w-[50%] lg:w-[35%]">
+            <div className="w-full flex justify-center items-center">
+              <div className="hexagon w-[75%] lg:w-[85%] ">
+                <img src={Me} alt="Person Icon" />
               </div>
-              {/* Greeting Text Column */}
-              <p className="text-white text-start fs-5">
-                Greetings! I'm a student at the{" "}
-                <span className="color-beige">
-                  University of California - San Diego
-                </span>
-                . I am currently studying{" "}
-                <span className="color-beige">Math-Computer Science </span>
-                and <span className="color-beige">Cognitive Science ML</span>. I
-                am interested in{" "}
-                <span className="color-beige">Software Engineering</span> and
-                <span className="color-beige"> Machine Learning</span>. I am
-                passionate about using technology to solve real-world problems.
-                I am also a huge <span className="color-beige">foodie</span> and
-                enjoy <span className="color-beige">cooking</span>.
-              </p>
-
-              <Numbers styles="d-flex align-items-center justify-content-center gap-3 flex-wrap" />
             </div>
 
-            <div className="col-lg-6 d-flex flex-column text-white">
-              <h2 className="fs-2 color-beige">Skills</h2>
-              <div className="d-flex flex-column text-start gap-2 shadow">
-                <h3 className="color-beige fs-4">Languages</h3>
-                <div className="d-flex flex-wrap gap-1">
-                  {languages.map((link, index) => (
-                    <a
-                      key={index}
-                      href={link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="d-inline-block mb-2"
-                    >
-                      <img src={link} alt="tech-icon" className="logo" />
-                    </a>
-                  ))}
-                </div>
+            {/* Greeting Text Column */}
 
-                <h3 className="color-beige fs-4">Technology</h3>
-                <div className="d-flex flex-wrap gap-1">
-                  {tech.map((link, index) => (
-                    <a
-                      key={index}
-                      href={link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="d-inline-block mb-2"
-                    >
-                      <img src={link} alt="tech-icon" className="logo" />
-                    </a>
-                  ))}
-                </div>
+            <p className="text-white/85 text-left text-lg">
+              I'm a student at the{" "}
+              <span className="text-beige">
+                University of California - San Diego
+              </span>
+              . I am currently studying{" "}
+              <span className="text-beige">Math-Computer Science </span>
+              and <span className="text-beige">Cognitive Science ML</span>. I am
+              interested in{" "}
+              <span className="text-beige">Software Engineering</span> and
+              <span className="text-beige"> Machine Learning</span>.
+            </p>
 
-                <h3 className="color-beige fs-4">Machine Learning</h3>
-                <div className="d-flex flex-wrap gap-1">
-                  {machineLearning.map((link, index) => (
-                    <a
-                      key={index}
-                      href={link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="d-inline-block mb-2"
-                    >
-                      <img src={link} alt="tech-icon" className="logo" />
-                    </a>
-                  ))}
-                </div>
+            <Numbers styles="flex items-center justify-center gap-3 flex-wrap" />
+          </div>
+
+          <div className="w-full flex items-center justify-center md:hidden lg:hidden">
+            <button className="w-full text-beige hover:text-beige border-2 border-beige px-8 py-1 transform transition-transform duration-300 hover:-translate-y-1 text-2xl">
+              CV
+            </button>
+          </div>
+
+          {/*Skills and stuff*/}
+          <div className="flex flex-col justify-center items-center text-white w-full md:w-[50%] lg:w-[65%]">
+            <h2 className="text-3xl text-white">Skills</h2>
+            <div className="flex flex-col text-left gap-2 shadow">
+              <h3 className="text-beige text-xl">Languages</h3>
+              <div className="flex flex-wrap gap-1">
+                {languages.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mb-2"
+                  >
+                    <img src={link} alt="tech-icon" className="logo" />
+                  </a>
+                ))}
+              </div>
+
+              <h3 className="text-beige text-xl">Technology</h3>
+              <div className="flex flex-wrap gap-1">
+                {tech.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mb-2"
+                  >
+                    <img src={link} alt="tech-icon" className="logo" />
+                  </a>
+                ))}
+              </div>
+
+              <h3 className="text-beige text-xl">Machine Learning</h3>
+              <div className="flex flex-wrap gap-1">
+                {machineLearning.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mb-2"
+                  >
+                    <img src={link} alt="tech-icon" className="logo" />
+                  </a>
+                ))}
               </div>
             </div>
           </div>

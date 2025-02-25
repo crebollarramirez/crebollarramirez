@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#root {
+  font-family: "Poppins-Regular", sans-serif; /* Fallback font added */
+  --blur-amount: 0px;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* Pure black background */
+  z-index: -3; /* Lowest layer */
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/grid.svg");
+  background-size: 30em;
+  background-repeat: repeat;
+  z-index: -1; /* Layer above background color but below the light */
+  filter: blur(var(--blur-amount, 0px)); /* Controlled by JS */
+  transition: filter 0.3s ease; /* Smooth transition for blur changes */
+}
+
+.light {
+  position: fixed; /* Stays consistent during scrolling */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13em;
+  height: 13em;
+  border-radius: 50%;
+  filter: blur(15px);
+  background: linear-gradient(to right, #ff0000, #fdcf58);
+  z-index: -2; /* In front of the black background, but behind the grid */
+}
+
+/* Hexagon container */
+.hexagon {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hexagon outline */
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: -5px; /* Adjust to match the border width */
+  left: -5px; /* Adjust to match the border width */
+  width: calc(100% + 10px); /* Adjust to match the border width */
+  height: calc(100% + 10px); /* Adjust to match the border width */
+  border: 90px solid rgb(180, 155, 130); /* Adjust the border size and color as needed */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  box-sizing: border-box;
+}
+
+/* Hexagon image */
+.hexagon img {
+  object-fit: cover;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}

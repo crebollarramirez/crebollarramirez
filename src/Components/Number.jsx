@@ -12,18 +12,18 @@ const Number = ({ num, description = "", isLoading = false }) => {
   }
 
   return (
-    <div className="d-flex gap-2 text-start align-content-center justify-content-center">
+    <div className="flex gap-2 text-left items-center justify-center">
       {isLoading ? (
-        <div className="d-flex gap-2 align-items-center">
-          <h1 className="text-white fs-6">Loading...</h1>
-          <h2 className="color-beige numDescription">
+        <div className="flex gap-2 items-center">
+          <h1 className="text-white/85 text-lg">Loading...</h1>
+          <h2 className="text-beige numDescription">
             {replaceSpaces(description)}
           </h2>
         </div>
       ) : (
         <>
-          <h1 className="text-white fs-2">{num}</h1>
-          <h2 className="color-beige fs-5">{replaceSpaces(description)}</h2>
+          <h1 className="text-white/85 text-2xl">{num}</h1>
+          <h2 className="text-beige text-lg">{replaceSpaces(description)}</h2>
         </>
       )}
     </div>

@@ -1,10 +1,12 @@
 import React, { useRef, useEffect } from "react";
-import "./App.css";
+import "./styles.css"; // Importing CSS styles
 import Welcome from "./Components/Welcome";
 import Projects from "./Components/Projects/Projects";
 import About from "./Components/About";
 import Footer from "./Components/Footer";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./Components/Navbar";
+import Experience from "./Components/Experience"; // Importing Experience component
+import Contact from "./Components/Contact";
 
 function App() {
   const lightRef = useRef(null); // Reference for the light element
@@ -41,15 +43,20 @@ function App() {
   }, []); // Empty dependency array to set up effect once
 
   return (
-    <>
+    <div className="h-screen flex flex-col justify-center items-center">
       <div className="light" ref={lightRef}></div> {/* Light effect */}
-      <main className="d-flex align-items-center justify-content-center flex-column min-vh-100 min-vw-100">
-        <Welcome />
-        <About />
-        <Projects />
-      </main>
-      <Footer />
-    </>
+      <div className="h-screen flex flex-col justify-center items-center w-[95%] md:w-[90%] lg:w-[70%]">
+        <Navbar /> {/* Navigation bar */}
+        <main className="flex-1 overflow-y-auto hide-scrollbar space-y-4">
+          <Welcome />
+          <About />
+          <Experience /> 
+          <Projects />
+          <Contact />
+          <Footer />
+        </main>
+      </div>
+    </div>
   );
 }
 

@@ -1,38 +1,34 @@
-const Welcome = () => {
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about");
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+import React from "react";
+import scrollTo from "../utils";
 
+const Welcome = () => {
   return (
-    <div className="d-flex align-items-center justify-content-center min-vh-100 min-vw-100 flex-column">
-      <div className="d-flex align-items-start justify-content-center flex-column text-start gap-3 p-2">
-        <h1 className="text-white huge-text">
-          Hello I'm, <span className="color-beige">Chris</span>.
+    <div className="h-full flex items-center justify-center flex-col" id="welcome">
+      <div className="flex items-start justify-center flex-col text-left gap-6 p-2">
+        <h1 className="text-white text-6xl">
+          Hello I'm, <span className="text-beige">Chris</span>.
         </h1>
-        <h2 className="fs-3 text-white">
-          I'm a <span className="color-beige">Software Engineer</span>.
+        <h2 className="text-3xl text-white">
+          I'm a <span className="text-beige">Software Engineer</span>.
         </h2>
 
         {/* Button and Links */}
-        <div className="d-flex gap-1 align-items-center justify-content-center flex-row w-100 h-100">
+        <div className="flex items-center justify-center flex-row w-full h-full">
           <button
-            className="custom-btn w-100 align-self-stretch"
-            onClick={scrollToAbout}
+            className="w-full self-stretch border-2 border-beige text-beige transition-transform duration-300 hover:-translate-y-1 cursor-pointer"
+            onClick={() => scrollTo("about")}
           >
             View More
-            <i className="fa fa-arrow-down ms-2"></i>
+            <i className="fa fa-arrow-down ml-2"></i>
           </button>
-          <div className="d-flex gap-3 p-1 align-items-center justify-content-center flex-row w-50">
+          <div className="flex gap-3 p-1 items-center justify-center flex-row w-1/2">
             <a
               href="https://www.linkedin.com/in/christopher-rebollar-ramirez/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-dark"
             >
-              <i className="fa fa-linkedin-square fs-2 text-decoration-none text-white"></i>
+              <i className="fa fa-linkedin-square text-3xl no-underline text-white hover:text-beige transition-colors duration-300 cursor-pointer"></i>
             </a>
             <a
               href="https://github.com/crebollarramirez"
@@ -40,7 +36,7 @@ const Welcome = () => {
               rel="noopener noreferrer"
               className="text-dark"
             >
-              <i className="fa fa-github fs-2 text-white"></i>
+              <i className="fa fa-github text-3xl text-white hover:text-beige transition-colors duration-300 cursor-pointer"></i>
             </a>
           </div>
         </div>
