@@ -15,7 +15,7 @@ const Welcome = () => {
       <div className="flex items-start justify-center flex-col text-left gap-6 p-2">
         {language === "EN" ? (
           <h1 className="text-white text-6xl">
-            Hello, I'm,<span className="text-beige"> Chris</span>.
+            Hello, I'm<span className="text-beige"> Chris</span>.
           </h1>
         ) : (
           <h1 className="text-white text-6xl">
