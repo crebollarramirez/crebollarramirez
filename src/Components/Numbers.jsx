@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Number from "./Number";
+import data from "../portfolio_data.json";
+import { useLanguage } from "./LanguageContext";
 
 const Numbers = ({ styles = "" }) => {
+  const { language } = useLanguage();
   const [commitCount, setCommitCount] = useState(null);
   const [issuesClosed, setIssuesClosed] = useState(null);
-  const [projectsCompleted] = useState(5); // Keep as static for now
-  const [technologiesMastered] = useState(10); // Keep as static for now
 
   // Loading states for dynamically fetched numbers
   const [isLoadingCommits, setIsLoadingCommits] = useState(true);
@@ -15,85 +16,90 @@ const Numbers = ({ styles = "" }) => {
   const GITHUB_USERNAME = "crebollarramirez";
   const TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
 
+  const fetchRepos = async () => {
+    const response = await axios.get(
+      `https://api.github.com/users/${GITHUB_USERNAME}/repos`,
+      {
+        headers: {
+          Authorization: TOKEN ? `token ${TOKEN}` : undefined,
+        },
+      }
+    );
+    return response.data;
+  };
+
+  const fetchCommits = async (repo) => {
+    try {
+      const response = await axios.get(
+        `https://api.github.com/repos/${GITHUB_USERNAME}/${repo.name}/commits`,
+        {
+          headers: {
+            Authorization: TOKEN ? `token ${TOKEN}` : undefined,
+          },
+          params: {
+            author: GITHUB_USERNAME,
+          },
+        }
+      );
+      return response.data.length;
+    } catch (error) {
+      if (error.response && error.response.status === 409) {
+        console.warn(
+          `Repository ${repo.name} has no commits or another conflict occurred.`
+        );
+        return 0;
+      } else {
+        throw error;
+      }
+    }
+  };
+
+  const fetchEvents = async () => {
+    const response = await axios.get(
+      `https://api.github.com/users/${GITHUB_USERNAME}/events`,
+      {
+        headers: {
+          Authorization: TOKEN ? `token ${TOKEN}` : undefined,
+        },
+      }
+    );
+    return response.data.filter((event) => event.type === "PushEvent");
+  };
+
+  const fetchIssuesClosed = async () => {
+    const response = await axios.get(
+      `https://api.github.com/search/issues`,
+      {
+        headers: {
+          Authorization: TOKEN ? `token ${TOKEN}` : undefined,
+        },
+        params: {
+          q: `is:issue is:closed author:${GITHUB_USERNAME}`,
+        },
+      }
+    );
+    return response.data.total_count;
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Fetch your repositories
-        const repoResponse = await axios.get(
-          `https://api.github.com/users/${GITHUB_USERNAME}/repos`,
-          {
-            headers: {
-              Authorization: TOKEN ? `token ${TOKEN}` : undefined,
-            },
-          }
-        );
+        const [repos, events, issuesClosedCount] = await Promise.all([
+          fetchRepos(),
+          fetchEvents(),
+          fetchIssuesClosed(),
+        ]);
 
-        const repos = repoResponse.data;
         let totalCommits = 0;
-        let totalIssuesClosed = 0;
+        let totalIssuesClosed = issuesClosedCount;
 
-        // Fetch commits and issues closed for each repo
-        const commitPromises = repos.map(async (repo) => {
-          try {
-            // Fetch commits where the author is you
-            const commitsResponse = await axios.get(
-              `https://api.github.com/repos/${GITHUB_USERNAME}/${repo.name}/commits`,
-              {
-                headers: {
-                  Authorization: TOKEN ? `token ${TOKEN}` : undefined,
-                },
-                params: {
-                  author: GITHUB_USERNAME,
-                },
-              }
-            );
+        const commitPromises = repos.map((repo) => fetchCommits(repo));
+        const commitsResults = await Promise.all(commitPromises);
+        totalCommits += commitsResults.reduce((acc, count) => acc + count, 0);
 
-            totalCommits += commitsResponse.data.length;
-          } catch (error) {
-            if (error.response && error.response.status === 409) {
-              console.warn(
-                `Repository ${repo.name} has no commits or another conflict occurred.`
-              );
-            } else {
-              throw error;
-            }
-          }
-        });
-
-        // Include commits from public events (repositories you contributed to)
-        const eventsResponse = await axios.get(
-          `https://api.github.com/users/${GITHUB_USERNAME}/events`,
-          {
-            headers: {
-              Authorization: TOKEN ? `token ${TOKEN}` : undefined,
-            },
-          }
-        );
-
-        const pushEvents = eventsResponse.data.filter(
-          (event) => event.type === "PushEvent"
-        );
-
-        pushEvents.forEach((event) => {
+        events.forEach((event) => {
           totalCommits += event.payload.size; // size is the number of commits in the push
         });
-
-        // Fetch issues closed in all repositories where you are involved
-        const searchIssuesResponse = await axios.get(
-          `https://api.github.com/search/issues`,
-          {
-            headers: {
-              Authorization: TOKEN ? `token ${TOKEN}` : undefined,
-            },
-            params: {
-              q: `is:issue is:closed author:${GITHUB_USERNAME}`,
-            },
-          }
-        );
-
-        totalIssuesClosed += searchIssuesResponse.data.total_count;
-
-        await Promise.all(commitPromises);
 
         setCommitCount(totalCommits);
         setIssuesClosed(totalIssuesClosed);
@@ -115,16 +121,19 @@ const Numbers = ({ styles = "" }) => {
     <div className={styles}>
       <Number
         num={commitCount}
-        description="Code Commits"
+        description={language === "EN" ? "Total Commits" : "Commits Totales"}
         isLoading={isLoadingCommits}
       />
       <Number
         num={issuesClosed}
-        description="Closed Issues"
+        description={language === "EN" ? "Closed Issues" : "Issues Cerrados"}
         isLoading={isLoadingIssues}
       />
-      <Number num={projectsCompleted} description="Projects Completed" />
-      <Number num={technologiesMastered} description="Technologies Mastered" />
+      <Number num={data.projects[language].length} description={language === "EN" ? "Projects Completed" : "Proyectos Completados"} />
+      <Number
+        num={data.technologies_mastered}
+        description={language === "EN" ? "Technologies Mastered" : "Tecnologías Dominadas"}
+      />
     </div>
   );
 };

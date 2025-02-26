@@ -1,0 +1,254 @@
+{
+  "technologies_mastered": 10,
+  "emails": [
+    "christopherrebollar0@icloud.com",
+    "crebollarramirez@ucsd.edu"
+  ],
+  "github": "https://github.com/crebollarramirez",
+  "linkedin": "https://www.linkedin.com/in/christopher-rebollar-ramirez/",
+  "skills": {
+    "languages": [
+      "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+      "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
+      "https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white",
+      "https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white",
+      "https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white",
+      "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+    ],
+    "tech": [
+      "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
+      "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white",
+      "https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white",
+      "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB",
+      "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white",
+      "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white",
+      "https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white",
+      "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white",
+      "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white",
+      "https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white",
+      "https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white"
+    ],
+    "machineLearning": [
+      "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white",
+      "https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white",
+      "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black",
+      "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white",
+      "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+      "https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white"
+    ]
+  },
+  "projects": {
+    "EN": [
+      {
+        "title": "DaybyDay",
+        "tech": [
+          "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
+          "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+          "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white"
+        ],
+        "details": [
+          "Developed a responsive frontend with React.js and TailwindCSS, building 5+ reusable components for dynamic user interfaces. ",
+          "Designed a robust backend using Python Django and AWS DynamoDB. ",
+          "Integrated OpenAI API and WebSockets for a real-time chatbot.",
+          "Conducted unit testing for backend features using Django Rest Framework (DRF) and implemented 10+ API routes for managing user interactions. Implemented secure user authentication with Django and JWT tokens."
+        ],
+        "githubLink": "https://github.com/crebollarramirez/DayByDay",
+        "type": "Full-Stack Web App"
+      },
+      {
+        "title": "Digits Classifier KNN",
+        "tech": [
+          "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+          "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white",
+          "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+          "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white",
+          "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"
+        ],
+        "details": [
+          "Built a KNN model for MNIST classification, achieving 92.2% accuracy using cosine distance (outperforming Euclidean distance).",
+          "Improved Wine dataset classification accuracy from 71% to 97% through feature normalization.",
+          "Conducted detailed performance evaluations, including training vs. test accuracy comparisons and error analysis on misclassified samples.",
+          "Developed a custom KNN model with support for multiple distances metrics and hyperparameter optimization, matching scikit-learn’s performance. "
+        ],
+        "githubLink": "https://github.com/crebollarramirez/digits-classifier-KNN",
+        "type": "Machine Learning"
+      },
+      {
+        "title": "Perceptron and Logistic Regression for Breast Cancer",
+        "tech": [
+          "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+          "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white",
+          "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+          "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white",
+          "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"
+        ],
+        "details": [
+          "Achieved 98.25% training/testing accuracy with a custom Perceptron model after 900 epochs on the Breast Cancer Wisconsin dataset.",
+          "Compared Perceptron and Logistic Regression models, utilizing NumPy and scikit-learn for binary classification. ",
+          "Applied data normalization and visualized performance trends using Matplotlib for deeper model insights. "
+        ],
+        "githubLink": "https://github.com/crebollarramirez/Perceptron---Logistic-Regression-for-Breast-Cancer",
+        "type": "Machine Learning"
+      },
+      {
+        "title": "Optimizing Fully Convolutional Networks for Semantic Segmentation",
+        "tech": [
+          "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+          "https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white",
+          "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+          "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black",
+          "https://img.shields.io/badge/GPU_Accelerated-000000.svg?style=for-the-badge&logo=nVIDIA&logoColor=green"
+        ],
+        "details": [
+          "Developed and optimized CNN-based segmentation models (U-Net, FCN, DeepLab) in PyTorch on PASCAL VOC-2012, improving Mean IoU from 0.0553 to 0.084 and Pixel Accuracy from 72.8% to 73.6% using class weighting and data augmentation.",
+          "Accelerated model training by 5x with GPU utilization, optimized learning rate scheduling (CosineAnnealingLR), and transfer learning using a pre-trained ResNet34 encoder. ",
+          "Enhanced segmentation accuracy by 3.2% through Xavier weight initialization, batch normalization, and dropout, reducing overfitting and improving generalization."
+        ],
+        "githubLink": "https://github.com/crebollarramirez/FCN-Semantic-Segmentation-Optimization",
+        "type": "Deep Learning"
+      },
+      {
+        "title": "JMGWorkScape",
+        "tech": [
+          "https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white",
+          "https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white"
+        ],
+        "details": [
+          "Co-developed JMGWorkScape, a house management app for tracking work orders and service schedules.",
+          "Implemented an optimized search feature to efficiently retrieve houses by name.",
+          "Created a PDF invoice generator for seamless creation and export of invoices.",
+          "Designed a SwiftUI-based interface to enhance user experience and accessibility.",
+          "Developed a routing feature to optimize service team schedules and resource allocation.",
+          "Implemented full CRUD operations for efficient house management."
+        ],
+        "githubLink": "https://github.com/mikxvii/JMGWorkScape",
+        "type": "iOS App"
+      }
+    ],
+    "ES": [
+      {
+        "title": "DaybyDay",
+        "tech": [
+          "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
+          "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+          "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white"
+        ],
+        "details": [
+          "Desarrolló un frontend responsivo con React.js y TailwindCSS, construyendo más de 5 componentes reutilizables para interfaces de usuario dinámicas.",
+          "Diseñó un backend robusto utilizando Python Django y AWS DynamoDB.",
+          "Integró la API de OpenAI y WebSockets para un chatbot en tiempo real.",
+          "Realizó pruebas unitarias para características del backend usando Django Rest Framework (DRF) e implementó más de 10 rutas de API para gestionar interacciones de usuario. Implementó autenticación de usuario segura con Django y tokens JWT."
+        ],
+        "githubLink": "https://github.com/crebollarramirez/DayByDay",
+        "type": "Full-Stack Web App"
+      },
+      {
+        "title": "Digits Classifier KNN",
+        "tech": [
+          "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+          "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white",
+          "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+          "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white",
+          "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"
+        ],
+        "details": [
+          "Construyó un modelo KNN para la clasificación de MNIST, alcanzando un 92.2% de precisión usando la distancia coseno (superando la distancia euclidiana).",
+          "Mejoró la precisión en la clasificación del conjunto de datos de Wine del 71% al 97% a través de la normalización de características.",
+          "Realizó evaluaciones de rendimiento detalladas, incluyendo comparaciones de precisión entre entrenamiento y pruebas y análisis de errores en muestras mal clasificadas.",
+          "Desarrolló un modelo KNN personalizado con soporte para múltiples métricas de distancia y optimización de hiperparámetros, igualando el rendimiento de scikit-learn."
+        ],
+        "githubLink": "https://github.com/crebollarramirez/digits-classifier-KNN",
+        "type": "Machine Learning"
+      },
+      {
+        "title": "Perceptron and Logistic Regression for Breast Cancer",
+        "tech": [
+          "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+          "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white",
+          "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+          "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white",
+          "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"
+        ],
+        "details": [
+          "Logró un 98.25% de precisión en entrenamiento/pruebas con un modelo de Perceptrón personalizado después de 900 épocas en el conjunto de datos Breast Cancer Wisconsin.",
+          "Comparó modelos de Perceptrón y Regresión Logística, utilizando NumPy y scikit-learn para clasificación binaria.",
+          "Aplicó normalización de datos y visualizó tendencias de rendimiento usando Matplotlib para obtener insights más profundos del modelo."
+        ],
+        "githubLink": "https://github.com/crebollarramirez/Perceptron---Logistic-Regression-for-Breast-Cancer",
+        "type": "Machine Learning"
+      },
+      {
+        "title": "Optimizing Fully Convolutional Networks for Semantic Segmentation",
+        "tech": [
+          "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+          "https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white",
+          "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+          "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black",
+          "https://img.shields.io/badge/GPU_Accelerated-000000.svg?style=for-the-badge&logo=nVIDIA&logoColor=green"
+        ],
+        "details": [
+          "Desarrolló y optimizó modelos de segmentación basados en CNN (U-Net, FCN, DeepLab) en PyTorch sobre PASCAL VOC-2012, mejorando el Mean IoU de 0.0553 a 0.084 y la Precisión de Pixel del 72.8% al 73.6% usando ponderación de clases y aumento de datos.",
+          "Aceleró el entrenamiento del modelo 5 veces con la utilización de GPU, optimizó la programación de la tasa de aprendizaje (CosineAnnealingLR) y aprendizaje transferido usando un codificador ResNet34 preentrenado.",
+          "Mejoró la precisión de la segmentación en un 3.2% a través de la inicialización de pesos Xavier, normalización por lotes y dropout, reduciendo el sobreajuste y mejorando la generalización."
+        ],
+        "githubLink": "https://github.com/crebollarramirez/FCN-Semantic-Segmentation-Optimization",
+        "type": "Deep Learning"
+      },
+      {
+        "title": "JMGWorkScape",
+        "tech": [
+          "https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white",
+          "https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white"
+        ],
+        "details": [
+          "Co-desarrolló JMGWorkScape, una aplicación de gestión de casas para el seguimiento de órdenes de trabajo y calendarios de servicios.",
+          "Implementó una característica de búsqueda optimizada para recuperar casas por nombre de manera eficiente.",
+          "Creó un generador de facturas PDF para la creación y exportación de facturas de forma fluida.",
+          "Diseñó una interfaz basada en SwiftUI para mejorar la experiencia del usuario y la accesibilidad.",
+          "Desarrolló una característica de ruteo para optimizar los horarios del equipo de servicio y la asignación de recursos.",
+          "Implementó operaciones CRUD completas para la gestión eficiente de casas."
+        ],
+        "githubLink": "https://github.com/mikxvii/JMGWorkScape",
+        "type": "iOS App"
+      }
+    ]
+  },
+  "experience": {
+    "EN": [
+      {
+        "title": "Full-Stack Developer",
+        "company": "ACM Hack",
+        "period": "Sep 2024 - Jan 2025",
+        "description": [
+          "Developed Swipe Style, a Tinder-inspired web app for browsing fashion items, using MERN Stack and TailwindCSS.",
+          "Implemented 10 API routes for managing user interactions and integrating Google OAuth for secure authentication.",
+          "Led a team of 5 members, organized weekly meetings, and delegated tasks to ensure efficient development."
+        ]
+      },
+      {
+        "title": "Software Engineer",
+        "company": "APF Hospice, Inc.",
+        "period": "Jan 2025 - Present",
+        "description": ["Developed and maintain 2 responsive company websites using HTML/CSS, Tailwindcss, and Javascript."]
+      }
+    ],
+    "ES": [
+      {
+        "title": "Full-Stack Developer",
+        "company": "ACM Hack",
+        "period": "Sep 2024 - Ene 2025",
+        "description": [
+          "Desarrolló Swipe Style, una aplicación web inspirada en Tinder para explorar artículos de moda, utilizando MERN Stack y TailwindCSS.",
+          "Implementó 10 rutas de API para gestionar interacciones de usuarios e integrar Google OAuth para autenticación segura.",
+          "Lideró un equipo de 5 miembros, organizó reuniones semanales y delegó tareas para asegurar un desarrollo eficiente."
+        ]
+      },
+      {
+        "title": "Software Engineer",
+        "company": "APF Hospice, Inc.",
+        "period": "Ene 2025 - Presente",
+        "description": ["Desarrollé y mantengo 2 sitios web responsivos de la empresa utilizando HTML/CSS, TailwindCSS y Javascript."]
+      }
+    ]
+  }
+}

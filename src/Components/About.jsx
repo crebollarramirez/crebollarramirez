@@ -1,49 +1,25 @@
 import React from "react";
 import Numbers from "./Numbers";
 import Me from "../assets/meSpain.jpg";
+import ResumeButton from "./Resume_Button/ResumeButton";
+import data from "../portfolio_data.json";
+import { useLanguage } from "./LanguageContext";
 
 const About = () => {
-  const languages = [
-    "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
-    "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
-    "https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white",
-    "https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white",
-    "https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white",
-    "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
-  ];
-
-  const tech = [
-    "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
-    "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white",
-    "https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white",
-    "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB",
-    "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white",
-    "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white",
-    "https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white",
-    "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white",
-    "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white",
-    "https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white",
-    "https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white",
-  ];
-
-  const machineLearning = [
-    "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white",
-    "https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white",
-    "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black",
-    "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white",
-    "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
-  ];
+  const { language } = useLanguage();
 
   return (
     <div
       id="about"
-      className="lg:h-full w-full flex flex-col items-center justify-center"
+      className="md:h-full lg:h-full w-full flex flex-col items-center justify-center"
     >
-      <h1 className="text-4xl text-white mb-12">About</h1>
-      <div className="lg:mt-0 flex items-center justify-center h-full">
-        <div className="flex items-center justify-center gap-2 md:gap-5 lg:gap-10 flex-col md:flex-row lg:flex-row">
+      <h1 className="text-4xl text-white mt-4 mb-4 md:mt-0 md:mb-0 lg:mb-0 lg:mt-0">
+        {language === "EN" ? "About Me" : "Sobre mí"}
+      </h1>
+      <div className="lg:mt-0 flex items-center justify-center flex-col h-full gap-4">
+        <div className="flex items-center justify-center gap-4 md:gap-4 lg:gap-10 flex-col md:flex-row lg:flex-row">
           {/* Me and Greeting */}
-          <div className="flex flex-col items-center justify-center gap-3 w-full md:w-[50%] lg:w-[35%]">
+          <div className="flex flex-col items-center justify-center gap-6 w-full md:w-[50%] lg:w-[35%]">
             <div className="w-full flex justify-center items-center">
               <div className="hexagon w-[75%] lg:w-[85%] ">
                 <img src={Me} alt="Person Icon" />
@@ -51,83 +27,101 @@ const About = () => {
             </div>
 
             {/* Greeting Text Column */}
+            <div className="flex flex-col items-center justify-center gap-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300 backdrop-blur-sm p-4">
+              {language === "EN" ? (
+                <h2 className="text-3xl text-white/85">Hello!</h2>
+              ) : (
+                <h2 className="text-3xl text-white/85">Hola!</h2>
+              )}
 
-            <p className="text-white/85 text-left text-lg">
-              I'm a student at the{" "}
-              <span className="text-beige">
-                University of California - San Diego
-              </span>
-              . I am currently studying{" "}
-              <span className="text-beige">Math-Computer Science </span>
-              and <span className="text-beige">Cognitive Science ML</span>. I am
-              interested in{" "}
-              <span className="text-beige">Software Engineering</span> and
-              <span className="text-beige"> Machine Learning</span>.
-            </p>
+              {language === "EN" ? (
+                <p className="text-white/85 text-xl text-left">
+                  I'm a student at the{" "}
+                  <span className="text-beige">
+                    University of California - San Diego
+                  </span>
+                  , currently studying
+                  <span className="text-beige"> Math-Computer Science</span> and
+                  <span className="text-beige"> Cognitive Science</span> with a
+                  specialization in{" "}
+                  <span className="text-beige">Machine Learning</span> and{" "}
+                  <span className="text-beige">Neural Computation</span>. My
+                  interests include
+                  <span className="text-beige"> Software Engineering</span>,
+                  <span className="text-beige"> Full Stack Development</span>,
+                  and
+                  <span className="text-beige"> Machine Learning</span>.
+                </p>
+              ) : (
+                <p className="text-white/85 text-xl text-left">
+                  Soy un estudiante de la {""}
+                  <span className="text-beige">
+                    Universidad de California - San Diego
+                  </span>
+                  , estoy estudiando
+                  <span className="text-beige">
+                    {" "}
+                    Matemáticas-Ciencias de la computación
+                  </span>{" "}
+                  and
+                  <span className="text-beige"> Ciencia cognitiva</span> con
+                  especialización en{" "}
+                  <span className="text-beige">aprendizaje automático</span> y{" "}
+                  <span className="text-beige">computación neuronal</span>. Mis
+                  intereses incluyen la
+                  <span className="text-beige"> ingeniería de software</span>,
+                  el
+                  <span className="text-beige"> desarrollo full stack</span> y
+                  el
+                  <span className="text-beige"> aprendizaje automático</span>.
+                </p>
+              )}
 
-            <Numbers styles="flex items-center justify-center gap-3 flex-wrap" />
-          </div>
-
-          <div className="w-full flex items-center justify-center md:hidden lg:hidden">
-            <button className="w-full text-beige hover:text-beige border-2 border-beige px-8 py-1 transform transition-transform duration-300 hover:-translate-y-1 text-2xl">
-              CV
-            </button>
+              <div className="w-full flex items-center justify-center md:hidden lg:hidden">
+                <ResumeButton size={"w-full py-[0.4em] text-xl"} />
+              </div>
+            </div>
           </div>
 
           {/*Skills and stuff*/}
-          <div className="flex flex-col justify-center items-center text-white w-full md:w-[50%] lg:w-[65%]">
-            <h2 className="text-3xl text-white">Skills</h2>
-            <div className="flex flex-col text-left gap-2 shadow">
-              <h3 className="text-beige text-xl">Languages</h3>
-              <div className="flex flex-wrap gap-1">
-                {languages.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block mb-2"
-                  >
-                    <img src={link} alt="tech-icon" className="logo" />
-                  </a>
+          <div className="flex flex-col justify-center items-center text-white w-full md:w-[50%] lg:w-[65%] bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300 backdrop-blur-sm p-4">
+            {language === "EN" ? (
+              <h2 className="text-3xl text-white/85">Skills</h2>
+            ) : (
+              <h2 className="text-3xl text-white/85">Habilidades</h2>
+            )}
+
+            <div className="flex flex-col text-left gap-4 shadow text-beige text-2xl font-semibold">
+              {language === "EN" ? <h3>Languages</h3> : <h3>Lenguajes</h3>}
+              <div className="flex flex-wrap gap-1 mb-2">
+                {data.skills.languages.map((link, index) => (
+                  <img src={link} alt="tech-icon" className="h-[1.4em]" />
+                ))}
+              </div>
+              {language === "EN" ? <h3>Technology</h3> : <h3>Tecnología</h3>}
+
+              <div className="flex flex-wrap gap-1 mb-2">
+                {data.skills.tech.map((link, index) => (
+                  <img src={link} alt="tech-icon" className="h-[1.4em]" />
                 ))}
               </div>
 
-              <h3 className="text-beige text-xl">Technology</h3>
-              <div className="flex flex-wrap gap-1">
-                {tech.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block mb-2"
-                  >
-                    <img src={link} alt="tech-icon" className="logo" />
-                  </a>
-                ))}
-              </div>
-
-              <h3 className="text-beige text-xl">Machine Learning</h3>
-              <div className="flex flex-wrap gap-1">
-                {machineLearning.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block mb-2"
-                  >
-                    <img src={link} alt="tech-icon" className="logo" />
-                  </a>
+              {language === "EN" ? (
+                <h3>Machine Learning</h3>
+              ) : (
+                <h3>Aprendizaje Automático</h3>
+              )}
+              <div className="flex flex-wrap gap-1 mb-2">
+                {data.skills.machineLearning.map((link, index) => (
+                  <img src={link} alt="tech-icon" className="h-[1.4em]" />
                 ))}
               </div>
             </div>
           </div>
         </div>
+        <Numbers styles="w-full flex items-center justify-around gap-3 flex-wrap bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300 backdrop-blur-sm p-4" />
       </div>
     </div>
   );
 };
-
 export default About;

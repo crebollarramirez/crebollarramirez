@@ -1,10 +1,34 @@
 import React from "react";
 import scrollTo from "../utils";
+import ResumeButton from "./Resume_Button/ResumeButton";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useLanguage } from "./LanguageContext";
 
-const Navbar = () => {
+const Navbar = ({ activeSection }) => {
+  const { language } = useLanguage();
+  const text = {
+    EN: {
+      about: "About Me",
+      experience: "Experience",
+      projects: "Projects",
+      contact: "Contact",
+    },
+    ES: {
+      about: "Sobre mí",
+      experience: "Experiencia",
+      projects: "Proyectos",
+      contact: "Contacto",
+    },
+  };
+
+  const getLinkClass = (section) =>
+    activeSection === section
+      ? "hover:text-beige transition-colors duration-300 cursor-pointer text-beige"
+      : "hover:text-beige transition-colors duration-300 cursor-pointer";
+
   return (
-    <nav className="h-[5%] w-full  items-center justify-between p-4 backdrop-blur-sm lg:text-xl text-sm hidden md:flex lg:flex mt-1">
-      <div className="text-white/85 mr-2 lg:mr-0">
+    <nav className="h-[5%] w-full  items-center justify-between py-4 backdrop-blur-sm lg:text-xl text-sm hidden md:flex lg:flex mt-1">
+      <div className="text-white/85 mr-2 lg:mr-0 transform transition-transform duration-300 hover:-translate-y-1">
         <p onClick={() => scrollTo("welcome")} className="cursor-pointer">
           <span className="font-bold text-beige">Christopher</span>{" "}
           Rebollar-Ramirez
@@ -13,40 +37,42 @@ const Navbar = () => {
       <ul className="flex space-x-4 justify-center items-center text-white/85">
         <li>
           <p
-            className="hover:text-beige transition-colors duration-300 cursor-pointer"
+            className={getLinkClass("about")}
             onClick={() => scrollTo("about")}
           >
-            About
+            {text[language].about}
           </p>
         </li>
         <li>
           <p
-            className="hover:text-beige transition-colors duration-300 cursor-pointer"
+            className={getLinkClass("experience")}
             onClick={() => scrollTo("experience")}
           >
-            Experience
+            {text[language].experience}
           </p>
         </li>
         <li>
           <p
-            className="hover:text-beige transition-colors duration-300 cursor-pointer"
+            className={getLinkClass("projects")}
             onClick={() => scrollTo("projects")}
           >
-            Projects
+            {text[language].projects}
           </p>
         </li>
         <li>
           <p
-            className="hover:text-beige transition-colors duration-300 cursor-pointer"
+            className={getLinkClass("contact")}
             onClick={() => scrollTo("contact")}
           >
-            Contact
+            {text[language].contact}
           </p>
         </li>
+
         <li>
-          <button className="text-beige hover:text-beige border-2 border-beige px-8 lg:px-12 md:py-[0.3em] lg:py-1 transform transition-transform duration-300 hover:-translate-y-1">
-            CV
-          </button>
+          <div className="flex items-center justify-center gap-2">
+            <ResumeButton size="py-2 px-12 text-md lg:text-xl" />
+            <LanguageSwitcher size="py-2 px-4 text-md lg:text-xl" />
+          </div>
         </li>
       </ul>
     </nav>

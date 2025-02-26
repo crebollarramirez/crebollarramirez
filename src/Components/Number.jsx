@@ -22,12 +22,16 @@ const Number = ({ num, description = "", isLoading = false }) => {
         </div>
       ) : (
         <>
-          <h1 className="text-white/85 text-2xl">{num}</h1>
-          <h2 className="text-beige text-lg">{replaceSpaces(description)}</h2>
+          <h1 className="text-white/85 text-3xl md:text-5xl lg:text-5xl">
+            {num}
+          </h1>
+          <h2 className="text-beige text-lg md:text-2xl lg:text-2xl font-semibold">
+            {replaceSpaces(description)}
+          </h2>
         </>
       )}
     </div>
   );
-}
+};
 
 export default Number;
