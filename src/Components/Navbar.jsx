@@ -86,7 +86,7 @@ const Navbar = ({ activeSection, toggleResumeModal }) => {
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <ul className="flex flex-col space-y-6 p-6 text-white/85 backdrop-blur-md">
+          <ul className="flex flex-col space-y-6 p-6 text-white/85 bg-black/60 backdrop-blur-sm">
             <li>
               <p
                 className={getLinkClass("about")}

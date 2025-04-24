@@ -56,7 +56,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center  backdrop-blur-sm bg-black/20">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center   backdrop-blur-sm bg-black/20">
       <div
         ref={modalRef}
         className="border border-beige w-[95%] max-w-4xl max-h-[90vh] flex flex-col"
@@ -73,7 +73,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
           </button>
         </div>
         
-        <div className="border-b border-beige/30 p-2 flex gap-2">
+        <div className="border-b border-beige/30 p-2 flex gap-2 ">
           <button
             onClick={() => setActiveResume("swe")}
             className={`px-4 py-2 transition-colors ${
@@ -100,9 +100,9 @@ const ResumeModal = ({ isOpen, onClose }) => {
           <object
             data={getResumeFile()}
             type="application/pdf"
-            className="w-full h-[65vh]"
+            className="w-full h-[65vh] bg-white"
           >
-            <p className="text-white text-center p-4">
+            <p className="text-black/60 text-center p-4">
               {language === "EN" 
                 ? "Your browser doesn't support viewing PDFs. You can download the resume instead." 
                 : "Tu navegador no admite la visualización de PDF. Puedes descargar el currículum en su lugar."}
