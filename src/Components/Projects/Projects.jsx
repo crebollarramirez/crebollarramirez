@@ -7,7 +7,7 @@ const Projects = () => {
   const { language } = useLanguage();
   return (
     <div
-      className="w-full flex flex-col items-center justify-start bg-dark-gray min-h-screen"
+      className="w-full flex flex-col items-center justify-start bg-dark-gray min-h-screen scroll-mt-24"
       id="projects"
     >
       {language === "EN" ? (

@@ -6,7 +6,7 @@ const Contact = () => {
   const { language } = useLanguage();
   return (
     <div
-      className="h-full w-full flex flex-col items-center justify-start"
+      className="h-full w-full flex flex-col items-center scroll-mt-24"
       id="contact"
     >
       {language === "EN" ? (

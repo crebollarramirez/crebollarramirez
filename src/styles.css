@@ -58,6 +58,32 @@ body::after {
   transition: filter 0.3s ease; /* Smooth transition for blur changes */
 }
 
+.resume-tab::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* Pure black background */
+  z-index: -3; /* Lowest layer */
+}
+
+.resume-tab::after{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/grid.svg");
+  background-size: 30em;
+  background-repeat: repeat;
+  z-index: -1; /* Layer above background color but below the light */
+  filter: blur(var(--blur-amount, 0px)); /* Controlled by JS */
+  transition: filter 0.3s ease; /* Smooth transition for blur changes */
+}
+
 .light {
   position: fixed; /* Stays consistent during scrolling */
   top: 50%;

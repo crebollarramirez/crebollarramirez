@@ -7,11 +7,17 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Experience from "./Components/Experience";
 import Contact from "./Components/Contact";
+import ResumeModal from "./Components/ResumeModal";
 import { LanguageProvider } from "./Components/LanguageContext";
 
 function App() {
   const lightRef = useRef(null); // Reference for the light element
   const [activeSection, setActiveSection] = useState(""); // State to track active section
+  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false); // New state for modal
+
+  const toggleResumeModal = () => {
+    setIsResumeModalOpen(!isResumeModalOpen);
+  };
 
   useEffect(() => {
     const light = lightRef.current;
@@ -58,15 +64,16 @@ function App() {
       <div className="light" ref={lightRef}></div> {/* Light effect */}
       <div className="h-screen flex flex-col justify-center items-center w-[95%] md:w-[90%] lg:w-[70%]">
         <LanguageProvider>
-          <Navbar activeSection={activeSection} />
-          <main className="flex-1 overflow-y-auto hide-scrollbar space-y-10">
+          <Navbar activeSection={activeSection} toggleResumeModal={toggleResumeModal} />
+          <main className="h-screen">
             <Welcome />
-            <About />
+            <About toggleResumeModal={toggleResumeModal} />
             <Experience />
             <Projects />
             <Contact />
             <Footer />
           </main>
+          <ResumeModal isOpen={isResumeModalOpen} onClose={() => setIsResumeModalOpen(false)} />
         </LanguageProvider>
       </div>
     </div>

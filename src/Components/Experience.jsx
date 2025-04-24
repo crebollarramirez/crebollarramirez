@@ -7,7 +7,7 @@ const Experience = () => {
 
   return (
     <div
-      className="w-full flex flex-col items-center justify-start min-h-screen"
+      className="w-full flex flex-col items-center justify-start h-full scroll-mt-24"
       id="experience"
     >
       {language === "EN" ? (
