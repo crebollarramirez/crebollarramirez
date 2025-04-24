@@ -11,9 +11,9 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full flex flex-col items-center justify-center scroll-mt-24 snap-start"
+      className="w-full flex flex-col items-center justify-center scroll-mt-16 md:scroll-mt-32 lg:scroll-mt-24"
     >
-      <h1 className="text-4xl text-white mt-4 mb-4 md:mt-0 md:mb-0 lg:mb-0 lg:mt-0">
+      <h1 className="text-4xl text-white mb-4 md:mt-0 md:mb-0 lg:mb-0 lg:mt-0">
         {language === "EN" ? "About Me" : "Sobre mí"}
       </h1>
       <div className="lg:mt-0 flex items-center justify-center flex-col gap-4 min-h-screen">
@@ -61,10 +61,9 @@ const About = () => {
                   , estoy estudiando
                   <span className="text-beige">
                     {" "}
-                    Matemáticas-Ciencias de la computación
+                    Matemáticas-Ciencias de Computación
                   </span>{" "}
-                  y
-                  <span className="text-beige"> Ciencia Cognitiva</span> con
+                  y<span className="text-beige"> Ciencia Cognitiva</span> con
                   especialización en{" "}
                   <span className="text-beige">aprendizaje automático</span> y{" "}
                   <span className="text-beige">computación neuronal</span>. Mis
@@ -76,10 +75,6 @@ const About = () => {
                   <span className="text-beige"> aprendizaje automático</span>.
                 </p>
               )}
-
-              <div className="w-full flex items-center justify-center md:hidden lg:hidden">
-                <ResumeButton size={"w-full py-[0.4em] text-xl"} />
-              </div>
             </div>
           </div>
 

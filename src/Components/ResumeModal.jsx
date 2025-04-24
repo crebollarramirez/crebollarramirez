@@ -56,7 +56,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center  backdrop-blur-sm">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center  backdrop-blur-sm bg-black/20">
       <div
         ref={modalRef}
         className="border border-beige w-[95%] max-w-4xl max-h-[90vh] flex flex-col"

@@ -65,7 +65,7 @@ function App() {
       <div className="h-screen flex flex-col justify-center items-center w-[95%] md:w-[90%] lg:w-[70%]">
         <LanguageProvider>
           <Navbar activeSection={activeSection} toggleResumeModal={toggleResumeModal} />
-          <main className="h-screen">
+          <main className="h-screen space-y-[6em] lg:space-y-[6em]">
             <Welcome />
             <About toggleResumeModal={toggleResumeModal} />
             <Experience />
