@@ -37,8 +37,8 @@ const Navbar = ({ activeSection, toggleResumeModal }) => {
       : "transform transition-transform duration-300 hover:-translate-y-1";
 
   return (
-    <div className="fixed top-0 left-0 w-[100%] flex justify-center z-50">
-      <nav className="w-[95%] md:w-[90%] lg:w-[70%] flex items-center justify-between px-2 md:px-6 lg:px-6 py-4 backdrop-blur-sm text-xl">
+    <div className="fixed top-0 left-0 w-[100%] flex justify-center z-50  backdrop-blur-sm">
+      <nav className="w-[95%] md:w-[90%] lg:w-[70%] flex items-center justify-between px-2 md:px-6 lg:px-6 py-4 text-xl">
         <div className="text-white/85 mr-2 lg:mr-0 transform transition-transform duration-300 hover:-translate-y-1">
           <p
             onClick={() => handleLinkClick("welcome")}
@@ -82,11 +82,11 @@ const Navbar = ({ activeSection, toggleResumeModal }) => {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden fixed inset-0 top-16 z-40 transition-transform duration-300 ease-in-out ${
-            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          className={`md:hidden fixed inset-x-0 top-16 z-40 transition-all duration-300 ease-in-out ${
+            isMenuOpen ? "translate-y-0 opacity-100 pointer-events-auto" : "translate-y-[-100%] opacity-0 pointer-events-none"
           }`}
         >
-          <ul className="flex flex-col space-y-6 p-6 text-white/85 bg-black/60 backdrop-blur-sm">
+          <ul className="flex flex-col space-y-6 p-6 text-white/85 bg-black/80 backdrop-blur-sm border-b border-white/10">
             <li>
               <p
                 className={getLinkClass("about")}

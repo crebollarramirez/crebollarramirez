@@ -16,7 +16,7 @@ const Contact = () => {
       )}
 
       <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center w-full h-full gap-4">
-        <div className="bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300 flex h-1/3 w-full xl:h-1/3 flex-col justify-start items-center p-2 backdrop-blur-sm">
+        <div className="bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300 flex h-1/3 w-full xl:h-1/3 flex-col justify-start items-center p-4 backdrop-blur-sm">
           {language === "EN" ? (
             <h2 className="text-3xl text-beige mt-4">My Socials</h2>
           ) : (
@@ -30,7 +30,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="text-dark"
             >
-              <i className="fa fa-linkedin-square text-6xl no-underline text-white/85  hover:text-beige transition-colors duration-300 cursor-pointer"></i>
+              <i className="fa fa-linkedin-square text-5xl md:text-6xl no-underline text-white/85 hover:text-beige transition-colors duration-300 cursor-pointer"></i>
             </a>
             <a
               href={data.github}
@@ -38,12 +38,12 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="text-dark"
             >
-              <i className="fa fa-github text-6xl text-white/85  hover:text-beige transition-colors duration-300 cursor-pointer"></i>
+              <i className="fa fa-github text-5xl md:text-6xl text-white/85 hover:text-beige transition-colors duration-300 cursor-pointer"></i>
             </a>
           </div>
         </div>
 
-        <div className="bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300 flex h-1/3 w-full xl:h-1/3 flex-col justify-start items-center p-2 backdrop-blur-sm">
+        <div className="bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300 flex h-1/3 w-full xl:h-1/3 flex-col justify-start items-center p-4 backdrop-blur-sm">
           {language === "EN" ? (
             <h2 className="text-3xl text-beige mt-4">Email</h2>
           ) : (
@@ -55,7 +55,7 @@ const Contact = () => {
                 <a
                   key={i}
                   href={`mailto:${email}`}
-                  className="text-2xl text-white/85  hover:text-beige transition-colors duration-300"
+                  className="text-base md:text-2xl text-white/85 hover:text-beige transition-colors duration-300 break-all text-center px-2"
                 >
                   {email}
                 </a>
