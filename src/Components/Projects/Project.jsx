@@ -1,17 +1,28 @@
-const Project = ({ title, tech, details, githubLink, type }) => {
+import LinkIcon from "../LinkIcon";
+
+const Project = ({ title, tech, details, githubLink, type, link }) => {
   return (
     <div className="flex flex-col items-center justify-start p-6 shadow gap-4 w-full h-full bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">
       <div className="flex items-center justify-start flex-col gap-1 w-full">
-        <h1 className="text-3xl font-semibold text-center">
-          <a
-            href={githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="no-underline text-beige"
-          >
-            {title} <i className="fa fa-github text-3xl"></i>
-          </a>
-        </h1>
+        <div className="flex items-center justify-center w-full relative">
+          <h1 className="text-3xl font-semibold text-center">
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="no-underline text-beige"
+            >
+              {title} <i className="fa fa-github text-3xl"></i>
+            </a>
+          </h1>
+
+          {link && (
+            <div className="absolute right-0">
+              <LinkIcon link={link} />
+            </div>
+          )}
+        </div>
+
         <h3 className="text-base text-white/60">{type}</h3>
       </div>
 

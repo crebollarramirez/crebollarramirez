@@ -6,10 +6,10 @@ const LinkIcon = ({ link }) => {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="cursor-pointer hover:scale-110 transition-transform duration-200"
+      className="cursor-pointer"
     >
       <svg
-        className="w-auto h-9 text-beige"
+        className="w-auto h-9 text-beige hover:scale-110 transition-transform duration-200"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

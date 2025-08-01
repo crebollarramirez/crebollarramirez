@@ -91,6 +91,24 @@
         "title": "Proyectos",
         "items": [
             {
+                "title": "ICE Tracker",
+                "tech": [
+                    "https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white",
+                    "https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white",
+                    "https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase",
+                    "https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white"
+                ],
+                "details": [
+                    "Construí una aplicación web en tiempo real que permite a comunidades inmigrantes reportar y rastrear de forma anónima la actividad de ICE, con el apoyo de más de 500 usuarios activos.",
+                    "Diseñé un backend sin servidor utilizando Firebase, la API de Google Maps y OpenAI para geolocalización, moderación de contenido y archivado automático de pines mediante tareas programadas.",
+                    "Desarrollé una interfaz de usuario interactiva y adaptable usando Next.js, React Leaflet y Tailwind CSS, con internacionalización multilingüe mediante next-intl.",
+                    "Mejoré la confiabilidad del código mediante pruebas unitarias e integrales con Jest, y optimicé el despliegue usando CI/CD automatizado con Vercel y Firebase Hosting."
+                ],
+                "githubLink": "https://github.com/crebollarramirez/ice_tracker",
+                "type": "Full-Stack Web App",
+                "link": "https://iceinmyarea.org"
+            },
+            {
                 "title": "Digits Classifier KNN",
                 "tech": [
                     "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",

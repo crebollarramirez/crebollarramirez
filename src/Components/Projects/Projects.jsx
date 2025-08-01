@@ -23,6 +23,7 @@ const Projects = () => {
             details={project.details}
             githubLink={project.githubLink}
             type={project.type}
+            link={project.link}
           />
         ))}
       </div>
