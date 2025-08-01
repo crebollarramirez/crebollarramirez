@@ -1,24 +1,23 @@
-import React from "react";
 import Project from "./Project";
-import data from "../../portfolio_data.json";
-import { useLanguage } from "../LanguageContext";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
-  const { language } = useLanguage();
+  const { t } = useTranslation();
+  const projectsData = t("projects.items", { returnObjects: true });
+
   return (
     <div
       className="w-full flex flex-col items-center justify-start bg-dark-gray min-h-screen scroll-mt-16 md:scroll-mt-32 lg:scroll-mt-24"
       id="projects"
     >
-      {language === "EN" ? (
-        <h1 className="text-4xl text-white mb-6 md:mb-6 lg:mb-12">Projects</h1>
-      ) : (
-        <h1 className="text-4xl text-white mb-6 md:mb-6 lg:mb-12">Proyectos</h1>
-      )}
+      <h1 className="text-4xl text-white mb-6 md:mb-6 lg:mb-12">
+        {t("projects.title")}
+      </h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        {data.projects[language].map((project, index) => (
+        {projectsData.map((project, index) => (
           <Project
+            key={index}
             title={project.title}
             tech={project.tech}
             details={project.details}

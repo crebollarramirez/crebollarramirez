@@ -1,32 +1,25 @@
-import React from "react";
-import data from "../portfolio_data.json";
-import { useLanguage } from "./LanguageContext";
+import { useTranslation } from "react-i18next";
 
 const Experience = () => {
-  const { language } = useLanguage();
+  const { t } = useTranslation();
+  const experienceData = t("experience.jobs", { returnObjects: true });
 
   return (
     <div
       className="w-full flex flex-col items-center justify-start min-h-screen scroll-mt-16 md:scroll-mt-32 lg:scroll-mt-24"
       id="experience"
     >
-      {language === "EN" ? (
-        <h1 className="text-4xl text-white mb-6 md:mb-6 lg:mb-12">
-          Experience
-        </h1>
-      ) : (
-        <h1 className="text-4xl text-white mb-6 md:mb-6 lg:mb-12">
-          Experiencia
-        </h1>
-      )}
+      <h1 className="text-4xl text-white mb-6 md:mb-6 lg:mb-12">
+        {t("experience.title")}
+      </h1>
 
       <div className="w-full lg:w-[60%]">
-        {data.experience[language].map((exp, index) => (
+        {experienceData.map((exp, index) => (
           <div key={index} className="mb-8 flex w-full">
             {/* Timeline line */}
             <div className="flex flex-col items-center">
               <div className="w-4 h-4 rounded-full bg-beige"></div>
-              {index !== data.experience[language].length - 1 && (
+              {index !== experienceData.length - 1 && (
                 <div className="w-0.5 h-full bg-beige/30"></div>
               )}
             </div>

@@ -1,17 +1,22 @@
-import React from "react";
-import { useLanguage } from "./LanguageContext";
+import { useTranslation } from "react-i18next";
 
 const LanguageSwitcher = ({ size = "" }) => {
-  const { language, toggleLanguage } = useLanguage();
+  const { i18n } = useTranslation();
 
-  const nextLanguage = language === "EN" ? "ES" : "EN";
+  const currentLanguage = i18n.language;
+  const nextLanguage = currentLanguage === "en" ? "es" : "en";
+  const displayLanguage = currentLanguage === "en" ? "ES" : "EN";
+
+  const handleLanguageChange = () => {
+    i18n.changeLanguage(nextLanguage);
+  };
 
   return (
     <button
       className={`text-beige hover:text-beige border-2 border-beige transform transition-transform duration-300 hover:-translate-y-1 ${size}`}
-      onClick={() => toggleLanguage(nextLanguage)}
+      onClick={handleLanguageChange}
     >
-      {nextLanguage}
+      {displayLanguage}
     </button>
   );
 };

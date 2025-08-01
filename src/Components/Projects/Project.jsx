@@ -1,5 +1,3 @@
-import React from "react";
-
 const Project = ({ title, tech, details, githubLink, type }) => {
   return (
     <div className="flex flex-col items-center justify-start p-6 shadow gap-4 w-full h-full bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">

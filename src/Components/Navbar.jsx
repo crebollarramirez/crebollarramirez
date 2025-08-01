@@ -1,26 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import scrollTo from "../utils";
 import ResumeButton from "./Resume_Button/ResumeButton";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { useLanguage } from "./LanguageContext";
+import { useTranslation } from "react-i18next";
 
 const Navbar = ({ activeSection, toggleResumeModal }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { language } = useLanguage();
-  const text = {
-    EN: {
-      about: "About Me",
-      experience: "Experience",
-      projects: "Projects",
-      contact: "Contact",
-    },
-    ES: {
-      about: "Sobre mí",
-      experience: "Experiencia",
-      projects: "Proyectos",
-      contact: "Contacto",
-    },
-  };
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -83,7 +69,9 @@ const Navbar = ({ activeSection, toggleResumeModal }) => {
         {/* Mobile Menu */}
         <div
           className={`md:hidden fixed inset-x-0 top-16 z-40 transition-all duration-300 ease-in-out ${
-            isMenuOpen ? "translate-y-0 opacity-100 pointer-events-auto" : "translate-y-[-100%] opacity-0 pointer-events-none"
+            isMenuOpen
+              ? "translate-y-0 opacity-100 pointer-events-auto"
+              : "translate-y-[-100%] opacity-0 pointer-events-none"
           }`}
         >
           <ul className="flex flex-col space-y-6 p-6 text-white/85 bg-black/80 backdrop-blur-sm border-b border-white/10">
@@ -92,7 +80,7 @@ const Navbar = ({ activeSection, toggleResumeModal }) => {
                 className={getLinkClass("about")}
                 onClick={() => handleLinkClick("about")}
               >
-                {text[language].about}
+                {t("navbar.about")}
               </p>
             </li>
             <li>
@@ -100,7 +88,7 @@ const Navbar = ({ activeSection, toggleResumeModal }) => {
                 className={getLinkClass("experience")}
                 onClick={() => handleLinkClick("experience")}
               >
-                {text[language].experience}
+                {t("navbar.experience")}
               </p>
             </li>
             <li>
@@ -108,7 +96,7 @@ const Navbar = ({ activeSection, toggleResumeModal }) => {
                 className={getLinkClass("projects")}
                 onClick={() => handleLinkClick("projects")}
               >
-                {text[language].projects}
+                {t("navbar.projects")}
               </p>
             </li>
             <li>
@@ -116,7 +104,7 @@ const Navbar = ({ activeSection, toggleResumeModal }) => {
                 className={getLinkClass("contact")}
                 onClick={() => handleLinkClick("contact")}
               >
-                {text[language].contact}
+                {t("navbar.contact")}
               </p>
             </li>
             <li className="pt-4">
@@ -138,7 +126,7 @@ const Navbar = ({ activeSection, toggleResumeModal }) => {
               className={getLinkClass("about")}
               onClick={() => scrollTo("about")}
             >
-              {text[language].about}
+              {t("navbar.about")}
             </p>
           </li>
           <li>
@@ -146,7 +134,7 @@ const Navbar = ({ activeSection, toggleResumeModal }) => {
               className={getLinkClass("experience")}
               onClick={() => scrollTo("experience")}
             >
-              {text[language].experience}
+              {t("navbar.experience")}
             </p>
           </li>
           <li>
@@ -154,7 +142,7 @@ const Navbar = ({ activeSection, toggleResumeModal }) => {
               className={getLinkClass("projects")}
               onClick={() => scrollTo("projects")}
             >
-              {text[language].projects}
+              {t("navbar.projects")}
             </p>
           </li>
           <li>
@@ -162,7 +150,7 @@ const Navbar = ({ activeSection, toggleResumeModal }) => {
               className={getLinkClass("contact")}
               onClick={() => scrollTo("contact")}
             >
-              {text[language].contact}
+              {t("navbar.contact")}
             </p>
           </li>
 

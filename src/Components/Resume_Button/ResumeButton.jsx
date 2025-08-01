@@ -1,4 +1,3 @@
-import React from "react";
 import FileIcon from "./fileIcon";
 
 const ResumeButton = ({ size = "", onClick }) => {

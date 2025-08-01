@@ -1,11 +1,11 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import sweResume from "../assets/crebollarramirez_resumeswe.pdf";
 import mlResume from "../assets/crebollarramirez_resumeML.pdf";
-import { useLanguage } from "./LanguageContext";
+import { useTranslation } from "react-i18next";
 
 const ResumeModal = ({ isOpen, onClose }) => {
   const modalRef = useRef(null);
-  const { language } = useLanguage();
+  const { t } = useTranslation();
   const [activeResume, setActiveResume] = useState("swe"); // Default to SWE resume
 
   useEffect(() => {
@@ -38,15 +38,9 @@ const ResumeModal = ({ isOpen, onClose }) => {
   }, [isOpen, onClose]);
 
   const getResumeTitle = () => {
-    if (language === "EN") {
-      return activeResume === "swe" 
-        ? "Software Engineering Resume" 
-        : "Machine Learning Resume";
-    } else {
-      return activeResume === "swe" 
-        ? "Currículum de Ingeniería de Software" 
-        : "Currículum de Aprendizaje Automático";
-    }
+    return activeResume === "swe"
+      ? t("resumeModal.sweTitle")
+      : t("resumeModal.mlTitle");
   };
 
   const getResumeFile = () => {
@@ -62,9 +56,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
         className="border border-beige w-[95%] max-w-4xl max-h-[90vh] flex flex-col"
       >
         <div className="flex justify-between items-center border-b border-beige/30 p-4">
-          <h2 className="text-2xl text-beige">
-            {getResumeTitle()}
-          </h2>
+          <h2 className="text-2xl text-beige">{getResumeTitle()}</h2>
           <button
             onClick={onClose}
             className="text-beige text-2xl focus:outline-none border border-beige px-4 transform transition-transform duration-300 hover:-translate-y-1"
@@ -72,7 +64,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
             ×
           </button>
         </div>
-        
+
         <div className="border-b border-beige/30 p-2 flex gap-2 ">
           <button
             onClick={() => setActiveResume("swe")}
@@ -82,7 +74,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
                 : "text-beige transform transition-transform duration-300 hover:-translate-y-1 border border-beige"
             }`}
           >
-            {language === "EN" ? "Software Engineering" : "Ingeniería de Software"}
+            {t("resumeModal.sweTitleShort")}
           </button>
           <button
             onClick={() => setActiveResume("ml")}
@@ -92,10 +84,10 @@ const ResumeModal = ({ isOpen, onClose }) => {
                 : "text-beige transform transition-transform duration-300 hover:-translate-y-1 border border-beige"
             }`}
           >
-            {language === "EN" ? "Machine Learning" : "Aprendizaje Automático"}
+            {t("resumeModal.mlTitleShort")}
           </button>
         </div>
-        
+
         <div className="overflow-auto flex-grow p-2">
           <object
             data={getResumeFile()}
@@ -103,20 +95,20 @@ const ResumeModal = ({ isOpen, onClose }) => {
             className="w-full h-[65vh] bg-white"
           >
             <p className="text-black/60 text-center p-4">
-              {language === "EN" 
-                ? "Your browser doesn't support viewing PDFs. You can download the resume instead." 
-                : "Tu navegador no admite la visualización de PDF. Puedes descargar el currículum en su lugar."}
+              {t("resumeModal.pdfError")}
             </p>
           </object>
         </div>
-        
+
         <div className="border-t border-beige/30 p-4 flex justify-end">
           <a
             href={getResumeFile()}
-            download={`crebollarramirez_${activeResume === "swe" ? "swe" : "ml"}_resume.pdf`}
+            download={`crebollarramirez_${
+              activeResume === "swe" ? "swe" : "ml"
+            }_resume.pdf`}
             className="text-beige border border-beige py-2 px-4 transform transition-transform duration-300 hover:-translate-y-1"
           >
-            {language === "EN" ? "Download" : "Descargar"}
+            {t("resumeModal.download")}
           </a>
         </div>
       </div>

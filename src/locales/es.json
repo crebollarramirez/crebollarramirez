@@ -1,0 +1,234 @@
+{
+    "navbar": {
+        "about": "Sobre mí",
+        "experience": "Experiencia",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "resumeModal": {
+        "sweTitleShort": "Ingeniería de Software",
+        "mlTitleShort": "Aprendizaje Automático",
+        "sweTitle": "Currículum de Ingeniería de Software",
+        "mlTitle": "Currículum de Aprendizaje Automático",
+        "pdfError": "Tu navegador no admite la visualización de PDF. Puedes descargar el currículum en su lugar.",
+        "download": "Descargar"
+    },
+    "welcome": {
+        "greeting": "Hola, soy<span class=\"text-beige\"> Chris</span>.",
+        "title": "Un <span class=\"text-beige\">Ingeniero de Software Full Stack</span>.",
+        "viewMore": "Ver Más"
+    },
+    "about": {
+        "title": "Sobre mí",
+        "hello": "Hola!",
+        "introduction": "Soy un estudiante de la <span class=\"text-beige\">Universidad de California - San Diego</span>, estoy estudiando<span class=\"text-beige\"> Matemáticas-Ciencias de Computación</span> y<span class=\"text-beige\"> Ciencia Cognitiva</span> con especialización en <span class=\"text-beige\">aprendizaje automático</span> y <span class=\"text-beige\">computación neuronal</span>. Mis intereses incluyen la<span class=\"text-beige\"> ingeniería de software</span>, el<span class=\"text-beige\"> desarrollo full stack</span> y el<span class=\"text-beige\"> aprendizaje automático</span>.",
+        "skills": "Habilidades",
+        "languages": "Lenguajes",
+        "technology": "Tecnología",
+        "machineLearning": "Aprendizaje Automático",
+        "skillsData": {
+            "languages": [
+                "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+                "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
+                "https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white",
+                "https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white",
+                "https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white",
+                "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+            ],
+            "tech": [
+                "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
+                "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white",
+                "https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white",
+                "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB",
+                "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white",
+                "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white",
+                "https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white",
+                "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white",
+                "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white",
+                "https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white",
+                "https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white"
+            ],
+            "machineLearning": [
+                "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white",
+                "https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white",
+                "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black",
+                "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white",
+                "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+                "https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white"
+            ]
+        }
+    },
+    "experience": {
+        "title": "Experiencia",
+        "jobs": [
+            {
+                "title": "Full-Stack Developer",
+                "company": "ACM Hack",
+                "period": "Sep 2024 - Ene 2025",
+                "description": [
+                    "Desarrollé Swipe Style, una aplicación web inspirada en Tinder para explorar artículos de moda, utilizando MERN Stack y TailwindCSS.",
+                    "Implementé 10 rutas de API para gestionar interacciones de usuarios e integrar Google OAuth para autenticación segura.",
+                    "Lideré un equipo de 5 miembros, organizó reuniones semanales y delegó tareas para asegurar un desarrollo eficiente."
+                ]
+            },
+            {
+                "title": "Software Engineer",
+                "company": "APF Hospice, Inc.",
+                "period": "Ene 2025 - Presente",
+                "description": [
+                    "Desarrollé y mantengo 2 sitios web responsivos de la empresa utilizando HTML/CSS, TailwindCSS y Javascript.",
+                    "Responsable del desarrollo de herramientas internas diseñadas para facilitar la transferencia eficiente de datos de pacientes, beneficiando así los flujos de trabajo de los empleados."
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "title": "Proyectos",
+        "items": [
+            {
+                "title": "DaybyDay",
+                "tech": [
+                    "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
+                    "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+                    "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white"
+                ],
+                "details": [
+                    "Desarrollé un frontend responsivo con React.js y TailwindCSS, construyendé más de 5 componentes reutilizables para interfaces de usuario dinámicas.",
+                    "Diseñé un backend robusto utilizando Python Django y AWS DynamoDB.",
+                    "Integré la API de OpenAI y WebSockets para un chatbot en tiempo real.",
+                    "Realizé pruebas unitarias para características del backend usando Django Rest Framework (DRF) e implementó más de 10 rutas de API para gestionar interacciones de usuario. Implementé autenticación de usuario segura con Django y tokens JWT."
+                ],
+                "githubLink": "https://github.com/crebollarramirez/DayByDay",
+                "type": "Full-Stack Web App"
+            },
+            {
+                "title": "Digits Classifier KNN",
+                "tech": [
+                    "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+                    "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white",
+                    "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+                    "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white",
+                    "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"
+                ],
+                "details": [
+                    "Construyé un modelo KNN para la clasificación de MNIST, alcanzando un 92.2% de precisión usando la distancia coseno (superando la distancia euclidiana).",
+                    "Mejoré la precisión en la clasificación del conjunto de datos de Wine del 71% al 97% a través de la normalización de características.",
+                    "Realizé evaluaciones de rendimiento detalladas, incluyendo comparaciones de precisión entre entrenamiento y pruebas y análisis de errores en muestras mal clasificadas.",
+                    "Desarrollé un modelo KNN personalizado con soporte para múltiples métricas de distancia y optimización de hiperparámetros, igualando el rendimiento de scikit-learn."
+                ],
+                "githubLink": "https://github.com/crebollarramirez/digits-classifier-KNN",
+                "type": "Machine Learning"
+            },
+            {
+                "title": "Perceptron and Logistic Regression for Breast Cancer",
+                "tech": [
+                    "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+                    "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white",
+                    "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+                    "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white",
+                    "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"
+                ],
+                "details": [
+                    "Logré un 98.25% de precisión en entrenamiento/pruebas con un modelo de Perceptrón personalizado después de 900 épocas en el conjunto de datos Breast Cancer Wisconsin.",
+                    "Comparé modelos de Perceptrón y Regresión Logística, utilizando NumPy y scikit-learn para clasificación binaria.",
+                    "Aplicé normalización de datos y visualizó tendencias de rendimiento usando Matplotlib para obtener insights más profundos del modelo."
+                ],
+                "githubLink": "https://github.com/crebollarramirez/Perceptron---Logistic-Regression-for-Breast-Cancer",
+                "type": "Machine Learning"
+            },
+            {
+                "title": "Optimizing Fully Convolutional Networks for Semantic Segmentation",
+                "tech": [
+                    "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+                    "https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white",
+                    "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+                    "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black",
+                    "https://img.shields.io/badge/GPU_Accelerated-000000.svg?style=for-the-badge&logo=nVIDIA&logoColor=green"
+                ],
+                "details": [
+                    "Desarrollé y optimizé modelos de segmentación basados en CNN (U-Net, FCN, DeepLab) en PyTorch sobre PASCAL VOC-2012, mejorando el Mean IoU de 0.0553 a 0.084 y la Precisión de Pixel del 72.8% al 73.6% usando ponderación de clases y aumento de datos.",
+                    "Aceleré el entrenamiento del modelo 5 veces con la utilización de GPU, optimizó la programación de la tasa de aprendizaje (CosineAnnealingLR) y aprendizaje transferido usando un codificador ResNet34 preentrenado.",
+                    "Mejoré la precisión de la segmentación en un 3.2% a través de la inicialización de pesos Xavier, normalización por lotes y dropout, reduciendo el sobreajuste y mejorando la generalización."
+                ],
+                "githubLink": "https://github.com/crebollarramirez/FCN-Semantic-Segmentation-Optimization",
+                "type": "Deep Learning"
+            },
+            {
+                "title": "JMGWorkScape",
+                "tech": [
+                    "https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white",
+                    "https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white"
+                ],
+                "details": [
+                    "Co-desarrollé JMGWorkScape, una aplicación de gestión de casas para el seguimiento de órdenes de trabajo y calendarios de servicios.",
+                    "Implementé una característica de búsqueda optimizada para recuperar casas por nombre de manera eficiente.",
+                    "Creé un generador de facturas PDF para la creación y exportación de facturas de forma fluida.",
+                    "Diseñé una interfaz basada en SwiftUI para mejorar la experiencia del usuario y la accesibilidad.",
+                    "Desarrollé una característica de ruteo para optimizar los horarios del equipo de servicio y la asignación de recursos.",
+                    "Implementé operaciones CRUD completas para la gestión eficiente de casas."
+                ],
+                "githubLink": "https://github.com/mikxvii/JMGWorkScape",
+                "type": "iOS App"
+            },
+            {
+                "title": "Shakespeare RNN",
+                "tech": [
+                    "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+                    "https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white",
+                    "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+                    "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"
+                ],
+                "details": [
+                    "Alcanzé una pérdida de prueba mínima de 1.3237 desarrollando modelos LSTM y RNN capaces de manejar secuencias de hasta 512 caracteres, optimizados con una configuración de doble capa oculta de 300 neuronas.",
+                    "Mejoré la convergencia del entrenamiento y la calidad del texto utilizando teacher forcing, lo que incrementó significativamente el rendimiento del modelo en distintos niveles de temperatura.",
+                    "Equilibré gramática y creatividad en la generación de texto para imitar el estilo de Shakespeare con temperaturas medias."
+                ],
+                "githubLink": "https://github.com/crebollarramirez/Shakespeare-RNN",
+                "type": "Deep Learning | PLN"
+            },
+            {
+                "title": "Embeddings de Números de Fourier para Aritmética en GPT-2",
+                "tech": [
+                    "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+                    "https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white",
+                    "https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"
+                ],
+                "details": [
+                    "Diseñé y afiné GPT-2 utilizando Embeddings de Números de Fourier (FoNE), alcanzando más del 99% de precisión en sumas y una mejora de 15× en divisiones enteras frente al modelo base.",
+                    "Realicé un análisis detallado en el espacio de Fourier de las capas MLP y de atención, identificando roles específicos de frecuencia en el razonamiento aritmético (magnitud vs. modularidad).",
+                    "Construí conjuntos de datos aritméticos personalizados (más de 720k muestras), optimicé el entrenamiento con programación de coseno, e integré herramientas de registro con WandB y perfilado de inferencia."
+                ],
+                "githubLink": "",
+                "type": "Deep Learning | PLN"
+            },
+            {
+                "title": "Study Buddy",
+                "tech": [
+                    "https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white",
+                    "https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white",
+                    "https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white",
+                    "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
+                ],
+                "details": [
+                    "Desarrollé el frontend responsivo utilizando Next.js y TailwindCSS para una interfaz moderna y limpia.",
+                    "Integré autenticación segura con Google OAuth, permitiendo acceso basado en roles para estudiantes y docentes.",
+                    "Utilicé MongoDB para gestionar perfiles de usuario, conversaciones del chatbot y datos de la aplicación.",
+                    "Construí el backend con Flask, WebSockets y la API de OpenAI para habilitar conversaciones interactivas en tiempo real con el chatbot."
+                ],
+                "githubLink": "https://github.com/nickswetlin/study-buddy",
+                "type": "Aplicación Web Full-Stack"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contacto",
+        "socials": "Mis Redes Sociales",
+        "email": "Correo Electrónico",
+        "emails": [
+            "christopherrebollar0@icloud.com",
+            "crebollarramirez@ucsd.edu"
+        ],
+        "linkedin": "https://www.linkedin.com/in/christopher-rebollar-ramirez/",
+        "github": "https://github.com/crebollarramirez"
+    }
+}
