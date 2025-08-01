@@ -21,7 +21,7 @@
     "about": {
         "title": "About Me",
         "hello": "Hello!",
-        "introduction": "I'm a student at the <span class=\"text-beige\">University of California - San Diego</span>, currently studying<span class=\"text-beige\"> Math-Computer Science</span> and<span class=\"text-beige\"> Cognitive Science</span> with a specialization in <span class=\"text-beige\">Machine Learning</span> and <span class=\"text-beige\">Neural Computation</span>. My interests include<span class=\"text-beige\"> Software Engineering</span>,<span class=\"text-beige\"> Full Stack Development</span>, and<span class=\"text-beige\"> Machine Learning</span>.",
+        "introduction": "I'm a recent graduate from the <span class=\"text-beige\">University of California - San Diego</span>, where I earned degrees in<span class=\"text-beige\"> Math-Computer Science</span> and<span class=\"text-beige\"> Cognitive Science</span> with a specialization in <span class=\"text-beige\">Machine Learning</span> and <span class=\"text-beige\">Neural Computation</span>. My interests include<span class=\"text-beige\"> Software Engineering</span>,<span class=\"text-beige\"> Full Stack Development</span>, and<span class=\"text-beige\"> Machine Learning</span>.",
         "skills": "Skills",
         "languages": "Languages",
         "technology": "Technology",
@@ -29,11 +29,11 @@
         "skillsData": {
             "languages": [
                 "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+                "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
                 "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
                 "https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white",
                 "https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white",
-                "https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white",
-                "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                "https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white"
             ],
             "tech": [
                 "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
@@ -41,12 +41,13 @@
                 "https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white",
                 "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB",
                 "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white",
-                "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white",
                 "https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white",
                 "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white",
                 "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white",
                 "https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white",
-                "https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white"
+                "https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white",
+                "https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34",
+                "https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"
             ],
             "machineLearning": [
                 "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white",
@@ -76,8 +77,10 @@
                 "company": "APF Hospice, Inc.",
                 "period": "Jan 2025 - Present",
                 "description": [
-                    "Developed and maintain 2 responsive company websites using HTML/CSS, Tailwindcss, and Javascript.",
-                    "Responsible for developing internal tools designed to facilitate the efficient transfer of patient data, thereby benefiting employee workflows."
+                    "Migrated website from Wix to custom Next.js app deployed on Vercel, improving responsiveness, accessibility, and performance.",
+                    "Implemented multilingual support with next-intl for enhanced accessibility and SEO in English and Spanish.",
+                    "Integrated Formspree for streamlined client communication through efficient form handling.",
+                    "Collaborated with stakeholders to align technical solutions with organizational mission and community outreach goals."
                 ]
             }
         ]
@@ -85,23 +88,6 @@
     "projects": {
         "title": "Projects",
         "items": [
-            {
-                "title": "DaybyDay",
-                "tech": [
-                    "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
-                    "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
-                    "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white",
-                    "https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white"
-                ],
-                "details": [
-                    "Developed a responsive frontend with React.js and TailwindCSS, building 5+ reusable components for dynamic user interfaces. ",
-                    "Designed a robust backend using Python Django and AWS DynamoDB. ",
-                    "Integrated OpenAI API and WebSockets for a real-time chatbot.",
-                    "Conducted unit testing for backend features using Django Rest Framework (DRF) and implemented 10+ API routes for managing user interactions. Implemented secure user authentication with Django and JWT tokens."
-                ],
-                "githubLink": "https://github.com/crebollarramirez/DayByDay",
-                "type": "Full-Stack Web App"
-            },
             {
                 "title": "Digits Classifier KNN",
                 "tech": [
@@ -231,5 +217,9 @@
         ],
         "linkedin": "https://www.linkedin.com/in/christopher-rebollar-ramirez/",
         "github": "https://github.com/crebollarramirez"
+    },
+    "footer": {
+        "copyright": "© 2025 Christopher Rebollar-Ramirez",
+        "poweredBy": "Powered by React.js"
     }
 }
