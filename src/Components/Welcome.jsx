@@ -6,7 +6,7 @@ const Welcome = () => {
 
   return (
     <div
-      className="h-full flex items-center justify-center flex-col"
+      className="w-full min-h-full flex items-center justify-center flex-col"
       id="welcome"
     >
       <div className="flex items-start justify-center flex-col text-left gap-6 p-2">
@@ -21,17 +21,14 @@ const Welcome = () => {
         />
 
         {/* Button and Links */}
-        <div className="flex items-center justify-center flex-row w-full h-full">
-          <div className="flex items-center justify-center flex-row gap-2 w-full h-full">
-            {" "}
+        <div className="flex items-stretch justify-center flex-row w-full h-full">
             <button
-              className="w-full self-stretch border-2 border-beige text-beige transition-transform duration-300 hover:-translate-y-1 cursor-pointer flex flex-row items-center justify-center"
+              className="w-full border-2 border-beige text-beige transition-transform duration-300 hover:-translate-y-1 cursor-pointer flex flex-row items-center justify-center"
               onClick={() => scrollTo("about")}
             >
               <p>{t("welcome.viewMore")}</p>
               <i className="fa fa-arrow-down ml-2"></i>
             </button>
-          </div>
           <div className="flex gap-3 p-1 items-center justify-center flex-row w-1/2">
             <a
               href={t("contact.linkedin")}

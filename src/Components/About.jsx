@@ -8,12 +8,12 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full flex flex-col items-center justify-center scroll-mt-16 md:scroll-mt-32 lg:scroll-mt-24"
+      className="w-full min-h-full flex flex-col items-center justify-center"
     >
       <h1 className="text-4xl text-white mb-4 md:mt-0 md:mb-0 lg:mb-0 lg:mt-0">
         {t("about.title")}
       </h1>
-      <div className="lg:mt-0 flex items-center justify-center flex-col gap-4 min-h-screen">
+      <div className="container mx-auto px-4 lg:mt-0 flex items-center justify-start flex-col gap-4 flex-1">
         <div className="flex items-center justify-center gap-4 md:gap-4 lg:gap-10 flex-col md:flex-row lg:flex-row">
           {/* Me and Greeting */}
           <div className="flex flex-col items-center justify-center gap-6 w-full md:w-[50%] lg:w-[35%]">

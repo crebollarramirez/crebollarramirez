@@ -8,7 +8,6 @@ import Navbar from "./Components/Navbar";
 import Experience from "./Components/Experience";
 import Contact from "./Components/Contact";
 import ResumeModal from "./Components/ResumeModal";
-import { LanguageProvider } from "./Components/LanguageContext";
 
 function App() {
   const lightRef = useRef(null); // Reference for the light element
@@ -60,22 +59,24 @@ function App() {
   }, []);
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center">
+    <div className="h-screen w-screen flex flex-col ">
       <div className="light" ref={lightRef}></div> {/* Light effect */}
-      <div className="h-screen flex flex-col justify-center items-center w-[95%] md:w-[90%] lg:w-[70%]">
-        <LanguageProvider>
-          <Navbar activeSection={activeSection} toggleResumeModal={toggleResumeModal} />
-          <main className="h-screen space-y-[6em] lg:space-y-[6em]">
-            <Welcome />
-            <About toggleResumeModal={toggleResumeModal} />
-            <Experience />
-            <Projects />
-            <Contact />
-            <Footer />
-          </main>
-          <ResumeModal isOpen={isResumeModalOpen} onClose={() => setIsResumeModalOpen(false)} />
-        </LanguageProvider>
-      </div>
+      <Navbar
+        activeSection={activeSection}
+        toggleResumeModal={toggleResumeModal}
+      />
+      <main className="flex-1 overflow-y-auto space-y-10">
+        <Welcome />
+        <About toggleResumeModal={toggleResumeModal} />
+        <Experience />
+        <Projects />
+        <Contact />
+        <Footer />
+      </main>
+      <ResumeModal
+        isOpen={isResumeModalOpen}
+        onClose={() => setIsResumeModalOpen(false)}
+      />
     </div>
   );
 }

@@ -7,14 +7,14 @@ const Projects = () => {
 
   return (
     <div
-      className="w-full flex flex-col items-center justify-start bg-dark-gray min-h-screen scroll-mt-16 md:scroll-mt-32 lg:scroll-mt-24"
+      className="w-full min-h-full flex flex-col items-center justify-start"
       id="projects"
     >
       <h1 className="text-4xl text-white mb-6 md:mb-6 lg:mb-12">
         {t("projects.title")}
       </h1>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
         {projectsData.map((project, index) => (
           <Project
             key={index}

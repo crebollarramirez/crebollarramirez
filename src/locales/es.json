@@ -70,7 +70,8 @@
                     "Desarrollé Swipe Style, una aplicación web inspirada en Tinder para explorar artículos de moda, utilizando MERN Stack y TailwindCSS.",
                     "Implementé 10 rutas de API para gestionar interacciones de usuarios e integrar Google OAuth para autenticación segura.",
                     "Lideré un equipo de 5 miembros, organizó reuniones semanales y delegó tareas para asegurar un desarrollo eficiente."
-                ]
+                ],
+                "link": "https://acmucsd.com/"
             },
             {
                 "title": "Software Engineer",
@@ -81,7 +82,8 @@
                     "Implementé soporte multilingüe con next-intl para mejorar la accesibilidad y el SEO en inglés y español.",
                     "Integré Formspree para una comunicación más eficiente con los clientes mediante el manejo optimizado de formularios.",
                     "Colaboré con las partes interesadas para alinear las soluciones técnicas con la misión de la organización y los objetivos de alcance comunitario."
-                ]
+                ],
+                "link": "https://www.apfhospice.com"
             }
         ]
     },
