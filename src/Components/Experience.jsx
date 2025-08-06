@@ -14,7 +14,7 @@ const Experience = () => {
         {t("experience.title")}
       </h1>
 
-      <div className="container mx-auto px-4 w-full lg:w-[60%]">
+      <div className="container mx-auto px-4">
         {experienceData.map((exp, index) => (
           <div key={index} className="mb-8 flex w-full relative">
             {/* Timeline line */}

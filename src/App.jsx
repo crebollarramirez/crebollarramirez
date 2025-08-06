@@ -59,13 +59,13 @@ function App() {
   }, []);
 
   return (
-    <div className="h-screen w-screen flex flex-col ">
+    <div className="h-screen w-screen flex flex-col overflow-hidden">
       <div className="light" ref={lightRef}></div> {/* Light effect */}
       <Navbar
         activeSection={activeSection}
         toggleResumeModal={toggleResumeModal}
       />
-      <main className="flex-1 overflow-y-auto space-y-10">
+      <main className="flex-1 overflow-y-auto overflow-x-hidden space-y-10 scrollbar-hide">
         <Welcome />
         <About toggleResumeModal={toggleResumeModal} />
         <Experience />
