@@ -18,14 +18,6 @@ ___
 
 <br>
 
-## 📊 GitHub Stats
-
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=crebollarramirez&theme=midnight-purple&hide_border=false&include_all_commits=false&count_private=false" alt="GitHub Stats" height="190px"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=crebollarramirez&theme=midnight-purple&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="Top Languages" height="190px"/>
-<img  src="https://github-readme-streak-stats.herokuapp.com/?user=crebollarramirez&theme=midnight-purple&hide_border=false" alt="GitHub Streak Stats" height="190px"/>
-</div>
-
 ## 🧠 Tech Stack
 
 ### Languages
