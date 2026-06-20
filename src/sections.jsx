@@ -256,75 +256,73 @@ function ProjectCard({ project, delay }) {
   const link = hasLink(project.link) ? project.link : null;
 
   return (
-    <Reveal
-      kind="up"
-      delay={delay}
-      className="flex flex-row overflow-hidden rounded-[20px] border border-[var(--border)] bg-[var(--surface)] backdrop-blur-md transition duration-300 ease-[var(--ease)] hover:-translate-y-1.5 hover:border-[var(--accent)] hover:shadow-[var(--shadow)] max-[920px]:flex-col"
-    >
-      {image && (
-        <div className="relative min-h-[300px] flex-[0_0_44%] overflow-hidden bg-[var(--bg-2)] max-[920px]:min-h-[200px] max-[920px]:flex-none max-[920px]:aspect-[16/10]">
-          <img
-            className="size-full object-cover"
-            src={image}
-            alt={`${project.name} screenshot`}
-            loading="lazy"
-          />
-        </div>
-      )}
-      <div
-        className={cx(
-          "flex flex-1 flex-col justify-center px-[34px] py-[30px]",
-          !image && "px-[38px] py-[34px]",
+    <Reveal kind="up" delay={delay} className="project-card-hit">
+      <div className="project-card flex flex-row overflow-hidden rounded-[20px] border border-[var(--border)] bg-[var(--surface)] backdrop-blur-md max-[920px]:flex-col">
+        {image && (
+          <div className="relative min-h-[300px] flex-[0_0_44%] overflow-hidden bg-[var(--bg-2)] max-[920px]:min-h-[200px] max-[920px]:flex-none max-[920px]:aspect-[16/10]">
+            <img
+              className="size-full object-cover"
+              src={image}
+              alt={`${project.name} screenshot`}
+              loading="lazy"
+            />
+          </div>
         )}
-      >
-        <div className="flex items-start justify-between gap-3">
-          <h3 className="text-2xl">{project.name}</h3>
-          {(github || link) && (
-            <div className="flex flex-none gap-2">
-              {github && (
-                <a
-                  className="grid size-9 flex-none place-items-center rounded-[10px] border border-[var(--border)] text-[var(--text-2)] transition duration-200 hover:translate-x-0.5 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:text-[var(--accent)] [&_svg]:text-lg"
-                  href={github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`${project.name} on GitHub`}
-                  title="View source on GitHub"
-                >
-                  <Icon.github />
-                </a>
-              )}
-              {link && (
-                <a
-                  className="grid size-9 flex-none place-items-center rounded-[10px] border border-[var(--border)] text-[var(--text-2)] transition duration-200 hover:translate-x-0.5 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:text-[var(--accent)] [&_svg]:text-lg"
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Open ${project.name}`}
-                  title="Open live site"
-                >
-                  <Icon.arrowUpRight />
-                </a>
-              )}
-            </div>
+        <div
+          className={cx(
+            "flex flex-1 flex-col justify-center px-[34px] py-[30px]",
+            !image && "px-[38px] py-[34px]",
           )}
-        </div>
-        <p className="my-3.5 text-[15px] text-[var(--text-2)]">
-          {project.blurb}
-        </p>
-        <ul className="mb-[18px] flex flex-col gap-[7px]">
-          {project.bullets.map((b, i) => (
-            <li
-              className="relative pl-5 text-[14.5px] text-[var(--text-2)] before:absolute before:top-[9px] before:left-0.5 before:size-1.5 before:rounded-full before:bg-[var(--accent)]"
-              key={i}
-            >
-              {b}
-            </li>
-          ))}
-        </ul>
-        <div className="mt-auto flex flex-wrap gap-[7px]">
-          {project.stack.map((s) => (
-            <Tag key={s}>{s}</Tag>
-          ))}
+        >
+          <div className="flex items-start justify-between gap-3">
+            <h3 className="text-2xl">{project.name}</h3>
+            {(github || link) && (
+              <div className="flex flex-none gap-2">
+                {github && (
+                  <a
+                    className="grid size-9 flex-none place-items-center rounded-[10px] border border-[var(--border)] text-[var(--text-2)] transition duration-200 hover:translate-x-0.5 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:text-[var(--accent)] [&_svg]:text-lg"
+                    href={github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${project.name} on GitHub`}
+                    title="View source on GitHub"
+                  >
+                    <Icon.github />
+                  </a>
+                )}
+                {link && (
+                  <a
+                    className="grid size-9 flex-none place-items-center rounded-[10px] border border-[var(--border)] text-[var(--text-2)] transition duration-200 hover:translate-x-0.5 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:text-[var(--accent)] [&_svg]:text-lg"
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Open ${project.name}`}
+                    title="Open live site"
+                  >
+                    <Icon.arrowUpRight />
+                  </a>
+                )}
+              </div>
+            )}
+          </div>
+          <p className="my-3.5 text-[15px] text-[var(--text-2)]">
+            {project.blurb}
+          </p>
+          <ul className="mb-[18px] flex flex-col gap-[7px]">
+            {project.bullets.map((b, i) => (
+              <li
+                className="relative pl-5 text-[14.5px] text-[var(--text-2)] before:absolute before:top-[9px] before:left-0.5 before:size-1.5 before:rounded-full before:bg-[var(--accent)]"
+                key={i}
+              >
+                {b}
+              </li>
+            ))}
+          </ul>
+          <div className="mt-auto flex flex-wrap gap-[7px]">
+            {project.stack.map((s) => (
+              <Tag key={s}>{s}</Tag>
+            ))}
+          </div>
         </div>
       </div>
     </Reveal>
