@@ -86,7 +86,7 @@ function SectionDots({ active }) {
           href={`#${s.id}`}
           className={cx(
             "group relative size-[9px] rounded-full bg-[var(--border-2)] transition-all duration-300 hover:bg-[var(--accent)]",
-            active === s.id && "scale-110 bg-[var(--accent)] shadow-[0_0_0_4px_var(--accent-soft)]",
+            active === s.id && "scale-110 !bg-[var(--accent)] shadow-[0_0_0_4px_var(--accent-soft)]",
           )}
         >
           <span className="pointer-events-none absolute top-1/2 right-[18px] -translate-y-1/2 translate-x-1.5 whitespace-nowrap rounded-[7px] border border-[var(--border)] bg-[var(--surface-2)] px-2 py-[3px] font-mono text-[11px] text-[var(--text-2)] opacity-0 transition duration-200 group-hover:translate-x-0 group-hover:opacity-100">

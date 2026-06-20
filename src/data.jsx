@@ -56,10 +56,11 @@ export const SKILLS = [
 export const EDUCATION = [
   {
     school: "University of California, San Diego",
-    degree: "B.S. Mathematics & Computer Science · B.S. Cognitive Science",
+    degree1: "B.S. Mathematics & Computer Science",
+    degree2: "B.S. Cognitive Science with a specialization in Machine Learning & Neural Computation",
     period: "Sep 2021 — Sep 2025",
     detail:
-      "Cognitive Science specialization in Machine Learning & Neural Computation. Coursework spanning advanced data structures (C++), algorithm design & analysis, operating systems, computer organization (C/ARM), software engineering, supervised ML, practical data science, ML in practice, and deep learning.",
+      "Coursework spanning Advanced Data Structures (C++), Algorithm Design & Analysis, Operating Systems, Computer Organization (C/ARM), Software Engineering, Supervised ML, Practical Data Science, ML in Practice, and Deep Learning.",
   },
 ];
 
@@ -114,7 +115,7 @@ export const EXPERIENCE = [
       "PostgreSQL",
       "Codex",
     ],
-    link: "#", // add the company / project URL here
+    link: "https://temptationla.com", // add the company / project URL here
     images: ["images/temptationla1.png", "images/temptationla2.png"],
   },
   {
@@ -139,7 +140,7 @@ export const EXPERIENCE = [
       "Formspree",
       "Vercel",
     ],
-    link: "#", // add the company / project URL here
+    link: "https://apfhospice.com", // add the company / project URL here
     images: [],
   },
 ];

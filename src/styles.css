@@ -393,6 +393,7 @@
   }
 }
 
+.animated-accent-text,
 .heroc__hi .accent,
 .heroc__role .accent {
   background: linear-gradient(135deg, var(--text), var(--accent) 45%, var(--accent-2) 70%, var(--text));
@@ -499,6 +500,7 @@
   .heroc__avatar:hover img,
   .heroc__note,
   .heroc__vinyl::after,
+  .animated-accent-text,
   .heroc__hi .accent,
   .heroc__role .accent {
     animation: none !important;
