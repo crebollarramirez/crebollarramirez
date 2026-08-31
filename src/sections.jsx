@@ -254,6 +254,8 @@ function ProjectCard({ project, delay }) {
   const image = project.images?.[0];
   const github = hasLink(project.github) ? project.github : null;
   const link = hasLink(project.link) ? project.link : null;
+  const period = project.period?.trim();
+  const status = project.status?.trim();
 
   return (
     <Reveal kind="up" delay={delay} className="project-card-hit">
@@ -305,6 +307,17 @@ function ProjectCard({ project, delay }) {
               </div>
             )}
           </div>
+          {(period || status) && (
+            <div className="my-3.5 flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-[12.5px] text-[var(--text-3)]">
+              {period && <span>{period}</span>}
+              {status && (
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="size-1.5 rounded-full bg-[var(--accent)]" aria-hidden="true" />
+                  {status}
+                </span>
+              )}
+            </div>
+          )}
           <p className="my-3.5 text-[15px] text-[var(--text-2)]">
             {project.blurb}
           </p>
@@ -340,7 +353,7 @@ export function Projects({ items }) {
         index="03"
         eyebrow="Projects"
         title="Things I've built"
-        kicker="A selection of work — open-source, side projects, and experiments."
+        kicker="A selection of production-oriented systems and technical projects."
       />
       <div className="flex flex-col gap-6 max-[920px]:gap-5">
         {items.map((pr, i) => (
